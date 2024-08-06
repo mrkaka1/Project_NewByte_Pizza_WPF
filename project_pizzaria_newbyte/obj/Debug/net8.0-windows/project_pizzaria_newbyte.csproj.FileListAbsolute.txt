@@ -3,11 +3,9 @@ C:\Users\daluz\source\repos\project_pizzaria_newbyte\project_pizzaria_newbyte\bi
 C:\Users\daluz\source\repos\project_pizzaria_newbyte\project_pizzaria_newbyte\bin\Debug\net8.0-windows\project_pizzaria_newbyte.runtimeconfig.json
 C:\Users\daluz\source\repos\project_pizzaria_newbyte\project_pizzaria_newbyte\bin\Debug\net8.0-windows\project_pizzaria_newbyte.dll
 C:\Users\daluz\source\repos\project_pizzaria_newbyte\project_pizzaria_newbyte\bin\Debug\net8.0-windows\project_pizzaria_newbyte.pdb
-C:\Users\daluz\source\repos\project_pizzaria_newbyte\project_pizzaria_newbyte\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\daluz\source\repos\project_pizzaria_newbyte\project_pizzaria_newbyte\obj\Debug\net8.0-windows\App.g.cs
 C:\Users\daluz\source\repos\project_pizzaria_newbyte\project_pizzaria_newbyte\obj\Debug\net8.0-windows\project_pizzaria_newbyte_MarkupCompile.cache
 C:\Users\daluz\source\repos\project_pizzaria_newbyte\project_pizzaria_newbyte\obj\Debug\net8.0-windows\project_pizzaria_newbyte_MarkupCompile.lref
-C:\Users\daluz\source\repos\project_pizzaria_newbyte\project_pizzaria_newbyte\obj\Debug\net8.0-windows\MainWindow.baml
 C:\Users\daluz\source\repos\project_pizzaria_newbyte\project_pizzaria_newbyte\obj\Debug\net8.0-windows\project_pizzaria_newbyte.g.resources
 C:\Users\daluz\source\repos\project_pizzaria_newbyte\project_pizzaria_newbyte\obj\Debug\net8.0-windows\project_pizzaria_newbyte.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\daluz\source\repos\project_pizzaria_newbyte\project_pizzaria_newbyte\obj\Debug\net8.0-windows\project_pizzaria_newbyte.AssemblyInfoInputs.cache
@@ -19,3 +17,5 @@ C:\Users\daluz\source\repos\project_pizzaria_newbyte\project_pizzaria_newbyte\ob
 C:\Users\daluz\source\repos\project_pizzaria_newbyte\project_pizzaria_newbyte\obj\Debug\net8.0-windows\project_pizzaria_newbyte.pdb
 C:\Users\daluz\source\repos\project_pizzaria_newbyte\project_pizzaria_newbyte\obj\Debug\net8.0-windows\project_pizzaria_newbyte.genruntimeconfig.cache
 C:\Users\daluz\source\repos\project_pizzaria_newbyte\project_pizzaria_newbyte\obj\Debug\net8.0-windows\ref\project_pizzaria_newbyte.dll
+C:\Users\daluz\source\repos\project_pizzaria_newbyte\project_pizzaria_newbyte\obj\Debug\net8.0-windows\Pages\MenuWindow.g.cs
+C:\Users\daluz\source\repos\project_pizzaria_newbyte\project_pizzaria_newbyte\obj\Debug\net8.0-windows\Pages\MenuWindow.baml

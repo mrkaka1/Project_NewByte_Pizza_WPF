@@ -16,9 +16,18 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Pages\" />
+    <None Remove="Resourses\Images\NewBite-Logomarca.png" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Resourses\Fonts\" />
-    <Folder Include="Resourses\Images\" />
+    <Folder Include="Resourses\Fonts\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resourses\Images\NewBite-Logomarca.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

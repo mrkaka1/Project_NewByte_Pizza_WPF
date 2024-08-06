@@ -1,0 +1,38 @@
+﻿<Window x:Class="project_pizzaria_newbyte.Pages.MenuWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:project_pizzaria_newbyte.Pages"
+        mc:Ignorable="d"
+        Title="MenuWindow" Height="450" Width="800">
+    <Grid>
+        <Border Grid.ColumnSpan="5" Grid.RowSpan="5" Background="#111113"/>
+        <Image Grid.Column="1" Grid.Row="0" Source="/Resourses/Images/NewBite-Logomarca.png" HorizontalAlignment="Left"/>
+        <Image   Grid.Column="1" Grid.Row="0" Source="/Resourses/Images/Home Off.png" HorizontalAlignment="Left"  Width="18" VerticalAlignment="Center" />
+
+       
+            <!--<Image Grid.Column="1" Grid.Row="0"  Source="/Resourses/Images/Search Off.png" HorizontalAlignment="Left" Margin="408,0,0,0" Width="16" VerticalAlignment="Center" Height="19"/>
+            <Image Grid.Column="1" Grid.Row="0"  Source="/Resourses/Images/Follow Off.png" HorizontalAlignment="Left" Width="22" VerticalAlignment="Center" Height="21" Margin="443,0,0,0"/>
+            <Image Grid.Column="1" Grid.Row="0"  Source="/Resourses/Images/Cart Off.png" HorizontalAlignment="Left" Width="17" VerticalAlignment="Center" Height="21" RenderTransformOrigin="0.956,0.555" Margin="484,0,0,0"/>-->
+
+
+        <Grid>
+            
+        </Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.02*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="0.02*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.09*" />
+            <RowDefinition Height="0.03*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="0.02*" />
+        </Grid.RowDefinitions>
+
+
+    </Grid>
+</Window>
