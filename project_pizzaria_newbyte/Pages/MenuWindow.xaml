@@ -6,6 +6,7 @@
         xmlns:local="clr-namespace:project_pizzaria_newbyte.Pages"
         mc:Ignorable="d"
         Title="MenuWindow" Height="450" Width="800">
+
     <Grid>
         <Border Grid.ColumnSpan="5" Grid.RowSpan="5" Background="#111113"/>
         <Image Grid.Column="1" Grid.Row="0" Source="/Resourses/Images/NewBite-Logomarca.png" HorizontalAlignment="Left"/>
