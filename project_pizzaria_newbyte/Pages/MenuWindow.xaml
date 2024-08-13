@@ -9,17 +9,14 @@
     <Grid>
         <Border Grid.ColumnSpan="5" Grid.RowSpan="5" Background="#111113"/>
         <Image Grid.Column="1" Grid.Row="0" Source="/Resourses/Images/NewBite-Logomarca.png" HorizontalAlignment="Left"/>
-        <Image   Grid.Column="1" Grid.Row="0" Source="/Resourses/Images/Home Off.png" HorizontalAlignment="Left"  Width="18" VerticalAlignment="Center" />
 
-       
-            <!--<Image Grid.Column="1" Grid.Row="0"  Source="/Resourses/Images/Search Off.png" HorizontalAlignment="Left" Margin="408,0,0,0" Width="16" VerticalAlignment="Center" Height="19"/>
+
+        <!--<Image Grid.Column="1" Grid.Row="0"  Source="/Resourses/Images/Search Off.png" HorizontalAlignment="Left" Margin="408,0,0,0" Width="16" VerticalAlignment="Center" Height="19"/>
             <Image Grid.Column="1" Grid.Row="0"  Source="/Resourses/Images/Follow Off.png" HorizontalAlignment="Left" Width="22" VerticalAlignment="Center" Height="21" Margin="443,0,0,0"/>
             <Image Grid.Column="1" Grid.Row="0"  Source="/Resourses/Images/Cart Off.png" HorizontalAlignment="Left" Width="17" VerticalAlignment="Center" Height="21" RenderTransformOrigin="0.956,0.555" Margin="484,0,0,0"/>-->
 
+        <Label Content="Nome Escola" Grid.Column="1" Grid.Row="2" Foreground="White" FontFamily="{StaticResource Poppins}"/>
 
-        <Grid>
-            
-        </Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.02*" />
             <ColumnDefinition Width="*" />
@@ -32,6 +29,7 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="0.02*" />
         </Grid.RowDefinitions>
+
 
 
     </Grid>

@@ -4,6 +4,6 @@
              xmlns:local="clr-namespace:project_pizzaria_newbyte"
              StartupUri="Pages/MenuWindow.xaml">
     <Application.Resources>
-         
+        <FontFamily x:Key="Poppins">pack://application:,,,/Resourses/Fonts/Poppins-Bold.ttf#Poppins</FontFamily>
     </Application.Resources>
 </Application>
