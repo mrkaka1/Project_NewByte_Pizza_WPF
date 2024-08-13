@@ -4,6 +4,28 @@
              xmlns:local="clr-namespace:project_pizzaria_newbyte"
              StartupUri="Pages/MenuWindow.xaml">
     <Application.Resources>
-        <FontFamily x:Key="Poppins">pack://application:,,,/Resourses/Fonts/Poppins-Bold.ttf#Poppins</FontFamily>
+        <!--#region FONT -->
+        <FontFamily x:Key="Poppins-Thin">pack://application:,,,/Resourses/Fonts/Poppins-Thin.ttf#Poppins</FontFamily>
+        <FontFamily x:Key="Poppins-ExtraLight">pack://application:,,,/Resourses/Fonts/Poppins-ExtraLight.ttf#Poppins</FontFamily>
+        <FontFamily x:Key="Poppins-Light">pack://application:,,,/Resourses/Fonts/Poppins-Light.ttf#Poppins</FontFamily>
+        <FontFamily x:Key="Poppins-Regular">pack://application:,,,/Resourses/Fonts/Poppins-Regular.ttf#Poppins</FontFamily>
+        <FontFamily x:Key="Poppins-Medium">pack://application:,,,/Resourses/Fonts/Poppins-Medium.ttf#Poppins</FontFamily>
+        <FontFamily x:Key="Poppins-SemiBold">pack://application:,,,/Resourses/Fonts/Poppins-SemiBold.ttf#Poppins</FontFamily>
+        <FontFamily x:Key="Poppins-Bold">pack://application:,,,/Resourses/Fonts/Poppins-Bold.ttf#Poppins</FontFamily>
+        <FontFamily x:Key="Poppins-ExtraBold">pack://application:,,,/Resourses/Fonts/Poppins-ExtraBold.ttf#Poppins</FontFamily>
+        <FontFamily x:Key="Poppins-Black">pack://application:,,,/Resourses/Fonts/Poppins-Black.ttf#Poppins</FontFamily>
+        <!--#endregion FONT -->
+
+        <!--#region ITALIC FONT -->
+        <FontFamily x:Key="Poppins-Thin-Italic">pack://application:,,,/Resourses/Fonts/Poppins-ThinItalic.ttf#Poppins</FontFamily>
+        <FontFamily x:Key="Poppins-ExtraLight-Italic">pack://application:,,,/Resourses/Fonts/Poppins-ExtraLightItalic.ttf#Poppins</FontFamily>
+        <FontFamily x:Key="Poppins-Light-Italic">pack://application:,,,/Resourses/Fonts/Poppins-LightItalic.ttf#Poppins</FontFamily>
+        <FontFamily x:Key="Poppins-Regular-Italic">pack://application:,,,/Resourses/Fonts/Poppins-RegularItalic.ttf#Poppins</FontFamily>
+        <FontFamily x:Key="Poppins-Medium-Italic">pack://application:,,,/Resourses/Fonts/Poppins-MediumItalic.ttf#Poppins</FontFamily>
+        <FontFamily x:Key="Poppins-SemiBold-Italic">pack://application:,,,/Resourses/Fonts/Poppins-SemiBoldItalic.ttf#Poppins</FontFamily>
+        <FontFamily x:Key="Poppins-Bold-Italic">pack://application:,,,/Resourses/Fonts/Poppins-BoldItalic.ttf#Poppins</FontFamily>
+        <FontFamily x:Key="Poppins-ExtraBold-Italic">pack://application:,,,/Resourses/Fonts/Poppins-ExtraBoldItalic.ttf#Poppins</FontFamily>
+        <FontFamily x:Key="Poppins-Black-Italic">pack://application:,,,/Resourses/Fonts/Poppins-BlackItalic.ttf#Poppins</FontFamily>
+        <!--#endregion ITALIC FONT -->
     </Application.Resources>
 </Application>
