@@ -7,16 +7,39 @@
         mc:Ignorable="d"
         Title="MenuWindow" Height="450" Width="800">
 
-    <Grid>
-        <Border Grid.ColumnSpan="5" Grid.RowSpan="5" Background="#111113"/>
-        <Image Grid.Column="1" Grid.Row="0" Source="/Resourses/Images/NewBite-Logomarca.png" HorizontalAlignment="Left"/>
+    <Grid Background="#111113">
+        <!--#region HEAD -->
+        <Grid Grid.Column="1" Grid.Row="0" VerticalAlignment="Center">
+            <StackPanel Grid.Column="0">
+                <Image Source="/Resourses/Images/NewBite-Logomarca.png" HorizontalAlignment="Left" Height="27" Width="82"/>
+            </StackPanel>
+            
+            <StackPanel Grid.Column="1" Orientation="Horizontal">
+                <Image Source="/Resourses/Icons/Home-Off.png" Height="20" Width="20"/>
+                <Image Source="/Resourses/Icons/Search-Off.png" Height="20" Width="20"/>
+                <Image Source="/Resourses/Icons/Cart-Off.png" Height="20" Width="20"/>
+                <Image Source="/Resourses/Icons/Follow-Off.png" Height="20" Width="20"/>
+            </StackPanel>
+
+            <!--#region SET GRID -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70*" />
+                <ColumnDefinition Width="630*" />
+                <ColumnDefinition Width="60*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+            </Grid.RowDefinitions>
+            <!--#endregion SET GRID-->
+        </Grid>
+        <!--#endregion HEAD-->
 
 
         <!--<Image Grid.Column="1" Grid.Row="0"  Source="/Resourses/Images/Search Off.png" HorizontalAlignment="Left" Margin="408,0,0,0" Width="16" VerticalAlignment="Center" Height="19"/>
             <Image Grid.Column="1" Grid.Row="0"  Source="/Resourses/Images/Follow Off.png" HorizontalAlignment="Left" Width="22" VerticalAlignment="Center" Height="21" Margin="443,0,0,0"/>
             <Image Grid.Column="1" Grid.Row="0"  Source="/Resourses/Images/Cart Off.png" HorizontalAlignment="Left" Width="17" VerticalAlignment="Center" Height="21" RenderTransformOrigin="0.956,0.555" Margin="484,0,0,0"/>-->
 
-        <Label Content="Nome Escola" Grid.Column="1" Grid.Row="2" Foreground="White" FontFamily="{StaticResource Poppins}"/>
+        <Label Content="Nome Escola" Grid.Column="1" Grid.Row="2" Foreground="White" FontFamily="{StaticResource Poppins-Regular}"/>
 
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.02*" />
@@ -30,8 +53,5 @@
             <RowDefinition Height="*" />
             <RowDefinition Height="0.02*" />
         </Grid.RowDefinitions>
-
-
-
     </Grid>
 </Window>
