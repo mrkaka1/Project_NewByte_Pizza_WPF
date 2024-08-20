@@ -19,10 +19,10 @@
             <Grid Grid.Column="0" Grid.Row="0">
 
                 <!-- IMAGE -->
-                <Border Background="Red" Margin="10" Grid.Column="0" Grid.Row="0" Style="{StaticResource Border-Radius}"/>
+                <Border Background="Red" Margin="10,10,10,10" Grid.Column="0" Grid.Row="0" Style="{StaticResource Border-Radius}"/>
 
                 <!-- PRODUCT DATA -->
-                <StackPanel Margin="10" Grid.Column="1" Grid.Row="0">
+                <StackPanel Margin="10,10,10,10" Grid.Column="1" Grid.Row="0">
                     <!-- PRODUCT -->
 
                     <TextBlock 
@@ -41,7 +41,7 @@
                         FontSize="14"
                         FontFamily="{StaticResource Poppins-Regular}"
                     />
-                    
+
                     <!--#region PRICE -->
                     <StackPanel VerticalAlignment="Bottom" Margin="0 50 0 0">
                         <TextBlock 
@@ -62,7 +62,7 @@
                         />
                     </StackPanel>
                     <!--#endregion PRICE -->
-                    
+
                     <!-- NOTE AND SELL -->
                     <TextBlock 
                         Text="0 vendidos"
@@ -71,36 +71,72 @@
                         FontFamily="{StaticResource Poppins-Regular}"
                     />
                 </StackPanel>
-                
+
                 <!-- PAYMENT -->
-                <StackPanel 
-                    Grid.Column="2" 
-                    Grid.Row="0"
-                >
-                    <Border 
+                <Border 
+                        Grid.Column="2"
+                        Grid.Row="0"
                         Style="{StaticResource Border-Radius}"
                         Background="{StaticResource Gray-1-Color}"
-                        Width="200"
-                        Height="230"
-                    >
-                        <StackPanel Orientation="Horizontal">
+                        Padding="14" Margin="3,0,2,0"
+                >
+                    <StackPanel Orientation="Vertical">
+                        <!-- TOTAL VALUE -->
+                        <Grid>
                             <TextBlock 
-    Text="R$0,00"
-    Foreground="#FFF" 
-    FontWeight="SemiBold" 
-    FontSize="25"
-    FontFamily="{StaticResource Poppins-SemiBold}"
-/>
-                        </StackPanel>
+                                Grid.Column="0"
+                                Text="Valor total:"
+                                Foreground="#FFF" 
+                                FontWeight="SemiBold" 
+                                FontSize="20"
+                                FontFamily="{StaticResource Poppins-SemiBold}"
+                            />
+                            <TextBlock 
+                                Grid.Column="1"
+                                Text="R$0,00"
+                                Foreground="#FFF" 
+                                FontWeight="SemiBold" 
+                                FontSize="20"
+                                FontFamily="{StaticResource Poppins-SemiBold}"
+                                HorizontalAlignment="Right"
+                            />
+
+                            <!--#region SET GRID -->
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="115*" />
+                                <ColumnDefinition Width="99*" />
+                            </Grid.ColumnDefinitions>
+
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*" />
+                            </Grid.RowDefinitions>
+                            <!--#endregion SET GRID -->
+                        </Grid>
                         
-                    </Border>
-                </StackPanel>
-                
+                        <!-- AMOUNT -->
+                        <StackPanel>
+                            <TextBlock 
+                                Text="Quantidade:" 
+                                Foreground="#FFF"
+                                FontWeight="Regular"
+                                FontSize="14"
+                                FontFamily="{StaticResource Poppins-Regular}"
+                            />
+                            
+                            <!-- SELECT AMOUNT -->
+                            <StackPanel Orientation="Horizontal">
+     
+                            </StackPanel>
+                        </StackPanel>
+                    </StackPanel>
+
+                </Border>
+
                 <!--#region SET GRID -->
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="220*" />
-                    <ColumnDefinition Width="348*" />
-                    <ColumnDefinition Width="200*" />
+                    <ColumnDefinition Width="302*" />
+                    <ColumnDefinition Width="247*" />
                 </Grid.ColumnDefinitions>
 
                 <Grid.RowDefinitions>
