@@ -27,5 +27,16 @@
         <FontFamily x:Key="Poppins-ExtraBold-Italic">pack://application:,,,/Resourses/Fonts/Poppins-ExtraBoldItalic.ttf#Poppins</FontFamily>
         <FontFamily x:Key="Poppins-Black-Italic">pack://application:,,,/Resourses/Fonts/Poppins-BlackItalic.ttf#Poppins</FontFamily>
         <!--#endregion ITALIC FONT -->
+        
+        <!--#region STYLES -->
+        <!-- BORDER RADIUS -->
+        <Style x:Key="Border-Radius" TargetType="Border">
+            <Setter Property="CornerRadius" Value="8"/>
+        </Style>
+
+        
+        <!-- COLOR -->
+        <SolidColorBrush x:Key="Gray-Color">#1E1E1E</SolidColorBrush>
+        <!--#endregion STYLES -->
     </Application.Resources>
 </Application>

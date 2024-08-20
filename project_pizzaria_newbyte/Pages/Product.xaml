@@ -19,8 +19,8 @@
             <Grid Grid.Column="0" Grid.Row="0">
 
                 <!-- IMAGE -->
-                <Border Background="Red" Margin="10" Grid.Column="0" Grid.Row="0"></Border>
-                
+                <Border Background="Red" Margin="10" Grid.Column="0" Grid.Row="0" Style="{StaticResource Border-Radius}"/>
+
                 <!-- PRODUCT DATA -->
                 <StackPanel Margin="10" Grid.Column="1" Grid.Row="0">
                     <!-- PRODUCT -->
@@ -43,21 +43,22 @@
                     />
                     
                     <!--#region PRICE -->
-                    <StackPanel Orientation="Horizontal" VerticalAlignment="Bottom">
+                    <StackPanel VerticalAlignment="Bottom" Margin="0 50 0 0">
+                        <TextBlock 
+                            Text="R$0,00"
+                            TextDecorations="Strikethrough"
+                            Foreground="#8E8EA0" 
+                            FontWeight="SemiBold" 
+                            FontSize="19"
+                            FontFamily="{StaticResource Poppins-SemiBold}"
+                            Margin="0 6.7 0 0"
+                        />
                         <TextBlock 
                             Text="R$0,00"
                             Foreground="#FFF" 
                             FontWeight="SemiBold" 
                             FontSize="25"
                             FontFamily="{StaticResource Poppins-SemiBold}"
-                        />
-                        <TextBlock 
-                            Text="R$0,00"
-                            Foreground="#8E8EA0" 
-                            FontWeight="SemiBold" 
-                            FontSize="19"
-                            FontFamily="{StaticResource Poppins-SemiBold}"
-                            Margin="0 6.7 0 0"
                         />
                     </StackPanel>
                     <!--#endregion PRICE -->
@@ -72,6 +73,28 @@
                 </StackPanel>
                 
                 <!-- PAYMENT -->
+                <StackPanel 
+                    Grid.Column="2" 
+                    Grid.Row="0"
+                >
+                    <Border 
+                        Style="{StaticResource Border-Radius}"
+                        Background="{StaticResource Gray-1-Color}"
+                        Width="200"
+                        Height="230"
+                    >
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock 
+    Text="R$0,00"
+    Foreground="#FFF" 
+    FontWeight="SemiBold" 
+    FontSize="25"
+    FontFamily="{StaticResource Poppins-SemiBold}"
+/>
+                        </StackPanel>
+                        
+                    </Border>
+                </StackPanel>
                 
                 <!--#region SET GRID -->
                 <Grid.ColumnDefinitions>
