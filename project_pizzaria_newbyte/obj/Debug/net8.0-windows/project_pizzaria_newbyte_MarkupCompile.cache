@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\daluz\source\repos\project_pizzaria_newbyte\project_pizzaria_newbyte\obj\Debug\net8.0-windows\
+C:\Users\daluz\source\repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\obj\Debug\net8.0-windows\
 project_pizzaria_newbyte
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\daluz\source\repos\project_pizzaria_newbyte\project_pizzaria_newbyte\App.xaml
-1-1323466734
-
-42045847148
+C:\Users\daluz\source\repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\App.xaml
+2-1595792632
+1513403558
+5-2132756336
 198-1509178875
-Pages\MenuWindow.xaml;
+Pages\MenuWindow.xaml;Pages\Product.xaml;
 
 False
 

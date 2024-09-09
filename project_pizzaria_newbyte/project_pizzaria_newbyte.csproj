@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <None Remove="Resourses\Images\NewBite-Logomarca.png" />
+    <None Remove="Resourses\Images\Propagandas.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,6 +29,9 @@
     <Resource Include="Resourses\Images\NewBite-Logomarca.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
+    <Content Include="Resourses\Images\Propagandas.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>

@@ -31,10 +31,19 @@
 
 
         <Grid Grid.Column="1" Grid.Row="2">
-            <Grid.ColumnDefinitions>
-                <!--teste da branch kaaun-->
-                <ColumnDefinition/>
-            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+
+                <RowDefinition  Height="0.6*" />
+                <RowDefinition />
+            </Grid.RowDefinitions>
+
+            <StackPanel Grid.Row="0">
+                <Image Source="/Resourses/Images/Propagandas.png"/>      
+            </StackPanel>
+
+            <StackPanel Grid.Row="1">
+                <Label Content="Ofertas Especiais" Foreground="White" FontFamily="{StaticResource Poppins-Medium}"/>
+            </StackPanel>
         </Grid>
 
 

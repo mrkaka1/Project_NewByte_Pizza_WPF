@@ -59,7 +59,7 @@ namespace project_pizzaria_newbyte {
             
             #line default
             #line hidden
-            System.Uri resourceLocater = new System.Uri("/project_pizzaria_newbyte;V1.0.0.0;component/app.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/project_pizzaria_newbyte;component/app.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\App.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
