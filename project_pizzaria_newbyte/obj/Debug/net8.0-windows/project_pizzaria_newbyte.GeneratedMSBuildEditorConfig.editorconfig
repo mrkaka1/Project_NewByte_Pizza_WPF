@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = project_pizzaria_newbyte
-build_property.ProjectDir = C:\Users\2022102020068\Documents\PDS\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\
+build_property.ProjectDir = C:\Users\daluz\source\repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
