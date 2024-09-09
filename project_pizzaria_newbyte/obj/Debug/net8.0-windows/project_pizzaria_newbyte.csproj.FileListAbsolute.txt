@@ -45,3 +45,7 @@ C:\Users\daluz\source\repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\o
 C:\Users\daluz\source\repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\obj\Debug\net8.0-windows\ref\project_pizzaria_newbyte.dll
 C:\Users\daluz\source\repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\bin\Debug\net8.0-windows\Resourses\Images\Propagandas.png
 C:\Users\daluz\source\repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\obj\Debug\net8.0-windows\project_pizzaria_newbyte_Content.g.cs
+C:\Users\daluz\source\repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\bin\Debug\net8.0-windows\Resourses\Images\Cart-Off.png
+C:\Users\daluz\source\repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\bin\Debug\net8.0-windows\Resourses\Images\Follow-Off.png
+C:\Users\daluz\source\repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\bin\Debug\net8.0-windows\Resourses\Images\Home-Off.png
+C:\Users\daluz\source\repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\bin\Debug\net8.0-windows\Resourses\Images\Search-Off.png
