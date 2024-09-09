@@ -27,5 +27,24 @@
         <FontFamily x:Key="Poppins-ExtraBold-Italic">pack://application:,,,/Resourses/Fonts/Poppins-ExtraBoldItalic.ttf#Poppins</FontFamily>
         <FontFamily x:Key="Poppins-Black-Italic">pack://application:,,,/Resourses/Fonts/Poppins-BlackItalic.ttf#Poppins</FontFamily>
         <!--#endregion ITALIC FONT -->
+
+        <!--#region ICONS -->
+        <!--
+        <Image x:Key="Home-On" Source="/Resourses/Icons/Home/Home-On.png" Height="16" Width="16"/>
+        <Image x:Key="Home-Off" Source="/Resourses/Icons/Home/Home-Off.png" Height="16" Width="16"/>
+        
+        <Image x:Key="Search-On" Source="/Resourses/Icons/Search/Search-On.png" Height="16" Width="16"/>
+        <Image x:Key="Search-Off" Source="/Resourses/Icons/Search/Search-Off.png" Height="16" Width="16"/>
+        
+        <Image x:Key="Cart-On" Source="/Resourses/Icons/Cart/Cart-On.png" Height="16" Width="16"/>
+        <Image x:Key="Cart-Off" Source="/Resourses/Icons/Cart/Cart-Off.png" Height="16" Width="16"/>
+        
+        <Image x:Key="Follow-On" Source="/Resourses/Icons/Follow/Follow-On.png" Height="16" Width="16"/>
+        <Image x:Key="Follow-Off" Source="/Resourses/Icons/Follow/Follow-Off.png" Height="16" Width="16"/>
+
+        <Image x:Key="Bell-On" Source="/Resourses/Icons/Bell/Bell-On.png" Height="16" Width="16"/>
+        <Image x:Key="Bell-Off" Source="/Resourses/Icons/Bell/Bell-Off.png" Height="16" Width="16"/>
+        -->
+        <!--#endregion ICONS -->
     </Application.Resources>
 </Application>
