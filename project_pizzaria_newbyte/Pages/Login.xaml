@@ -137,14 +137,14 @@
                             Height="44"
                         >
                             <TextBlock 
-                        Text="Entrar" 
-                        Foreground="#000"
-                        FontWeight="Regular"
-                        FontSize="12"
-                        FontFamily="{StaticResource Poppins-SemiBold}"
-                        VerticalAlignment="Center"
-                        HorizontalAlignment="Center"
-                    />
+                                Text="Entrar" 
+                                Foreground="#000"
+                                FontWeight="Regular"
+                                FontSize="12"
+                                FontFamily="{StaticResource Poppins-SemiBold}"
+                                VerticalAlignment="Center"
+                                HorizontalAlignment="Center"
+                            />
                         </Border>
                     </Button>
 

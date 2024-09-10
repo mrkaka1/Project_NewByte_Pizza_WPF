@@ -20,10 +20,20 @@
 
                 <!-- IMAGE -->
                 <Border 
-                    Background="Red" 
+                    Background="{StaticResource Gray-1-Color}" 
                     Margin="10,10,10,10" 
                     Grid.Column="0" Grid.Row="0" 
-                    Style="{StaticResource Border-Radius}"/>
+                    Style="{StaticResource Border-Radius}"
+                >
+                    <Image 
+                        Source="/Resourses/Images/Follow-Off.png" 
+                        Height="18" 
+                        Width="18" 
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Bottom"
+                        Margin="10,10,10,10"
+                    />
+                </Border>
 
                 <!-- PRODUCT DATA -->
                 <StackPanel Margin="10,10,10,10" Grid.Column="1" Grid.Row="0">
@@ -92,7 +102,7 @@
                                 Text="Valor total:"
                                 Foreground="#FFF" 
                                 FontWeight="SemiBold" 
-                                FontSize="20"
+                                FontSize="18"
                                 FontFamily="{StaticResource Poppins-SemiBold}"
                             />
                             <TextBlock 
@@ -100,7 +110,7 @@
                                 Text="R$0,00"
                                 Foreground="#FFF" 
                                 FontWeight="SemiBold" 
-                                FontSize="20"
+                                FontSize="18"
                                 FontFamily="{StaticResource Poppins-SemiBold}"
                                 HorizontalAlignment="Right"
                             />
@@ -116,7 +126,7 @@
                             </Grid.RowDefinitions>
                             <!--#endregion SET GRID -->
                         </Grid>
-                        
+
                         <!-- AMOUNT -->
                         <StackPanel>
                             <TextBlock 
@@ -125,15 +135,127 @@
                                 FontWeight="Regular"
                                 FontSize="12"
                                 FontFamily="{StaticResource Poppins-Regular}"
+                                Margin="0,8,0,8"
                             />
-                            
+
                             <!-- SELECT AMOUNT -->
                             <StackPanel Orientation="Horizontal">
-     
+                                <!-- BUTTON -->
+                                <Button
+                                    BorderBrush="Transparent"
+                                    Background="Transparent"
+                                    BorderThickness="0"
+                                >
+                                    <Border 
+                                        BorderThickness="2"
+                                        BorderBrush="#FFF"
+                                        Background="Transparent"
+                                        Style="{StaticResource Border-Radius}"
+                                        Width="44"
+                                        Height="44"
+                                    >
+                                        <Image 
+                                            Source="/Resourses/Images/Remove.png" 
+                                            Height="10" 
+                                            Width="10" 
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                        />
+                                    </Border>
+                                </Button>
+
+                                <!-- TEXT -->
+                                <TextBlock 
+                                    Text="0" 
+                                    Foreground="#FFF"
+                                    FontWeight="Regular"
+                                    FontSize="12"
+                                    FontFamily="{StaticResource Poppins-SemiBold}"
+                                    VerticalAlignment="Center"
+                                    HorizontalAlignment="Center"
+                                    Margin="10,0,10,0"
+                                />
+                                
+                                <!-- BUTTON -->
+                                <Button
+                                    BorderBrush="Transparent"
+                                    Background="Transparent"
+                                    BorderThickness="0"
+                                >
+                                    <Border 
+                                        BorderThickness="2"
+                                        BorderBrush="#FFF"
+                                        Background="Transparent"
+                                        Style="{StaticResource Border-Radius}"
+                                        Width="44"
+                                        Height="44"
+                                    >
+                                        <Image 
+                                            Source="/Resourses/Images/Add.png" 
+                                            Height="10" 
+                                            Width="10" 
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                        />
+                                    </Border>
+                                </Button>
+                            </StackPanel>
+                            
+                            <!-- ADD IN CART -->
+                            <StackPanel Orientation="Vertical">
+                                <!-- BUTTON -->
+                                <Button
+                                    BorderBrush="Transparent"
+                                    Background="Transparent"
+                                    BorderThickness="0"
+                                    Margin="0,8,0,8"
+                                >
+                                    <Border 
+                                        BorderThickness="2"
+                                        BorderBrush="#FFF"
+                                        Background="Transparent"
+                                        Style="{StaticResource Border-Radius}"
+                                        Width="212"
+                                        Height="44"
+                                    >
+                                        <TextBlock 
+                                            Text="Adicionar ao carrinho" 
+                                            Foreground="#FFF"
+                                            FontSize="12"
+                                            FontFamily="{StaticResource Poppins-Medium}"
+                                            VerticalAlignment="Center"
+                                            HorizontalAlignment="Center"
+                                        />
+                                    </Border>
+                                </Button>
+
+                                <!-- BUTTON -->
+                                <Button
+                                    BorderBrush="Transparent"
+                                    Background="Transparent"
+                                    BorderThickness="0"
+                                >
+                                    <Border 
+                                        BorderThickness="2"
+                                        BorderBrush="#FFF"
+                                        Background="#FFF"
+                                        Style="{StaticResource Border-Radius}"
+                                        Width="212"
+                                        Height="44"
+                                    >
+                                        <TextBlock 
+                                            Text="Comprar agora" 
+                                            Foreground="#000"
+                                            FontSize="12"
+                                            FontFamily="{StaticResource Poppins-Medium}"
+                                            VerticalAlignment="Center"
+                                            HorizontalAlignment="Center"
+                                        />
+                                    </Border>
+                                </Button>
                             </StackPanel>
                         </StackPanel>
                     </StackPanel>
-
                 </Border>
 
                 <!--#region SET GRID -->
@@ -149,6 +271,46 @@
                 <!--#endregion SET GRID -->
             </Grid>
             <!--#endregion SECTION 1 -->
+            
+            <!--#region SECTION 2 -->
+            <Grid Grid.Column="0" Grid.Row="1">
+
+                <StackPanel Orientation="Vertical">
+                    <!-- TITLE -->
+                    <TextBlock 
+                        Text="Produtos similares"
+                        Foreground="#FFF" 
+                        FontWeight="Bold" 
+                        FontSize="16"
+                        FontFamily="{StaticResource Poppins-SemiBold}"
+                        HorizontalAlignment="Left"
+                    />
+                    
+                    <!-- PRODUCTS -->
+                    <StackPanel Orientation="Horizontal">
+                        <Border 
+                            Background="{StaticResource Gray-1-Color}" 
+                            Width="140"
+                            Height="140"
+                            Margin="0,0,10,0" 
+                            Grid.Column="0" Grid.Row="0" 
+                            HorizontalAlignment="Left"
+                            Style="{StaticResource Border-Radius}"
+                        />
+                        
+                        <Border 
+                            Background="{StaticResource Gray-1-Color}" 
+                            Width="140"
+                            Height="140"
+                            Margin="0,0,10,0" 
+                            Grid.Column="0" Grid.Row="0" 
+                            HorizontalAlignment="Left"
+                            Style="{StaticResource Border-Radius}"
+                        />
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+            <!--#endregion SECTION 2 -->
 
             <!--#region SECTION 2 -->
             <Grid>
