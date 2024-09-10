@@ -51,7 +51,7 @@
                         <TextBlock 
                             Text="R$0,00"
                             TextDecorations="Strikethrough"
-                            Foreground="#8E8EA0" 
+                            Foreground="{StaticResource Gray-2-Color}" 
                             FontWeight="SemiBold" 
                             FontSize="18"
                             FontFamily="{StaticResource Poppins-SemiBold}"
