@@ -40,7 +40,10 @@
         </Style>
 
         <!-- COLOR -->
-        <SolidColorBrush x:Key="Gray-1-Color">#1E1E1E</SolidColorBrush>
+        <SolidColorBrush x:Key="Dark-1-Color">#1E1E1E</SolidColorBrush>
+        <SolidColorBrush x:Key="Dark-2-Color">#171717</SolidColorBrush>
+        <SolidColorBrush x:Key="Gray-1-Color">#313131</SolidColorBrush>
+        <SolidColorBrush x:Key="Gray-2-Color">#868686</SolidColorBrush>
         <!--#endregion STYLES -->
     </Application.Resources>
 </Application>
