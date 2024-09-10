@@ -29,36 +29,15 @@
         <!--#endregion ITALIC FONT -->
         
         <!--#region STYLES -->
-        <!-- BORDER RADIUS -->
+        <!-- BORDER -->
         <Style x:Key="Border-Radius" TargetType="Border">
             <Setter Property="CornerRadius" Value="8"/>
         </Style>
-
-        <Button x:Key="Button-1"
-            Width="44"
-            Height="44"
-            BorderBrush="Transparent"
-            Background="Transparent"
->
-            <Border 
-                BorderThickness="2"
-                BorderBrush="#FFF"
-                Style="{StaticResource Border-Radius}"
-                Width="40"
-                Height="40"
-            >
-                    <TextBlock 
-                        Text="" 
-                        Foreground="#FFF"
-                        FontWeight="Regular"
-                        FontSize="18"
-                        FontFamily="{StaticResource Poppins-Regular}"
-                        VerticalAlignment="Center"
-                        HorizontalAlignment="Center"
-                    />
-            </Border>
-        </Button>
-
+        
+        <Style x:Key="Border-Style-1" TargetType="Border">
+            <Setter Property="CornerRadius" Value="8"/>
+            <Setter Property="BorderThickness" Value="2"/>
+        </Style>
 
         <!-- COLOR -->
         <SolidColorBrush x:Key="Gray-1-Color">#1E1E1E</SolidColorBrush>
