@@ -19,7 +19,11 @@
             <Grid Grid.Column="0" Grid.Row="0">
 
                 <!-- IMAGE -->
-                <Border Background="Red" Margin="10,10,10,10" Grid.Column="0" Grid.Row="0" Style="{StaticResource Border-Radius}"/>
+                <Border 
+                    Background="Red" 
+                    Margin="10,10,10,10" 
+                    Grid.Column="0" Grid.Row="0" 
+                    Style="{StaticResource Border-Radius}"/>
 
                 <!-- PRODUCT DATA -->
                 <StackPanel Margin="10,10,10,10" Grid.Column="1" Grid.Row="0">
@@ -29,7 +33,7 @@
                         Text="Produto"
                         Foreground="#FFF" 
                         FontWeight="Bold" 
-                        FontSize="30"
+                        FontSize="24"
                         FontFamily="{StaticResource Poppins-Bold}"
                      />
                     <!-- DESCRIPTION -->
@@ -38,7 +42,7 @@
                         Text="Descrição" 
                         Foreground="#FFF"
                         FontWeight="Regular"
-                        FontSize="14"
+                        FontSize="12"
                         FontFamily="{StaticResource Poppins-Regular}"
                     />
 
@@ -49,7 +53,7 @@
                             TextDecorations="Strikethrough"
                             Foreground="#8E8EA0" 
                             FontWeight="SemiBold" 
-                            FontSize="19"
+                            FontSize="18"
                             FontFamily="{StaticResource Poppins-SemiBold}"
                             Margin="0 6.7 0 0"
                         />
@@ -57,7 +61,7 @@
                             Text="R$0,00"
                             Foreground="#FFF" 
                             FontWeight="SemiBold" 
-                            FontSize="25"
+                            FontSize="24"
                             FontFamily="{StaticResource Poppins-SemiBold}"
                         />
                     </StackPanel>
@@ -67,7 +71,7 @@
                     <TextBlock 
                         Text="0 vendidos"
                         Foreground="#FFF" 
-                        FontSize="14"
+                        FontSize="12"
                         FontFamily="{StaticResource Poppins-Regular}"
                     />
                 </StackPanel>
@@ -119,7 +123,7 @@
                                 Text="Quantidade:" 
                                 Foreground="#FFF"
                                 FontWeight="Regular"
-                                FontSize="14"
+                                FontSize="12"
                                 FontFamily="{StaticResource Poppins-Regular}"
                             />
                             
