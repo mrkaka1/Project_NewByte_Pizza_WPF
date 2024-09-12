@@ -24,5 +24,10 @@ namespace project_pizzaria_newbyte.Pages
         {
             InitializeComponent();
         }
+
+        private void ScrollViewer_Scroll(object sender, System.Windows.Controls.Primitives.ScrollEventArgs e)
+        {
+
+        }
     }
 }
