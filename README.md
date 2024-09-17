@@ -1,7 +1,7 @@
 <h2>Project_NewByte_Pizza_WPF</h2>
 
 <div>
-  <p>This project was done in the Systems Development Project discipline at the Federal Institute of Rondônia - Ji-Paraná Campus.</p>
+  <p>This project was done in the Systems Development Project discipline at the Instituto Federal de Rondônia - Campus Ji-Paraná.</p>
 
   <p>
     Below are the collaborators/creators of the system
