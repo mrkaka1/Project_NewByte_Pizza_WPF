@@ -53,3 +53,7 @@ C:\Users\daluz\source\repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\o
 C:\Users\daluz\source\repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\obj\Debug\net8.0-windows\ref\project_pizzaria_newbyte.dll
 C:\Users\daluz\source\repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\obj\Debug\net8.0-windows\Pages\Payment.g.cs
 C:\Users\daluz\source\repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\obj\Debug\net8.0-windows\Pages\Payment.baml
+C:\Users\daluz\source\repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\obj\Debug\net8.0-windows\Pages\Profile.g.cs
+C:\Users\daluz\source\repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\obj\Debug\net8.0-windows\Pages\Search-1.g.cs
+C:\Users\daluz\source\repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\obj\Debug\net8.0-windows\Pages\Profile.baml
+C:\Users\daluz\source\repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\obj\Debug\net8.0-windows\Pages\Search-1.baml
