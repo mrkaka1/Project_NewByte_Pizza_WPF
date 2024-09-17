@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj": {}
+    "C:\\Users\\GabrielReds13\\Documents\\- PROJECTS\\PDS\\teste\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj": {}
   },
   "projects": {
-    "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj": {
+    "C:\\Users\\GabrielReds13\\Documents\\- PROJECTS\\PDS\\teste\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj",
+        "projectUniqueName": "C:\\Users\\GabrielReds13\\Documents\\- PROJECTS\\PDS\\teste\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj",
         "projectName": "project_pizzaria_newbyte",
-        "projectPath": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj",
-        "packagesPath": "C:\\Users\\daluz\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\obj\\",
+        "projectPath": "C:\\Users\\GabrielReds13\\Documents\\- PROJECTS\\PDS\\teste\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj",
+        "packagesPath": "C:\\Users\\GabrielReds13\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\GabrielReds13\\Documents\\- PROJECTS\\PDS\\teste\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\daluz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\GabrielReds13\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -67,7 +63,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

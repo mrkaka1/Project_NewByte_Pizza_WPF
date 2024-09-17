@@ -9,6 +9,48 @@
       Title="Profile">
 
     <Grid>
-        
+        <Grid>
+            <Border Grid.ColumnSpan="5" Grid.RowSpan="5" Background="#111113"/>
+            <Image Grid.Column="1" Grid.Row="0" Source="/Resourses/Images/NewBite-Logomarca.png" HorizontalAlignment="Left"/>
+
+            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image Source="/Resourses/Images/Home-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+                <Image Source="/Resourses/Images/Search-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+                <Image Source="/Resourses/Images/Cart-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+                <Image Source="/Resourses/Images/Follow-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+            </StackPanel>
+
+            <!--#region CONTENT -->
+            <Grid Grid.Column="1" Grid.Row="2" >
+                <Border 
+                Width="150" 
+                Height="150" 
+                CornerRadius="80" 
+                BorderThickness="1" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Top"
+                Background="{StaticResource Gray-1-Color}"
+             >
+                </Border>
+
+
+            </Grid>
+            <!--#endregion CONTENT -->
+            <!--#region SET GRID -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.02*" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="0.02*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0.09*" />
+                <RowDefinition Height="0.03*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="0.02*" />
+            </Grid.RowDefinitions>
+            <!--#endregion SET GRID -->
+
+        </Grid>
     </Grid>
 </Page>
