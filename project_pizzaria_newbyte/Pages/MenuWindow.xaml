@@ -8,6 +8,19 @@
         Title="MenuWindow" Height="450" Width="800">
 
     <Grid Background="#111113">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.02*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="0.02*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.09*" />
+            <RowDefinition Height="0.03*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="0.02*" />
+        </Grid.RowDefinitions>
+
         <!--#region HEAD -->
         <Grid Grid.Column="1" Grid.Row="0" VerticalAlignment="Center">
             <!-- LOGO -->
@@ -15,20 +28,10 @@
                 <Image Source="/Resourses/Images/NewBite-Logomarca.png" HorizontalAlignment="Left" Height="27" Width="82"/>
             </StackPanel>
 
-            <!--#region OPTIONS -->
-            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
-                <Image Source="/Resourses/Images/Home-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
-                <Image Source="/Resourses/Images/Search-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
-                <Image Source="/Resourses/Images/Cart-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
-                <Image Source="/Resourses/Images/Follow-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
-            </StackPanel>
-            <!--#region OPTIONS -->
 
-            <!--#region MORE OPTIONS -->
-            <!--<StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
-                <Image Source="/Resourses/Icons/Bell/Bell-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
-            </StackPanel>-->
-            <!--#region MORE OPTIONS -->
+            <!--<Image Grid.Column="1" Grid.Row="0"  Source="/Resourses/Images/Search Off.png" HorizontalAlignment="Left" Margin="408,0,0,0" Width="16" VerticalAlignment="Center" Height="19"/>
+            <Image Grid.Column="1" Grid.Row="0"  Source="/Resourses/Images/Follow Off.png" HorizontalAlignment="Left" Width="22" VerticalAlignment="Center" Height="21" Margin="443,0,0,0"/>
+            <Image Grid.Column="1" Grid.Row="0"  Source="/Resourses/Images/Cart Off.png" HorizontalAlignment="Left" Width="17" VerticalAlignment="Center" Height="21" RenderTransformOrigin="0.956,0.555" Margin="484,0,0,0"/>-->
 
             <!--#region SET GRID -->
             <Grid.ColumnDefinitions>
@@ -55,29 +58,68 @@
             </Grid.RowDefinitions>
 
             <StackPanel Grid.Row="0">
-                <Image Source="/Resourses/Images/Propagandas.png"/>      
+                <Image Source="/Resourses/Images/Propagandas.png"/>
             </StackPanel>
 
             <StackPanel Grid.Row="1">
                 <Label Content="Ofertas Especiais" Foreground="White" FontFamily="{StaticResource Poppins-Bold}"/>
+                <ScrollViewer HorizontalScrollBarVisibility="Visible" VerticalScrollBarVisibility="Disabled">
+                    
+                    
+                    <WrapPanel>
+                    
+                    <Border 
+                        BorderBrush="{StaticResource Gray-1-Color}"  
+                        Background="{StaticResource Dark-2-Color}"
+                        Style="{StaticResource Border-Style-1}"
+                        Padding="20"
+                        Width="260"
+                        Height="100"
+                        >
+                            <Label Content="Ver Ofertas" Background="White" Foreground="Black" FontFamily="{StaticResource Poppins-Bold}" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+                        </Border>
+
+                    <Border 
+                        BorderBrush="{StaticResource Gray-1-Color}"  
+                        Background="{StaticResource Dark-2-Color}"
+                        Style="{StaticResource Border-Style-1}"
+                        Padding="20"
+                        Width="260"
+                        Height="100"
+                       >
+                            <Label Content="Ver Ofertas" Background="White" Foreground="Black" FontFamily="{StaticResource Poppins-Bold}" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+                        </Border>
+                        <Border 
+                         BorderBrush="{StaticResource Gray-1-Color}"  
+                         Background="{StaticResource Dark-2-Color}"
+                         Style="{StaticResource Border-Style-1}"
+                         Padding="20"
+                         Width="260"
+                         Height="100"
+                        >
+                            <Label Content="Ver Ofertas" Background="White" Foreground="Black" FontFamily="{StaticResource Poppins-Bold}" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+                        </Border>
+                        <Border 
+                         BorderBrush="{StaticResource Gray-1-Color}"  
+                         Background="{StaticResource Dark-2-Color}"
+                         Style="{StaticResource Border-Style-1}"
+                         Padding="20"
+                         Width="260"
+                         Height="100"
+                        >
+                            <Label Content="Ver Ofertas" Background="White" Foreground="Black" FontFamily="{StaticResource Poppins-Bold}" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+                        </Border>
+
+
+                    </WrapPanel>
+                </ScrollViewer>
+
+
 
             </StackPanel>
         </Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.02*" />
-            <ColumnDefinition Width="*" />
-            <ColumnDefinition Width="0.02*" />
-        </Grid.ColumnDefinitions>
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="0.09*" />
-            <RowDefinition Height="0.03*" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="0.02*" />
-        </Grid.RowDefinitions>
 
-      
-        
 
 
     </Grid>
