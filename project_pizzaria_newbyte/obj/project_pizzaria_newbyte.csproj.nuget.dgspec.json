@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\GabrielReds13\\Documents\\- PROJECTS\\PDS\\teste\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj": {}
+    "C:\\Users\\Thiago\\Source\\Repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj": {}
   },
   "projects": {
-    "C:\\Users\\GabrielReds13\\Documents\\- PROJECTS\\PDS\\teste\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj": {
+    "C:\\Users\\Thiago\\Source\\Repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\GabrielReds13\\Documents\\- PROJECTS\\PDS\\teste\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj",
+        "projectUniqueName": "C:\\Users\\Thiago\\Source\\Repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj",
         "projectName": "project_pizzaria_newbyte",
-        "projectPath": "C:\\Users\\GabrielReds13\\Documents\\- PROJECTS\\PDS\\teste\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj",
-        "packagesPath": "C:\\Users\\GabrielReds13\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\GabrielReds13\\Documents\\- PROJECTS\\PDS\\teste\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\obj\\",
+        "projectPath": "C:\\Users\\Thiago\\Source\\Repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj",
+        "packagesPath": "C:\\Users\\Thiago\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Thiago\\Source\\Repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\GabrielReds13\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Thiago\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
