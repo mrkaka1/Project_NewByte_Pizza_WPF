@@ -21,7 +21,13 @@
         
         <!--#region CONTENT -->
         <Grid Grid.Column="1" Grid.Row="2" >
-           
+            <Border Width="150" Height="150" CornerRadius="80" BorderThickness="1" HorizontalAlignment="Left" VerticalAlignment="Top">
+                <Border.Background>
+                    <ImageBrush ImageSource="/Resourses/Images/profilepic.jpg" />
+                </Border.Background>
+            </Border>
+            
+            
         </Grid>
         <!--#endregion CONTENT -->
 

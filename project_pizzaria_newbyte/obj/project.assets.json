@@ -8,39 +8,23 @@
     "net8.0-windows7.0": []
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\2022102020018\\.nuget\\packages\\": {},
-=======
-    "C:\\Users\\2022102020068\\.nuget\\packages\\": {},
->>>>>>> 348786bc330aaa347cf33fab6bdcbbd3753f0515
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\2022102020018\\Source\\Repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj",
+      "projectUniqueName": "C:\\Users\\2022102020018\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj",
       "projectName": "project_pizzaria_newbyte",
-      "projectPath": "C:\\Users\\2022102020018\\Source\\Repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj",
+      "projectPath": "C:\\Users\\2022102020018\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj",
       "packagesPath": "C:\\Users\\2022102020018\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\2022102020018\\Source\\Repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\2022102020068\\Documents\\PDS\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj",
-      "projectName": "project_pizzaria_newbyte",
-      "projectPath": "C:\\Users\\2022102020068\\Documents\\PDS\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj",
-      "packagesPath": "C:\\Users\\2022102020068\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\2022102020068\\Documents\\PDS\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\obj\\",
->>>>>>> 348786bc330aaa347cf33fab6bdcbbd3753f0515
+      "outputPath": "C:\\Users\\2022102020018\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\2022102020018\\AppData\\Roaming\\NuGet\\NuGet.Config",
-=======
-        "C:\\Users\\2022102020068\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> 348786bc330aaa347cf33fab6bdcbbd3753f0515
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
