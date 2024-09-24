@@ -22,6 +22,7 @@
     <None Remove="Resourses\Images\NewBite-Logomarca.png" />
     <None Remove="Resourses\Images\Propagandas.png" />
     <None Remove="Resourses\Images\Search-Off.png" />
+    <None Remove="Resourses\Images\Search-On.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -37,6 +38,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Resourses\Images\Home-Off.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resourses\Images\Search-On.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Resource Include="Resourses\Images\NewBite-Logomarca.png">
