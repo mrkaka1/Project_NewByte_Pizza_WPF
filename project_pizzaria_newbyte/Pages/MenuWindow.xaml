@@ -68,48 +68,53 @@
                     
                     <WrapPanel>
                     
-                    <Border 
-                        BorderBrush="{StaticResource Gray-1-Color}"  
-                        Background="{StaticResource Dark-2-Color}"
-                        Style="{StaticResource Border-Style-1}"
-                        Padding="20"
-                        Width="260"
-                        Height="100"
+                        <Border 
+                            BorderBrush="{StaticResource Gray-1-Color}"  
+                            Background="{StaticResource Dark-2-Color}"
+                            Style="{StaticResource Border-Style-1}"
+                            Padding="20"
+                            Margin="0 0 10 0"
+                            Width="260"
+                            Height="100"
                         >
                             <Label Content="Ver Ofertas" Background="White" Foreground="Black" FontFamily="{StaticResource Poppins-Bold}" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
                         </Border>
 
-                    <Border 
-                        BorderBrush="{StaticResource Gray-1-Color}"  
-                        Background="{StaticResource Dark-2-Color}"
-                        Style="{StaticResource Border-Style-1}"
-                        Padding="20"
-                        Width="260"
-                        Height="100"
-                       >
-                            <Label Content="Ver Ofertas" Background="White" Foreground="Black" FontFamily="{StaticResource Poppins-Bold}" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
-                        </Border>
                         <Border 
-                         BorderBrush="{StaticResource Gray-1-Color}"  
-                         Background="{StaticResource Dark-2-Color}"
-                         Style="{StaticResource Border-Style-1}"
-                         Padding="20"
-                         Width="260"
-                         Height="100"
+                            BorderBrush="{StaticResource Gray-1-Color}"  
+                            Background="{StaticResource Dark-2-Color}"
+                            Style="{StaticResource Border-Style-1}"
+                            Padding="20"
+                            Margin="0 0 10 0"
+                            Width="260"
+                            Height="100"
                         >
                             <Label Content="Ver Ofertas" Background="White" Foreground="Black" FontFamily="{StaticResource Poppins-Bold}" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
                         </Border>
+                        
                         <Border 
-                         BorderBrush="{StaticResource Gray-1-Color}"  
-                         Background="{StaticResource Dark-2-Color}"
-                         Style="{StaticResource Border-Style-1}"
-                         Padding="20"
-                         Width="260"
-                         Height="100"
+                            BorderBrush="{StaticResource Gray-1-Color}"  
+                            Background="{StaticResource Dark-2-Color}"
+                            Style="{StaticResource Border-Style-1}"
+                            Padding="20"
+                            Margin="0 0 10 0"
+                            Width="260"
+                            Height="100"
                         >
-                            <Label Content="Ver Ofertas" Background="White" Foreground="Black" FontFamily="{StaticResource Poppins-Bold}" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+                                <Label Content="Ver Ofertas" Background="White" Foreground="Black" FontFamily="{StaticResource Poppins-Bold}" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
                         </Border>
 
+                        <Border 
+                            BorderBrush="{StaticResource Gray-1-Color}"  
+                            Background="{StaticResource Dark-2-Color}"
+                            Style="{StaticResource Border-Style-1}"
+                            Padding="20"
+                            Margin="0 0 10 0"  
+                            Width="260"
+                            Height="100"
+                        >
+                            <Label Content="Ver Ofertas" Background="White" Foreground="Black" FontFamily="{StaticResource Poppins-Bold}" HorizontalAlignment="Right" VerticalAlignment="Bottom"/>
+                        </Border>
 
                     </WrapPanel>
                 </ScrollViewer>
