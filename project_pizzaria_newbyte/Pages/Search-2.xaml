@@ -1,0 +1,323 @@
+﻿<Window x:Class="project_pizzaria_newbyte.Pages.Search_2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:project_pizzaria_newbyte.Pages"
+        mc:Ignorable="d"
+        Title="Search_2" Height="450" Width="800">
+    <ScrollViewer>
+        <Grid>
+            <Grid Background="#111113">
+
+
+                <!--Definição da página-->
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="25"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <!--#region HEAD -->
+
+                <Grid Grid.Column="1" Grid.Row="0" VerticalAlignment="Center">
+                    <!-- LOGO -->
+                    <StackPanel Grid.Column="0">
+                        <Image Source="/Resourses/Images/NewBite-Logomarca.png" HorizontalAlignment="Left" Height="27" Width="82"/>
+                    </StackPanel>
+
+                    <!--#region OPTIONS -->
+                    <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Image Source="/Resourses/Images/Home-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+                        <Image Source="/Resourses/Images/Search-On.png" Height="20" Width="20" Margin="10,0,10,0"/>
+                        <Image Source="/Resourses/Images/Cart-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+                        <Image Source="/Resourses/Images/Follow-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+                    </StackPanel>
+                    <!--#region OPTIONS -->
+
+                    <!--#region MORE OPTIONS -->
+                    <!--<StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+    <Image Source="/Resourses/Icons/Bell/Bell-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+</StackPanel>-->
+                    <!--#region MORE OPTIONS -->
+
+                    <!--#region SET GRID -->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="70*" />
+                        <ColumnDefinition Width="630*" />
+                        <ColumnDefinition Width="60*" />
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                    </Grid.RowDefinitions>
+                    <!--#endregion SET GRID-->
+                </Grid>
+                <!--#endregion HEAD-->
+
+
+                <TextBox Grid.Row="1" Margin="5" Text="Pesquisar produto" Foreground="White" Background="#111113" BorderBrush="#868686" VerticalAlignment="Center" Padding="4">
+                    <TextBox.Resources>
+                        <Style TargetType="{x:Type Border}">
+                            <Setter Property="CornerRadius" Value="5"/>
+                        </Style>
+                    </TextBox.Resources>
+                </TextBox>
+
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <WrapPanel Grid.Column="0">
+                        <ComboBox Margin="5" Width="60">
+                            <ComboBoxItem Content="Tipo" IsEnabled="False" IsSelected="True"/>
+                            <ComboBoxItem Content="Pizza Margherita"/>
+                            <ComboBoxItem Content="Pizza Pepperoni"/>
+                            <ComboBoxItem Content="Pizza Quatro Queijos"/>
+                            <ComboBoxItem Content="Pizza Vegana"/>
+                            <ComboBoxItem Content="Pizza de Frango com Catupiry"/>
+                        </ComboBox>
+                        <ComboBox Margin="5" Width="80" >
+                            <ComboBoxItem Content="Categoria" IsEnabled="False" IsSelected="True"/>
+                            <ComboBoxItem Content="Pizza Margherita"/>
+                            <ComboBoxItem Content="Pizza Pepperoni"/>
+                            <ComboBoxItem Content="Pizza Quatro Queijos"/>
+                            <ComboBoxItem Content="Pizza Vegana"/>
+                            <ComboBoxItem Content="Pizza de Frango com Catupiry"/>
+                        </ComboBox >
+
+
+                        <Button Content="Filtro" Click="botão_filtro" Foreground="Black" Background="White"  Width="60" Height="22"  Margin="10,0,0,0"/>
+
+
+                        <StackPanel x:Name="panel_filtro" Visibility="Collapsed" Orientation="Horizontal" Margin="10,0,0,0">
+                            <CheckBox Content="Vegana" Foreground="White" Margin="5,0"/>
+                            <CheckBox Content="Sem Glúten" Foreground="White" Margin="5,0"/>
+                            <CheckBox Content="Com Queijo" Foreground="White" Margin="5,0"/>
+                            <CheckBox Content="Extras" Foreground="White" Margin="5,0"/>
+                        </StackPanel>
+                    </WrapPanel>
+
+
+                </Grid>
+                <StackPanel Grid.Row="3">
+                    <Label Content="Resultados das Buscas" Foreground="White"/>
+                </StackPanel>
+
+                <Grid Grid.Row="4" Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+
+                        <ColumnDefinition Width="*"/>
+
+                    </Grid.ColumnDefinitions>
+
+
+
+                    <!-- IMAGE -->
+                    <Border 
+                Background="{StaticResource Gray-1-Color}" 
+                 Margin="0,0,10,0" 
+                Style="{StaticResource Border-Radius}" 
+                Width="100" Height="100">
+                        <Image 
+                Source="/Resourses/Images/Woman-Eat-Pizza.png" 
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center" Height="100" Width="100"/>
+                    </Border>
+                    <!-- title -->
+                    <TextBlock 
+               Text="Produto"
+                Foreground="#FFF" 
+                FontWeight="Bold" 
+                FontSize="15"
+                FontFamily="{StaticResource Poppins-Bold}" 
+               Margin="0,4,572,82" Grid.Column="1"
+             />
+
+                    <!-- DESCRIPTION -->
+
+                    <TextBlock 
+             Text="+1.000 vendidos" 
+             Foreground="#868686"
+             FontWeight="Regular"
+             FontSize="7"
+            FontFamily="{StaticResource Poppins-Regular}"
+                Margin="0,24,572,66" Grid.Column="1"/>
+
+
+                    <TextBlock 
+              Text="Preço: R$0,00"
+              Foreground="#FFF" 
+              FontWeight="SemiBold" 
+              FontSize="8"
+              FontFamily="{StaticResource Poppins-SemiBold}"
+            Margin="0,79,600,0" Grid.Column="1"/>
+                    <Border Height="1" Background="#313131" Grid.ColumnSpan="2" Margin="0,5,0,0" VerticalAlignment="Bottom"/>
+
+                    <!--card 2-->
+
+                </Grid>
+                <Grid Grid.Row="5" Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+
+                        <ColumnDefinition Width="*"/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <!-- IMAGE -->
+                    <Border 
+     Background="{StaticResource Gray-1-Color}" 
+      Margin="0,0,10,0" 
+     Style="{StaticResource Border-Radius}" 
+     Width="100" Height="100">
+                        <Image 
+     Source="/Resourses/Images/Woman-Eat-Pizza.png" 
+     HorizontalAlignment="Center"
+     VerticalAlignment="Center" Height="100" Width="100"/>
+                    </Border>
+                    <!-- title -->
+                    <TextBlock 
+    Text="Produto"
+     Foreground="#FFF" 
+     FontWeight="Bold" 
+     FontSize="15"
+     FontFamily="{StaticResource Poppins-Bold}" 
+    Margin="0,4,572,82" Grid.Column="1"
+  />
+
+                    <!-- DESCRIPTION -->
+
+                    <TextBlock 
+  Text="+1.000 vendidos" 
+  Foreground="#868686"
+  FontWeight="Regular"
+  FontSize="7"
+ FontFamily="{StaticResource Poppins-Regular}"
+     Margin="0,24,572,66" Grid.Column="1"/>
+
+
+                    <TextBlock 
+   Text="Preço: R$0,00"
+   Foreground="#FFF" 
+   FontWeight="SemiBold" 
+   FontSize="8"
+   FontFamily="{StaticResource Poppins-SemiBold}"
+ Margin="0,79,600,0" Grid.Column="1"/>
+                    <Border Height="1" Background="#313131" Grid.ColumnSpan="2" Margin="0,5,0,0" VerticalAlignment="Bottom"/>
+
+                </Grid>
+
+                <Grid Grid.Row="6" Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+
+                        <ColumnDefinition Width="*"/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <!-- IMAGE -->
+                    <Border 
+    Background="{StaticResource Gray-1-Color}" 
+     Margin="0,0,10,0" 
+    Style="{StaticResource Border-Radius}" 
+    Width="100" Height="100">
+                        <Image 
+    Source="/Resourses/Images/Woman-Eat-Pizza.png" 
+    HorizontalAlignment="Center"
+    VerticalAlignment="Center" Height="100" Width="100"/>
+                    </Border>
+                    <!-- title -->
+                    <TextBlock 
+   Text="Produto"
+    Foreground="#FFF" 
+    FontWeight="Bold" 
+    FontSize="15"
+    FontFamily="{StaticResource Poppins-Bold}" 
+   Margin="0,4,572,82" Grid.Column="1"
+ />
+
+                    <!-- DESCRIPTION -->
+
+                    <TextBlock 
+ Text="+1.000 vendidos" 
+ Foreground="#868686"
+ FontWeight="Regular"
+ FontSize="7"
+FontFamily="{StaticResource Poppins-Regular}"
+    Margin="0,24,572,66" Grid.Column="1"/>
+
+
+                    <TextBlock 
+  Text="Preço: R$0,00"
+  Foreground="#FFF" 
+  FontWeight="SemiBold" 
+  FontSize="8"
+  FontFamily="{StaticResource Poppins-SemiBold}"
+Margin="0,79,600,0" Grid.Column="1"/>
+                    <Border Height="1" Background="#313131" Grid.ColumnSpan="2" Margin="0,5,0,0" VerticalAlignment="Bottom"/>
+
+                </Grid>
+
+                <Grid Grid.Row="8" Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+
+                        <ColumnDefinition Width="*"/>
+
+                    </Grid.ColumnDefinitions>
+
+                    <!-- IMAGE -->
+                    <Border 
+    Background="{StaticResource Gray-1-Color}" 
+     Margin="0,0,10,0" 
+    Style="{StaticResource Border-Radius}" 
+    Width="100" Height="100">
+                        <Image 
+    Source="/Resourses/Images/Woman-Eat-Pizza.png" 
+    HorizontalAlignment="Center"
+    VerticalAlignment="Center" Height="100" Width="100"/>
+                    </Border>
+                    <!-- title -->
+                    <TextBlock 
+   Text="Produto"
+    Foreground="#FFF" 
+    FontWeight="Bold" 
+    FontSize="15"
+    FontFamily="{StaticResource Poppins-Bold}" 
+   Margin="0,4,572,82" Grid.Column="1"
+ />
+
+                    <!-- DESCRIPTION -->
+
+                    <TextBlock 
+ Text="+1.000 vendidos" 
+ Foreground="#868686"
+ FontWeight="Regular"
+ FontSize="7"
+FontFamily="{StaticResource Poppins-Regular}"
+    Margin="0,24,572,66" Grid.Column="1"/>
+
+
+                    <TextBlock 
+  Text="Preço: R$0,00"
+  Foreground="#FFF" 
+  FontWeight="SemiBold" 
+  FontSize="8"
+  FontFamily="{StaticResource Poppins-SemiBold}"
+Margin="0,79,600,0" Grid.Column="1"/>
+                    <Border Height="1" Background="#313131" Grid.ColumnSpan="2" Margin="0,5,0,0" VerticalAlignment="Bottom"/>
+
+                </Grid>
+
+            </Grid>
+        </Grid>
+    </ScrollViewer>
+</Window>
