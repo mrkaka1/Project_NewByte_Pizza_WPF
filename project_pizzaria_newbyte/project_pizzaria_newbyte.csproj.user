@@ -22,6 +22,9 @@
     <Compile Update="Pages\Search-1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\Search-2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Pages\Login.xaml">
@@ -37,6 +40,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\Search-1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\Search-2.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
