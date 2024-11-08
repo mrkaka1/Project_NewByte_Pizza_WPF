@@ -95,6 +95,9 @@ C:\Users\Thiago\Source\Repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\
 C:\Users\Thiago\Source\Repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\obj\Debug\net8.0-windows\project_pizzaria_newbyte.pdb
 C:\Users\Thiago\Source\Repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\obj\Debug\net8.0-windows\project_pizzaria_newbyte.genruntimeconfig.cache
 C:\Users\Thiago\Source\Repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\obj\Debug\net8.0-windows\ref\project_pizzaria_newbyte.dll
+<<<<<<< HEAD
+C:\Users\daluz\source\repos\Project_NewByte_Pizza_WPF\project_pizzaria_newbyte\obj\Debug\net8.0-windows\project_pizzaria_newbyte.csproj.AssemblyReference.cache
+=======
 C:\Users\Matheus\Desktop\pds\project_pizzaria_newbyte\obj\Debug\net8.0-windows\Pages\Login.g.cs
 C:\Users\Matheus\Desktop\pds\project_pizzaria_newbyte\obj\Debug\net8.0-windows\Pages\MenuWindow.g.cs
 C:\Users\Matheus\Desktop\pds\project_pizzaria_newbyte\obj\Debug\net8.0-windows\Pages\Payment.g.cs
@@ -136,3 +139,4 @@ C:\Users\Matheus\Desktop\pds\project_pizzaria_newbyte\obj\Debug\net8.0-windows\r
 C:\Users\Matheus\Desktop\pds\project_pizzaria_newbyte\obj\Debug\net8.0-windows\project_pizzaria_newbyte.pdb
 C:\Users\Matheus\Desktop\pds\project_pizzaria_newbyte\obj\Debug\net8.0-windows\project_pizzaria_newbyte.genruntimeconfig.cache
 C:\Users\Matheus\Desktop\pds\project_pizzaria_newbyte\obj\Debug\net8.0-windows\ref\project_pizzaria_newbyte.dll
+>>>>>>> main
