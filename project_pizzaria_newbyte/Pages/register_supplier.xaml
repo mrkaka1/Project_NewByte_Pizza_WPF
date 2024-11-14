@@ -1,0 +1,179 @@
+﻿<Page x:Class="project_pizzaria_newbyte.Pages.register_supplier"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:project_pizzaria_newbyte.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="register_supplier">
+
+    <Page.Resources>
+
+        <!--Estilo Textbox-->
+        <Style TargetType="TextBox" x:Key="RoundedTextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border Background="{TemplateBinding Background}"
+                        CornerRadius="5"
+                        BorderThickness="1"
+                        Padding="6">
+                            <ScrollViewer x:Name="PART_ContentHost" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Padding" Value="2"/>
+        </Style>
+
+        <!--Estilo botões-->
+        <Style TargetType="Button" x:Key="RoundedButtonStyle">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border
+                            CornerRadius="15"
+                            />
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Page.Resources>
+
+    <Grid>
+
+        <!-- Definindo as colunas e linhas do Grid principal primeiro -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.15*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="0.15*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.09*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--#region HEAD -->
+        <Grid Grid.Column="0" Grid.Row="0" VerticalAlignment="Center" Grid.ColumnSpan="4">
+            <!-- LOGO -->
+            <StackPanel Grid.Column="0">
+                <Image Source="/Resourses/Images/NewBite-Logomarca.png" HorizontalAlignment="Left" Height="27" Width="82"/>
+            </StackPanel>
+
+            <!--#region OPTIONS -->
+            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image Source="/Resourses/Images/Home-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+                <Image Source="/Resourses/Images/Search-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+                <Image Source="/Resourses/Images/Cart-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+                <Image Source="/Resourses/Images/Follow-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+            </StackPanel>
+            <!--#region OPTIONS -->
+
+            <!--#region MORE OPTIONS -->
+            <!--<StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+    <Image Source="/Resourses/Icons/Bell/Bell-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+</StackPanel>-->
+            <!--#region MORE OPTIONS -->
+
+            <!--#region SET GRID -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70*" />
+                <ColumnDefinition Width="630*" />
+                <ColumnDefinition Width="60*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+            </Grid.RowDefinitions>
+            <!--#endregion SET GRID-->
+        </Grid>
+        <!--#endregion HEAD-->
+
+        <Grid Grid.Row="1" Grid.Column="1">
+            <TextBlock Text="Cadastrar fornecedor" Foreground="White" FontSize="22" Margin="5"/>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="0.5*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Border 
+                Background="{StaticResource Gray-1-Color}" 
+                BorderBrush="{StaticResource Gray-1-Color}"
+                Style="{StaticResource Border-Style-1}"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Top"
+                Width="200"
+                Height="200" Margin="5,53,0,0"
+            />
+
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel></StackPanel>
+                        <StackPanel Margin="5">
+                            <Label Content="Nome" Foreground="White"/>
+                            <TextBox Height="25" Background="{StaticResource Gray-1-Color}" BorderBrush="{StaticResource Gray-1-Color}" Style="{StaticResource RoundedTextBox}"/>
+                            <Label Content="CNPJ" Foreground="White"/>
+                            <TextBox Height="25" Background="{StaticResource Gray-1-Color}" BorderBrush="{StaticResource Gray-1-Color}" Style="{StaticResource RoundedTextBox}"/>
+
+                        </StackPanel>
+
+                        <StackPanel Grid.Column="1" Margin="5">
+                            <Label Content="CEP" Foreground="White"/>
+                            <TextBox Height="25" Background="{StaticResource Gray-1-Color}" BorderBrush="{StaticResource Gray-1-Color}" Style="{StaticResource RoundedTextBox}"/>
+                            <Label Content="Endereço" Foreground="White"/>
+                            <TextBox Height="25" Background="{StaticResource Gray-1-Color}" BorderBrush="{StaticResource Gray-1-Color}" Style="{StaticResource RoundedTextBox}"/>
+
+                        </StackPanel>
+
+
+                    </Grid>
+
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Button VerticalAlignment="Top" Content="Cancelar" Grid.Column="0" Margin="5" Background="Transparent" Foreground="White" Padding="5">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                        <Button VerticalAlignment="Top" Content="Limpar" Grid.Column="1" Margin="5" Padding="5" Background="Transparent" Foreground="White">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                        <Button VerticalAlignment="Top" Content="Cadastrar" Grid.Column="2" Margin="5" Background="White" Padding="5">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </Grid>
+
+                </Grid>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Page>

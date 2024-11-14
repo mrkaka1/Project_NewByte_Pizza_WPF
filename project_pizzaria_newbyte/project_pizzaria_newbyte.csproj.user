@@ -7,6 +7,9 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+    <Compile Update="Pages\edit_supplier.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\EmployeeRegistration.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -22,6 +25,9 @@
     <Compile Update="Pages\Profile.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\register_supplier.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\Search-1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -30,6 +36,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Pages\edit_supplier.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Pages\EmployeeRegistration.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -43,6 +52,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\Profile.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\register_supplier.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\Search-1.xaml">
