@@ -6,7 +6,57 @@
         xmlns:local="clr-namespace:project_pizzaria_newbyte.Pages"
         mc:Ignorable="d"
         Title="ConsultEmployees" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#111113">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.02*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="0.02*" />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.09*" />
+            <RowDefinition Height="0.03*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="0.02*" />
+        </Grid.RowDefinitions>
+
+        <!--#region HEAD -->
+        <Grid Grid.Column="1" Grid.Row="0" VerticalAlignment="Center">
+            <!-- LOGO -->
+            <StackPanel Grid.Column="0">
+                <Image Source="/Resourses/Images/NewBite-Logomarca.png" HorizontalAlignment="Left" Height="27" Width="82"/>
+            </StackPanel>
+
+            <!--#region OPTIONS -->
+            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Image Source="/Resourses/Images/Home-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+                <Image Source="/Resourses/Images/Search-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+                <Image Source="/Resourses/Images/Cart-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+                <Image Source="/Resourses/Images/Follow-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+            </StackPanel>
+            <!--#region OPTIONS -->
+
+            <!--#region MORE OPTIONS -->
+            <!--<StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+        <Image Source="/Resourses/Icons/Bell/Bell-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+    </StackPanel>-->
+            <!--#region MORE OPTIONS -->
+
+            <!--#region SET GRID -->
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="70*" />
+                <ColumnDefinition Width="630*" />
+                <ColumnDefinition Width="60*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+            </Grid.RowDefinitions>
+            <!--#endregion SET GRID-->
+        </Grid>
+        <!--#endregion HEAD-->
+
         
+        <DataGrid Grid.Column="1" Grid.Row="2" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+
     </Grid>
 </Window>

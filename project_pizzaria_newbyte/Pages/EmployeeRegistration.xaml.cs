@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+
 namespace project_pizzaria_newbyte.Pages
 {
     /// <summary>
@@ -23,6 +24,11 @@ namespace project_pizzaria_newbyte.Pages
         public EmployeeRegistration()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            var connection = 
         }
     }
 }

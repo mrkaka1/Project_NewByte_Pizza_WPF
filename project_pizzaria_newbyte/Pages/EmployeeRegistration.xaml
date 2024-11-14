@@ -274,7 +274,7 @@
                     </Border>
                 </Button>
 
-                <!-- BUTTON CANCELAR-->
+                <!-- BUTTON CANCELAR -->
                 <Button
                     BorderBrush="Transparent"
                     Background="Transparent"
