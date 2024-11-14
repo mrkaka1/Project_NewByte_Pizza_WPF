@@ -22,6 +22,7 @@
     <None Remove="Resourses\Images\NewBite-Logomarca.png" />
     <None Remove="Resourses\Images\Propagandas.png" />
     <None Remove="Resourses\Images\Search-Off.png" />
+    <None Remove="Resourses\Images\Search-On.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -39,6 +40,9 @@
     <Content Include="Resourses\Images\Home-Off.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Include="Resourses\Images\Search-On.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Resource Include="Resourses\Images\NewBite-Logomarca.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
@@ -48,6 +52,10 @@
     <Content Include="Resourses\Images\Propagandas.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySql.Data" Version="9.1.0" />
   </ItemGroup>
 
 </Project>

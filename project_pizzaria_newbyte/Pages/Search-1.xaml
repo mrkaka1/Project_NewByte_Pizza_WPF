@@ -8,414 +8,1061 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="Search_1">
 
-    <Grid Background="#111113">
+    <ScrollViewer>
+        <Grid Background="#111113">
 
-        <!--Definição da página-->
-        <Grid.RowDefinitions>
-            <RowDefinition Height="0.25*"/>
-            <RowDefinition Height="0.2*"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="*"/>
-        </Grid.RowDefinitions>
-
-        <!--#region HEAD -->
-        <!--#teste thaigo lindo -->
-        <Grid Grid.Column="1" Grid.Row="0" VerticalAlignment="Center">
-            <!-- LOGO -->
-            <StackPanel Grid.Column="0">
-                <Image Source="/Resourses/Images/NewBite-Logomarca.png" HorizontalAlignment="Left" Height="27" Width="82"/>
-            </StackPanel>
-
-            <!--#region OPTIONS -->
-            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
-                <Image Source="/Resourses/Images/Home-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
-                <Image Source="/Resourses/Images/Search-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
-                <Image Source="/Resourses/Images/Cart-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
-                <Image Source="/Resourses/Images/Follow-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
-            </StackPanel>
-            <!--#region OPTIONS -->
-
-            <!--#region MORE OPTIONS -->
-            <!--<StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
-         <Image Source="/Resourses/Icons/Bell/Bell-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
-     </StackPanel>-->
-            <!--#region MORE OPTIONS -->
-
-            <!--#region SET GRID -->
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="70*" />
-                <ColumnDefinition Width="630*" />
-                <ColumnDefinition Width="60*" />
-            </Grid.ColumnDefinitions>
-
+            <!--Definição da página-->
             <Grid.RowDefinitions>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
             </Grid.RowDefinitions>
-            <!--#endregion SET GRID-->
+
+            <!--#region HEAD -->
+            <!--#teste thaigo lindo -->
+            <Grid Grid.Column="1" Grid.Row="0" VerticalAlignment="Center">
+                <!-- LOGO -->
+                <StackPanel Grid.Column="0">
+                    <Image Source="/Resourses/Images/NewBite-Logomarca.png" HorizontalAlignment="Left" Height="27" Width="82"/>
+                </StackPanel>
+
+                <!--#region OPTIONS -->
+                <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Image Source="/Resourses/Images/Home-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+                    <Image Source="/Resourses/Images/Search-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+                    <Image Source="/Resourses/Images/Cart-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+                    <Image Source="/Resourses/Images/Follow-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+                </StackPanel>
+                <!--#region OPTIONS -->
+
+                <!--#region MORE OPTIONS -->
+                <!--<StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Center">
+     <Image Source="/Resourses/Icons/Bell/Bell-Off.png" Height="20" Width="20" Margin="10,0,10,0"/>
+ </StackPanel>-->
+                <!--#region MORE OPTIONS -->
+
+                <!--#region SET GRID -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="70*" />
+                    <ColumnDefinition Width="630*" />
+                    <ColumnDefinition Width="60*" />
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                </Grid.RowDefinitions>
+                <!--#endregion SET GRID-->
+            </Grid>
+            <!--#endregion HEAD-->
+
+            <TextBox Grid.Row="1" Margin="5" Text="Pesquisar produto" Foreground="White" Background="#313131" BorderBrush="#868686" VerticalAlignment="Center" Padding="4">
+                <TextBox.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+
+
+            <Grid Grid.Row="2">
+                <StackPanel>
+                    <TextBlock Text="Mais Vendidos" FontSize="18" Foreground="White" Margin="10"/>
+                    <!--Cards-->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="1" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="2" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="3" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+                    </Grid>
+
+
+                    <!--Produtos recomendados-->
+                    <TextBlock Text="Recomendados" FontSize="18" Foreground="White" Margin="10"/>
+                    
+                    <!--Buttons recomedados-->
+                    <WrapPanel Margin="5 0 0 0">
+                        <Button Content="Padrão" Padding="5" Margin="5" Background="#65001E" Foreground="#ffffff" BorderBrush="#A50031" BorderThickness="2">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+
+                        <Button Content="Queijo" Padding="5" Margin="5" Background="#171717" Foreground="#ffffff" BorderBrush="#313131" BorderThickness="2">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+
+                        <Button Content="Doce" Padding="5" Margin="5" Background="#171717" Foreground="#ffffff" BorderBrush="#313131" BorderThickness="2">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+
+                        <Button Content="Carne" Padding="5" Margin="5" Background="#171717" Foreground="#ffffff" BorderBrush="#313131" BorderThickness="2">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+
+                        <Button Content="Multiplos sabores" Padding="5" Margin="5" Background="#171717" Foreground="#ffffff" BorderBrush="#313131" BorderThickness="2">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </WrapPanel>
+
+                    <!--Cards-->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="1" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="2" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="3" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+
+                    </Grid>
+
+                    <!--Produtos em promoção-->
+                    <TextBlock Text="Em promoção" FontSize="18" Foreground="White" Margin="10"/>
+
+                    <!--Buttons recomedados-->
+                    <WrapPanel Margin="5 0 0 0">
+                        <Button Content="0-50%" Padding="5" Margin="5" Background="#65001E" Foreground="#ffffff" BorderBrush="#A50031" BorderThickness="2">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+
+                        <Button Content="50-75%" Padding="5" Margin="5" Background="#171717" Foreground="#ffffff" BorderBrush="#313131" BorderThickness="2">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+
+                        <Button Content="75-90%" Padding="5" Margin="5" Background="#171717" Foreground="#ffffff" BorderBrush="#313131" BorderThickness="2">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+
+                        <Button Content="Ofertas do dia" Padding="5" Margin="5" Background="#171717" Foreground="#ffffff" BorderBrush="#313131" BorderThickness="2">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+
+                        <Button Content="Multiplos sabores" Padding="5" Margin="5" Background="#171717" Foreground="#ffffff" BorderBrush="#313131" BorderThickness="2">
+                            <Button.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Button.Resources>
+                        </Button>
+                    </WrapPanel>
+
+                    <!--Cards-->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="1" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="2" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="3" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+
+                    </Grid>
+
+                    <!--Produtos em promoção-->
+                    <TextBlock Text="Em promoção" FontSize="18" Foreground="White" Margin="10"/>
+
+                    <!--Buttons recomedados-->
+                    <WrapPanel Margin="5 0 0 0">
+                        <ListBox>
+                            
+                        </ListBox>
+                    </WrapPanel>
+
+                    <!--Cards-->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="1" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="2" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="3" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+
+                    </Grid>
+
+                    <!--Cards-->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="1" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="2" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="3" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+
+                    </Grid>
+                    <!--Cards-->
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="1" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="2" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+                        <Border Grid.Column="3" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
+                            <Border.Resources>
+                                <Style TargetType="{x:Type Border}">
+                                    <Setter Property="CornerRadius" Value="2"/>
+                                </Style>
+                            </Border.Resources>
+
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="auto"/>
+                                    <RowDefinition Height="auto"/>
+                                </Grid.RowDefinitions>
+
+                                <Image Grid.Row="0"></Image>
+
+                                <Grid Grid.Row="1">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="*"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <StackPanel Grid.Column="0">
+                                        <Label Content="Produto" Foreground="#ffffff"/>
+                                        <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
+                                    </StackPanel>
+
+                                    <StackPanel Grid.Column="1">
+                                        <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
+                                        <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
+                                    </StackPanel>
+                                </Grid>
+                            </Grid>
+                        </Border>
+
+
+                    </Grid>
+                    
+
+
+                </StackPanel>
+            </Grid>
         </Grid>
-        <!--#endregion HEAD-->
-
-        <TextBox Grid.Row="1" Margin="5" Text="Pesquisar produto" Foreground="White" Background="#313131" BorderBrush="#868686" VerticalAlignment="Center" Padding="4">
-            <TextBox.Resources>
-                <Style TargetType="{x:Type Border}">
-                    <Setter Property="CornerRadius" Value="5"/>
-                </Style>
-            </TextBox.Resources>
-        </TextBox>
-
-
-        <Grid Grid.Row="2">
-            <StackPanel>
-                <TextBlock Text="Mais Vendidos"
-             FontSize="18" 
-             Foreground="White"
-             Margin="10"
-         />
-
-                <!--Cards-->
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                    </Grid.ColumnDefinitions>
-
-                    <Border Grid.Column="0" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
-                        <Border.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="2"/>
-                            </Style>
-                        </Border.Resources>
-
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="auto"/>
-                                <RowDefinition Height="auto"/>
-                            </Grid.RowDefinitions>
-
-                            <Image Grid.Row="0"></Image>
-
-                            <Grid Grid.Row="1">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-
-                                <StackPanel Grid.Column="0">
-                                    <Label Content="Produto" Foreground="#ffffff"/>
-                                    <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
-                                </StackPanel>
-
-                                <StackPanel Grid.Column="1">
-                                    <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
-                                    <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
-                                </StackPanel>
-                            </Grid>
-                        </Grid>
-                    </Border>
-
-                    <Border Grid.Column="1" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
-                        <Border.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="2"/>
-                            </Style>
-                        </Border.Resources>
-
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="auto"/>
-                                <RowDefinition Height="auto"/>
-                            </Grid.RowDefinitions>
-
-                            <Image Grid.Row="0"></Image>
-
-                            <Grid Grid.Row="1">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-
-                                <StackPanel Grid.Column="0">
-                                    <Label Content="Produto" Foreground="#ffffff"/>
-                                    <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
-                                </StackPanel>
-
-                                <StackPanel Grid.Column="1">
-                                    <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
-                                    <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
-                                </StackPanel>
-                            </Grid>
-                        </Grid>
-                    </Border>
-
-                    <Border Grid.Column="2" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
-                        <Border.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="2"/>
-                            </Style>
-                        </Border.Resources>
-
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="auto"/>
-                                <RowDefinition Height="auto"/>
-                            </Grid.RowDefinitions>
-
-                            <Image Grid.Row="0"></Image>
-
-                            <Grid Grid.Row="1">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-
-                                <StackPanel Grid.Column="0">
-                                    <Label Content="Produto" Foreground="#ffffff"/>
-                                    <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
-                                </StackPanel>
-
-                                <StackPanel Grid.Column="1">
-                                    <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
-                                    <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
-                                </StackPanel>
-                            </Grid>
-                        </Grid>
-                    </Border>
-
-                    <Border Grid.Column="3" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
-                        <Border.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="2"/>
-                            </Style>
-                        </Border.Resources>
-
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="auto"/>
-                                <RowDefinition Height="auto"/>
-                            </Grid.RowDefinitions>
-
-                            <Image Grid.Row="0"></Image>
-
-                            <Grid Grid.Row="1">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-
-                                <StackPanel Grid.Column="0">
-                                    <Label Content="Produto" Foreground="#ffffff"/>
-                                    <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
-                                </StackPanel>
-
-                                <StackPanel Grid.Column="1">
-                                    <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
-                                    <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
-                                </StackPanel>
-                            </Grid>
-                        </Grid>
-                    </Border>
-                </Grid>
-            </StackPanel>
-        </Grid>
-
-        <Grid Grid.Row="3">
-            <StackPanel>
-                <TextBlock Text="Recomendados"
-             FontSize="18" 
-             Foreground="White"
-             Margin="10"
-         />
-
-                <WrapPanel Margin="5 0 0 0">
-                    <Button Content="Padrão" Padding="5" Margin="5" Background="#65001E" Foreground="#ffffff" BorderBrush="#A50031" BorderThickness="2">
-                        <Button.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="2"/>
-                            </Style>
-                        </Button.Resources>
-                    </Button>
-
-                    <Button Content="Queijo" Padding="5" Margin="5" Background="#171717" Foreground="#ffffff" BorderBrush="#313131" BorderThickness="2">
-                        <Button.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="2"/>
-                            </Style>
-                        </Button.Resources>
-                    </Button>
-
-                    <Button Content="Doce" Padding="5" Margin="5" Background="#171717" Foreground="#ffffff" BorderBrush="#313131" BorderThickness="2">
-                        <Button.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="2"/>
-                            </Style>
-                        </Button.Resources>
-                    </Button>
-
-                    <Button Content="Carne" Padding="5" Margin="5" Background="#171717" Foreground="#ffffff" BorderBrush="#313131" BorderThickness="2">
-                        <Button.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="2"/>
-                            </Style>
-                        </Button.Resources>
-                    </Button>
-
-                    <Button Content="Multiplos sabores" Padding="5" Margin="5" Background="#171717" Foreground="#ffffff" BorderBrush="#313131" BorderThickness="2">
-                        <Button.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="2"/>
-                            </Style>
-                        </Button.Resources>
-                    </Button>
-                </WrapPanel>
-
-                <!--Cards-->
-                <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-                        <ColumnDefinition Width="*"/>
-
-                    </Grid.ColumnDefinitions>
-
-                    <Border Grid.Column="0" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
-                        <Border.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="2"/>
-                            </Style>
-                        </Border.Resources>
-
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="auto"/>
-                                <RowDefinition Height="auto"/>
-                            </Grid.RowDefinitions>
-
-                            <Image Grid.Row="0"></Image>
-
-                            <Grid Grid.Row="1">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-
-                                <StackPanel Grid.Column="0">
-                                    <Label Content="Produto" Foreground="#ffffff"/>
-                                    <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
-                                </StackPanel>
-
-                                <StackPanel Grid.Column="1">
-                                    <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
-                                    <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
-                                </StackPanel>
-                            </Grid>
-                        </Grid>
-                    </Border>
-
-                    <Border Grid.Column="1" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
-                        <Border.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="2"/>
-                            </Style>
-                        </Border.Resources>
-
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="auto"/>
-                                <RowDefinition Height="auto"/>
-                            </Grid.RowDefinitions>
-
-                            <Image Grid.Row="0"></Image>
-
-                            <Grid Grid.Row="1">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-
-                                <StackPanel Grid.Column="0">
-                                    <Label Content="Produto" Foreground="#ffffff"/>
-                                    <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
-                                </StackPanel>
-
-                                <StackPanel Grid.Column="1">
-                                    <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
-                                    <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
-                                </StackPanel>
-                            </Grid>
-                        </Grid>
-                    </Border>
-
-                    <Border Grid.Column="2" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
-                        <Border.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="2"/>
-                            </Style>
-                        </Border.Resources>
-
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="auto"/>
-                                <RowDefinition Height="auto"/>
-                            </Grid.RowDefinitions>
-
-                            <Image Grid.Row="0"></Image>
-
-                            <Grid Grid.Row="1">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-
-                                <StackPanel Grid.Column="0">
-                                    <Label Content="Produto" Foreground="#ffffff"/>
-                                    <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
-                                </StackPanel>
-
-                                <StackPanel Grid.Column="1">
-                                    <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
-                                    <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
-                                </StackPanel>
-                            </Grid>
-                        </Grid>
-                    </Border>
-
-                    <Border Grid.Column="3" Background="#171717" Margin="5" Padding="10" BorderBrush="#313131" BorderThickness="2">
-                        <Border.Resources>
-                            <Style TargetType="{x:Type Border}">
-                                <Setter Property="CornerRadius" Value="2"/>
-                            </Style>
-                        </Border.Resources>
-
-                        <Grid>
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="auto"/>
-                                <RowDefinition Height="auto"/>
-                            </Grid.RowDefinitions>
-
-                            <Image Grid.Row="0"></Image>
-
-                            <Grid Grid.Row="1">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="*"/>
-                                    <ColumnDefinition Width="*"/>
-                                </Grid.ColumnDefinitions>
-
-                                <StackPanel Grid.Column="0">
-                                    <Label Content="Produto" Foreground="#ffffff"/>
-                                    <Label Content="+1000 vendas" Foreground="#8E8EA0" FontSize="10"/>
-                                </StackPanel>
-
-                                <StackPanel Grid.Column="1">
-                                    <Label Content="R$ 0,00" Foreground="#8E8EA0" HorizontalAlignment="Right" FontSize="10"/>
-                                    <Label Content="R$ 0,00" Foreground="#ffffff" HorizontalAlignment="Right"/>
-                                </StackPanel>
-                            </Grid>
-                        </Grid>
-                    </Border>
-                </Grid>
-            </StackPanel>
-        </Grid>
-    </Grid>
+    </ScrollViewer>
 </Page>
