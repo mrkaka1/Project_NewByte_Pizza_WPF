@@ -255,7 +255,7 @@
                                 </Style>
                             </Button.Resources>
                         </Button>
-                        <Button VerticalAlignment="Top" Content="Cadastrar" Grid.Column="2" Margin="5" Background="White" Padding="5">
+                        <Button VerticalAlignment="Top" Content="Cadastrar" Grid.Column="2" Margin="5" Background="White" Padding="5" Click="Button_Click">
                             <Button.Resources>
                                 <Style TargetType="{x:Type Border}">
                                     <Setter Property="CornerRadius" Value="2"/>
