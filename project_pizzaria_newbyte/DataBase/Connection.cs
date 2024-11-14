@@ -18,7 +18,7 @@ namespace project_pizzaria_newbyte.DataBase
 
             //private static string user = "root";
 
-            //private static string password = "root";
+            private static string password = "root";
 
             //private static string dbname = "bd_escola";
 
@@ -30,7 +30,7 @@ namespace project_pizzaria_newbyte.DataBase
             {
                 try
                 {
-                    connection = new MySqlConnection($"server={host};database={/*dbname*/};port={port};user={/*user*/};password={/*password*/}");
+                    connection = new MySqlConnection($"server={host};database=newbite;port={port};user=root;password={password}");
                     connection.Open();
 
                 }
