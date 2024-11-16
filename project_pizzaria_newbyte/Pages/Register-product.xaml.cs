@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using project_pizzaria_newbyte.Model;
 using project_pizzaria_newbyte.DataBase;
+using Google.Protobuf.WellKnownTypes;
 
 namespace project_pizzaria_newbyte.Pages
 {
@@ -29,12 +30,22 @@ namespace project_pizzaria_newbyte.Pages
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            ProdutoModel refri = new ProdutoModel();
-            refri.Id = 9;
-            refri.Nome = "Coca-Cola";
-            refri.Valor = 7;
 
-            refri.cadastrarProduto();
+            if (nameInput.Text != null && priceInput.Text != null)
+            {
+                ProdutoModel produto = new ProdutoModel();
+                produto.Nome = nameInput.Text;
+                produto.Valor = Convert.ToDouble(priceInput.Text);
+
+                ProdutoIDAO produtoIDAO = new ProdutoIDAO();
+                produtoIDAO.Create(produto);
+            }
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

@@ -1,63 +1,76 @@
 ﻿using MySql.Data.MySqlClient;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Windows;
 
 namespace project_pizzaria_newbyte.DataBase
 {
     class Connection
     {
-        internal class Connect
+        private static string host = "localhost";
+
+        private static string port = "3306";
+
+        private static string user = "root";
+
+        private static string password = "root";
+
+        private static string dbname = "newbite";
+
+        private static MySqlConnection connection;
+
+        private static MySqlCommand command;
+
+        public void Connect()
         {
-            private static string host = "localhost";
-
-            private static string port = "3306";
-
-            //private static string user = "root";
-
-            private static string password = "root";
-
-            //private static string dbname = "bd_escola";
-
-            private static MySqlConnection connection;
-
-            private static MySqlCommand command;
-
-            public Connect()
+            try
             {
-                try
-                {
-                    connection = new MySqlConnection($"server={host};database=newbite;port={port};user=root;password={password}");
-                    connection.Open();
+                connection = new MySqlConnection($"server={host};database={dbname};port={port};user={user};password={password}");
+                connection.Open();
+            }
+            catch (Exception ex)
+            {
+                throw new InvalidOperationException("Erro de conexão." + ex);
+            }
+        }
 
-                }
-                catch (Exception ex)
+        public MySqlCommand Query()
+        {
+            try
+            {
+                if (connection == null || connection.State != ConnectionState.Open)
                 {
-                    throw ex;
+                    throw new InvalidOperationException("Erro no query.");
+                }
+
+                command = connection.CreateCommand();
+                command.CommandType = CommandType.Text;
+
+                return command;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao execultar ação. " + ex);
+                throw new Exception("Erro ao execultar ação. " + ex);
+            }
+        }
+
+        public void Close()
+        {
+            try
+            {
+
+                if (connection != null)
+                {
+                    if (connection.State == ConnectionState.Open)
+                    {
+                        connection.Close();
+                    }
                 }
             }
-
-            public MySqlCommand Query()
+            catch (Exception ex)
             {
-                try
-                {
-                    command = connection.CreateCommand();
-                    command.CommandType = CommandType.Text;
-
-                    return command;
-                }
-                catch (Exception ex)
-                {
-                    throw ex;
-                }
-            }
-
-            public void Close()
-            {
-                connection.Close();
+                MessageBox.Show("Erro ao desconectar. " + ex);
+                throw new Exception("Erro ao desconectar. " + ex);
             }
         }
     }
