@@ -57,6 +57,24 @@ namespace project_pizzaria_newbyte.Pages
 
             } catch (Exception ex) { MessageBox.Show("ERROR:"+ ex); }
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            ConsultEmployees consultEmployees = new ConsultEmployees();
+           
+            consultEmployees.ShowDialog();
+            
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            inputName.Text = "";
+            inputEmail.Text = "";
+            inputAcesso.Text = "";
+            inputCargo.Text = "";
+            inputSenha.Text = "";
+            inputRepSenha.Text = "";
+        }
     }
 }
 

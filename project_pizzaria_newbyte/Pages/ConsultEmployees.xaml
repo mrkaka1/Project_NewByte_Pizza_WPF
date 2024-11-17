@@ -55,8 +55,9 @@
         </Grid>
         <!--#endregion HEAD-->
 
-        
-        <DataGrid Grid.Column="1" Grid.Row="2" d:ItemsSource="{d:SampleData ItemCount=5}"/>
+
+        <DataGrid x:Name="DataGridEmployees" Grid.Column="1" Grid.Row="2" AutoGenerateColumns="True" Background="White" Foreground="Black" />
+
 
     </Grid>
 </Window>
