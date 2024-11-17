@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\GabrielReds13\\Documents\\- PROJECTS\\PDS\\teste\\Project_NewByte_Pizza_WPF\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\gabrielreds13\\documents\\- projects\\pds\\teste\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\model\\estoqueidao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\model\\estoqueidao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\gabrielreds13\\documents\\- projects\\pds\\teste\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\model\\produtoidao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\model\\produtoidao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,24 +15,20 @@
       "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\interface\\idao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\gabrielreds13\\documents\\- projects\\pds\\teste\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\pages\\register-product.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\pages\\register-product.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\gabrielreds13\\documents\\- projects\\pds\\teste\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\model\\estoqueidao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\model\\estoqueidao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\gabrielreds13\\documents\\- projects\\pds\\teste\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\model\\produtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\model\\produtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\gabrielreds13\\documents\\- projects\\pds\\teste\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\pages\\register-product.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\pages\\register-product.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\gabrielreds13\\documents\\- projects\\pds\\teste\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\model\\estoquemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\model\\estoquemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\gabrielreds13\\documents\\- projects\\pds\\teste\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\pages\\register-product.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\pages\\register-product.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\gabrielreds13\\documents\\- projects\\pds\\teste\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\model\\produtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\model\\produtomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\gabrielreds13\\documents\\- projects\\pds\\teste\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -78,24 +78,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "EstoqueIDAO.cs",
               "DocumentMoniker": "C:\\Users\\GabrielReds13\\Documents\\- PROJECTS\\PDS\\teste\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Model\\EstoqueIDAO.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Model\\EstoqueIDAO.cs",
               "ToolTip": "C:\\Users\\GabrielReds13\\Documents\\- PROJECTS\\PDS\\teste\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Model\\EstoqueIDAO.cs",
               "RelativeToolTip": "project_pizzaria_newbyte\\Model\\EstoqueIDAO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAApAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCQAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T22:54:13.941Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Register-product.xaml",
               "DocumentMoniker": "C:\\Users\\GabrielReds13\\Documents\\- PROJECTS\\PDS\\teste\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\Register-product.xaml",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\Register-product.xaml",
@@ -107,7 +107,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Register-product.xaml.cs",
               "DocumentMoniker": "C:\\Users\\GabrielReds13\\Documents\\- PROJECTS\\PDS\\teste\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\Register-product.xaml.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\Register-product.xaml.cs",
@@ -120,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "IDAO.cs",
               "DocumentMoniker": "C:\\Users\\GabrielReds13\\Documents\\- PROJECTS\\PDS\\teste\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Interface\\IDAO.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Interface\\IDAO.cs",
@@ -133,13 +133,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "ProdutoIDAO.cs",
               "DocumentMoniker": "C:\\Users\\GabrielReds13\\Documents\\- PROJECTS\\PDS\\teste\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Model\\ProdutoIDAO.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Model\\ProdutoIDAO.cs",
               "ToolTip": "C:\\Users\\GabrielReds13\\Documents\\- PROJECTS\\PDS\\teste\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Model\\ProdutoIDAO.cs",
               "RelativeToolTip": "project_pizzaria_newbyte\\Model\\ProdutoIDAO.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAoAAAABAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAAwwCEAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-16T20:38:18.634Z",
               "EditorCaption": ""
@@ -159,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "EstoqueModel.cs",
               "DocumentMoniker": "C:\\Users\\GabrielReds13\\Documents\\- PROJECTS\\PDS\\teste\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Model\\EstoqueModel.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Model\\EstoqueModel.cs",
@@ -172,7 +172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "ProdutoModel.cs",
               "DocumentMoniker": "C:\\Users\\GabrielReds13\\Documents\\- PROJECTS\\PDS\\teste\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Model\\ProdutoModel.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Model\\ProdutoModel.cs",

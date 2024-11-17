@@ -31,10 +31,7 @@ namespace project_pizzaria_newbyte.Model
                 create.Parameters.AddWithValue("@Valor", produto.Valor);
                 create.ExecuteNonQuery();
 
-                MessageBox.Show("Produto cadastrado");
-
             } catch (Exception ex) {
-                MessageBox.Show("Erro ao cadastrar. " + ex);
                 return false;
             } finally
             {
