@@ -8,6 +8,9 @@
   <ul>
       <li>Gabriel Guedes Alves de Moura</li>
       <li>Kauan Marques da Luz</li>
+      <li>Matheus Andrade</li>
+      <li>Miguel Henrique</li>
+    
   </ul>
   </p>
 
