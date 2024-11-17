@@ -68,11 +68,11 @@ create table Cliente(
 );
 
 create table Funcionario(
-	id_fun int primary key not null,
+    id_fun int primary key not null auto_increment,
     nome_fun varchar(200),
-	
-    id_cre_fk int,
-    foreign key (id_cre_fk) references Credencial(id_cre)
+    email_fun varchar(200),
+    senha_fun varchar(200),
+    repetir_senha_fun varchar(200),
 );
 
 create table Produto(
