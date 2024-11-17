@@ -1,4 +1,5 @@
-﻿using System;
+﻿using project_pizzaria_newbyte.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,10 +26,38 @@ namespace project_pizzaria_newbyte.Pages
         {
             InitializeComponent();
         }
+           
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            var connection = 
+            try {
+                if (
+                   inputName.Text.Length > 0 &&
+                   inputEmail.Text.Length > 0 &&
+                   inputAcesso.Text.Length > 0 &&
+                   inputCargo.Text.Length > 0 &&
+                   inputSenha.Text.Length > 0 &&
+                   inputRepSenha.Text.Length > 0
+                )
+                {
+                    EmployeeIDAO employeeIDAO = new EmployeeIDAO();
+
+                    EmployeeModel employee = new EmployeeModel();
+
+                    employee.Nome = inputName.Text;
+                    employee.Email = inputEmail.Text;
+                    employee.Acesso = inputAcesso.Text;
+                    employee.Cargo = inputCargo.Text;
+                    employee.Senha = inputSenha.Text;
+                    employee.Repetir_Senha = inputRepSenha.Text;
+
+                    employeeIDAO.Create(employee);
+                    MessageBox.Show("Cadastrado");
+
+                }
+
+            } catch (Exception ex) { MessageBox.Show("ERROR:"+ ex); }
         }
     }
 }
+

@@ -104,6 +104,7 @@
                     Style="{StaticResource Border-Style-1}"
     >
                     <TextBox
+                        x:Name="inputName"
                         Padding="10"
                         Text="Inserir nome"    
                         Foreground="{StaticResource Gray-2-Color}" 
@@ -130,6 +131,7 @@
                     Style="{StaticResource Border-Style-1}"
 >
                     <TextBox
+                        x:Name="inputEmail"
                         Padding="10"
                         Text="Inserir email"    
                         Foreground="{StaticResource Gray-2-Color}" 
@@ -156,6 +158,7 @@
                     Style="{StaticResource Border-Style-1}"
 >
                     <TextBox
+                        x:Name="inputAcesso"
                         Padding="10"
                         Text="Inserir acesso"    
                         Foreground="{StaticResource Gray-2-Color}" 
@@ -181,6 +184,7 @@
                     Style="{StaticResource Border-Style-1}"
 >
                     <TextBox
+                        x:Name="inputCargo"
                         Padding="10"
                         Text="Inserir cargo"    
                         Foreground="{StaticResource Gray-2-Color}" 
@@ -209,6 +213,7 @@
                     Style="{StaticResource Border-Style-1}"
     >
                     <TextBox
+                        x:Name="inputSenha"
                         Padding="10"
                         Text="Inserir senha"    
                         Foreground="{StaticResource Gray-2-Color}" 
@@ -235,6 +240,7 @@
                     Style="{StaticResource Border-Style-1}"
 >
                     <TextBox
+                        x:Name="inputRepSenha"
                         Padding="10"
                         Text="Confirmar senha"    
                         Foreground="{StaticResource Gray-2-Color}" 
@@ -247,32 +253,7 @@
                 </Border>
 
                 <!-- BUTTON -->
-                <Button
-                    BorderBrush="Transparent"
-                    Background="Transparent"
-                    BorderThickness="0"
-                    Margin="0 28 0 0"
-                    
-                >
-                    <Border 
-                        BorderThickness="2"
-                        BorderBrush="#FFF"
-                        Background="#FFF"
-                        Style="{StaticResource Border-Radius}"
-                        Width="200"
-                        Height="40"
-                    >
-                        <TextBlock 
-                            Text="Cadastrar" 
-                            Foreground="#000"
-                            FontWeight="Regular"
-                            FontSize="12"
-                            FontFamily="{StaticResource Poppins-SemiBold}"
-                            VerticalAlignment="Center"
-                            HorizontalAlignment="Center"
-                        />
-                    </Border>
-                </Button>
+                <Button Content="Cadastrar" Click="Button_Click_1"></Button>
 
                 <!-- BUTTON CANCELAR -->
                 <Button

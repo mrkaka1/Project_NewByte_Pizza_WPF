@@ -75,8 +75,10 @@ create table Funcionario(
     cargo_fun varchar(100),
     
     senha_fun varchar(200),
-    repetir_senha_fun varchar(200),
+    repetir_senha_fun varchar(200)
 );
+
+select * from Funcionario;
 
 create table Produto(
 	id_pro int primary key not null,

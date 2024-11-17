@@ -10,9 +10,9 @@ namespace project_pizzaria_newbyte.DataBase
 
         private static string port = "3306";
 
-        private static string user = "root";
+        private static string user = "local";
 
-        private static string password = "root";
+        private static string password = "Kauan23@";
 
         private static string dbname = "newbite";
 

@@ -32,14 +32,14 @@ namespace project_pizzaria_newbyte.Pages
         {
 
             if (
-                    nameInput.Text.Length > 0 && 
+                    nameInput.Text.Length > 0 &&
                     measureSelect.Text.Length > 0 &&
                     supplierSelect.Text.Length > 0
             )
             {
                 double amount, price;
 
-                if(double.TryParse(amountInput.Text, out amount) && double.TryParse(priceInput.Text, out price))
+                if (double.TryParse(amountInput.Text, out amount) && double.TryParse(priceInput.Text, out price))
                 {
                     EstoqueIDAO estoqueCRUD = new EstoqueIDAO();
                     ProdutoIDAO produtoCRUD = new ProdutoIDAO();
