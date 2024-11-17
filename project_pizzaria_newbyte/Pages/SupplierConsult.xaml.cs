@@ -17,16 +17,15 @@ using System.Windows.Shapes;
 namespace project_pizzaria_newbyte.Pages
 {
     /// <summary>
-    /// Lógica interna para ConsultSupplier.xaml
+    /// Lógica interna para SupplierConsult.xaml
     /// </summary>
-    public partial class ConsultSupplier : Window
+    public partial class SupplierConsult : Window
     {
-        public ConsultSupplier()
+        public SupplierConsult()
         {
             InitializeComponent();
-            this.Loaded += ConsultSupplier_Loaded;
+            ////this.Loaded += ConsultSupplier_Loaded();
         }
-
         private void ConsultSupplier_Loaded(object sender, RoutedEventArgs e)
         {
             LoadSupplierData();

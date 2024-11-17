@@ -146,8 +146,8 @@
     BorderBrush="Transparent"
     Background="Transparent"
     BorderThickness="0"
-    Click="Button_Click"
                     Margin="0 30 0 0"
+    Click="Button_Click_1"
 >
                     <Border 
         BorderThickness="2"
@@ -228,14 +228,14 @@
 
 
                 <!-- BUTTON -->
-                <Button Content="Cadastrar" Click="Button_Click_1" > </Button>
+                <!--<Button Content="Cadastrar"  />-->
                 <!-- BUTTON -->
                 <Button
                     BorderBrush="Transparent"
                     Background="Transparent"
                     BorderThickness="0"
-                    Click="Button_Click_1"
                     Margin="0 25 0 0"
+                    Click="Button_Click"
                 >
                     <Border 
                         BorderThickness="2"
@@ -263,8 +263,8 @@
                     BorderBrush="Transparent"
                     Background="Transparent"
                     BorderThickness="0"
-                    Click="Button_Click_2"
                     Margin="0 30 0 0"
+                    Click="Button_Click_2"
                 >
                     <Border 
                         BorderThickness="2"
