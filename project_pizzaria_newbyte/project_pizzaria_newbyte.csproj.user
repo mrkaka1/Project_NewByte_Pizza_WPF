@@ -7,6 +7,7 @@
     </ApplicationDefinition>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Compile Update="Pages\edit_supplier.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -34,9 +35,22 @@
     <Compile Update="Pages\Search-2.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\SignUp.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
     <Page Update="Pages\edit_supplier.xaml">
+=======
+    <Page Update="Pages\ConsultEmployees.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ConsultProduct.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ConsultSupplier.xaml">
+>>>>>>> origin
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\EmployeeRegistration.xaml">
@@ -54,13 +68,20 @@
     <Page Update="Pages\Profile.xaml">
       <SubType>Designer</SubType>
     </Page>
+<<<<<<< HEAD
     <Page Update="Pages\register_supplier.xaml">
+=======
+    <Page Update="Pages\Register-product.xaml">
+>>>>>>> origin
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\Search-1.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\Search-2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\SignUp.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
