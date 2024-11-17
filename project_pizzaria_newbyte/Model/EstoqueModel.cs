@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace project_pizzaria_newbyte.Model
 {
-    class Estoque
+    class EstoqueModel
     {
+        public int Id { get; set; }
+        public string TipoMedida { get; set; }
+        public double Quantidade { get; set; }
     }
 }

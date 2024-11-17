@@ -199,7 +199,7 @@
 
                 <Grid Grid.Column="1">
                     <Grid.RowDefinitions>
-                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition Height="0.7*"/>
                         <RowDefinition Height="*"/>
                     </Grid.RowDefinitions>
 
@@ -212,22 +212,27 @@
                         <StackPanel></StackPanel>
                         <StackPanel Margin="5">
                             <Label Content="Nome" Foreground="White"/>
-                            <TextBox Height="25" Background="{StaticResource Gray-1-Color}" BorderBrush="{StaticResource Gray-1-Color}" Style="{StaticResource RoundedTextBox}"/>
+                            <TextBox x:Name="nameInput" Height="25" Background="{StaticResource Gray-1-Color}" BorderBrush="{StaticResource Gray-1-Color}" Style="{StaticResource RoundedTextBox}" TextChanged="TextBox_TextChanged"/>
                             <Label Content="Fornecedor" Foreground="White"/>
-                            <ComboBox Height="25">
-
+                            <ComboBox x:Name="supplierSelect" Height="25">
+                                <ComboBoxItem Content="Nenhuma" />
                             </ComboBox>
-
-
+                            <Label Content="Valor (R$)" Foreground="White"/>
+                            <TextBox x:Name="priceInput" Height="25" Background="{StaticResource Gray-1-Color}" BorderBrush="{StaticResource Gray-1-Color}" Style="{StaticResource RoundedTextBox}"/>
                         </StackPanel>
 
                         <StackPanel Grid.Column="1" Margin="5">
                             <Label Content="Medida" Foreground="White"/>
-                            <ComboBox Height="25">
-
+                            <ComboBox x:Name="measureSelect" Height="25" ItemStringFormat="">
+                                <ComboBoxItem Content="Seleci" />
+                                <ComboBoxItem Content="Quilograma" />
+                                <ComboBoxItem Content="Miligrama" />
+                                <ComboBoxItem Content="Unidade" />
+                                <ComboBoxItem Content="Litro" />
+                                <ComboBoxItem Content="Mililitro" />
                             </ComboBox>
                             <Label Content="Quantidade" Foreground="White"/>
-                            <TextBox Height="25" Background="{StaticResource Gray-1-Color}" BorderBrush="{StaticResource Gray-1-Color}" Style="{StaticResource RoundedTextBox}"/>
+                            <TextBox x:Name="amountInput" Height="25" Background="{StaticResource Gray-1-Color}" BorderBrush="{StaticResource Gray-1-Color}" Style="{StaticResource RoundedTextBox}"/>
 
                         </StackPanel>
 

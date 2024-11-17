@@ -12,6 +12,9 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using project_pizzaria_newbyte.Model;
+using project_pizzaria_newbyte.DataBase;
+using Google.Protobuf.WellKnownTypes;
 
 namespace project_pizzaria_newbyte.Pages
 {
@@ -26,6 +29,40 @@ namespace project_pizzaria_newbyte.Pages
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (
+                    nameInput.Text.Length > 0 && 
+                    measureSelect.Text.Length > 0 &&
+                    supplierSelect.Text.Length > 0
+            )
+            {
+                double amount, price;
+
+                if(double.TryParse(amountInput.Text, out amount) && double.TryParse(priceInput.Text, out price))
+                {
+                    EstoqueIDAO estoqueCRUD = new EstoqueIDAO();
+                    ProdutoIDAO produtoCRUD = new ProdutoIDAO();
+
+                    EstoqueModel estoque = new EstoqueModel();
+                    estoque.TipoMedida = measureSelect.Text;
+                    estoque.Quantidade = amount;
+
+                    estoqueCRUD.Create(estoque);
+
+
+
+                    ProdutoModel produto = new ProdutoModel();
+                    produto.Nome = nameInput.Text;
+                    produto.Valor = Convert.ToDouble(priceInput.Text);
+
+                    produtoCRUD.Create(produto);
+                }
+            }
+
+        }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
         }
