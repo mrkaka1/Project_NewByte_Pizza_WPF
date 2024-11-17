@@ -46,7 +46,17 @@ namespace project_pizzaria_newbyte.Model
         } 
         public List<EstoqueModel> Read()
         {
+
             throw new NotImplementedException();
+            /*try
+            {
+                connection.Connect();
+                var read = connection.Query();
+                read.CommandText = "select * from Estoque;";
+            } catch (Exception ex)
+            {
+
+            }*/
         }
 
         public EstoqueModel ReadById(int id)
