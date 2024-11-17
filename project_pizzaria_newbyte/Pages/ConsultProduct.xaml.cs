@@ -10,25 +10,18 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-
 
 namespace project_pizzaria_newbyte.Pages
 {
     /// <summary>
-    /// Interação lógica para EmployeeRegistration.xam
+    /// Lógica interna para ConsultProduct.xaml
     /// </summary>
-    public partial class EmployeeRegistration : Page
+    public partial class ConsultProduct : Window
     {
-        public EmployeeRegistration()
+        public ConsultProduct()
         {
             InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            var connection = 
         }
     }
 }

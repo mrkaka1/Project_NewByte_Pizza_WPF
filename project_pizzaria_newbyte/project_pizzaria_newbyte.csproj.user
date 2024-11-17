@@ -10,6 +10,12 @@
     <Compile Update="Pages\ConsultEmployees.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\ConsultProduct.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\ConsultSupplier.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\EmployeeRegistration.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -40,6 +46,12 @@
   </ItemGroup>
   <ItemGroup>
     <Page Update="Pages\ConsultEmployees.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ConsultProduct.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\ConsultSupplier.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\EmployeeRegistration.xaml">
