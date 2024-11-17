@@ -26,7 +26,7 @@ namespace project_pizzaria_newbyte.Model
                 connection.Connect();
 
                 var create = connection.Query();
-                create.CommandText = $"insert into Funcionario (id_fun, nome_fun, email_fun, acesso_fun, cargo_fun, senha_fun, repetir_senha_fun) values (@Id, @Nome, @email, @acesso, @cargo, @senha, @repetirSenha)";
+                create.CommandText = $"insert into Funcionario (id_fun, nome_fun, email_fun, acesso_fun, cargo_fun, senha_fun) values (@Id, @Nome, @email, @acesso, @cargo, @senha)";
 
                 create.Parameters.AddWithValue("@Id", null);
                 create.Parameters.AddWithValue("@Nome", employee.Nome);
@@ -34,11 +34,14 @@ namespace project_pizzaria_newbyte.Model
                 create.Parameters.AddWithValue("@acesso", employee.Acesso);
                 create.Parameters.AddWithValue("@cargo", employee.Cargo);
                 create.Parameters.AddWithValue("@senha", employee.Senha);
-                create.Parameters.AddWithValue("@repetirSenha", employee.Repetir_Senha);
                 create.ExecuteNonQuery();
+
+                MessageBox.Show("Cadastrado");
+
             }
             catch (Exception ex)
             {
+                MessageBox.Show($"Error: {ex}");
                 return false;
             }
             finally

@@ -52,7 +52,6 @@ namespace project_pizzaria_newbyte.Pages
                     employee.Repetir_Senha = inputRepSenha.Text;
 
                     employeeIDAO.Create(employee);
-                    MessageBox.Show("Cadastrado");
 
                 }
 
