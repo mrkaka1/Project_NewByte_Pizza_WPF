@@ -3,20 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\daluz\\source\\repos\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\model\\supplieridao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\model\\supplieridao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\daluz\\source\\repos\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\model\\suppliermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\model\\suppliermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\daluz\\source\\repos\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\pages\\registersupplier.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\pages\\registersupplier.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\daluz\\source\\repos\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\pages\\registersupplier.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\pages\\registersupplier.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\daluz\\source\\repos\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\pages\\menuoptions.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\pages\\menuoptions.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\daluz\\source\\repos\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\pages\\menuoptions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\pages\\menuoptions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\daluz\\source\\repos\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\pages\\consultsupplier.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\pages\\consultsupplier.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\daluz\\source\\repos\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\pages\\supplierconsult.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\pages\\supplierconsult.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\daluz\\source\\repos\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\pages\\supplierconsult.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\pages\\supplierconsult.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\daluz\\source\\repos\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\pages\\consultsupplier.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\pages\\consultsupplier.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\daluz\\source\\repos\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\pages\\consultemployees.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\pages\\consultemployees.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\daluz\\source\\repos\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\pages\\consultemployees.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\pages\\consultemployees.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\daluz\\source\\repos\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\model\\supplieridao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\model\\supplieridao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\daluz\\source\\repos\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\model\\suppliermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\model\\suppliermodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\daluz\\source\\repos\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\model\\employeeidao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -27,20 +59,12 @@
       "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\pages\\employeeregistration.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\daluz\\source\\repos\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\pages\\menuoptions.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\pages\\menuoptions.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\daluz\\source\\repos\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\pages\\register-product.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\pages\\register-product.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\daluz\\source\\repos\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\pages\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\pages\\login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\daluz\\source\\repos\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\pages\\menuoptions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|solutionrelative:project_pizzaria_newbyte\\pages\\menuoptions.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{97458CFF-ABB4-43A9-9FA5-9EEB6F5CF069}|project_pizzaria_newbyte\\project_pizzaria_newbyte.csproj|c:\\users\\daluz\\source\\repos\\project_newbyte_pizza_wpf\\project_pizzaria_newbyte\\model\\produtoidao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -133,46 +157,136 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ConsultSupplier.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\ConsultSupplier.xaml.cs",
+              "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\ConsultSupplier.xaml.cs",
+              "ToolTip": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\ConsultSupplier.xaml.cs",
+              "RelativeToolTip": "project_pizzaria_newbyte\\Pages\\ConsultSupplier.xaml.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAABcAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T22:20:03.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ConsultSupplier.xaml",
+              "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\ConsultSupplier.xaml",
+              "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\ConsultSupplier.xaml",
+              "ToolTip": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\ConsultSupplier.xaml",
+              "RelativeToolTip": "project_pizzaria_newbyte\\Pages\\ConsultSupplier.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-17T22:19:34.571Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "MenuOptions.xaml",
+              "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\MenuOptions.xaml",
+              "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\MenuOptions.xaml",
+              "ToolTip": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\MenuOptions.xaml",
+              "RelativeToolTip": "project_pizzaria_newbyte\\Pages\\MenuOptions.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-17T20:46:26.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MenuOptions.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\MenuOptions.xaml.cs",
+              "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\MenuOptions.xaml.cs",
+              "ToolTip": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\MenuOptions.xaml.cs",
+              "RelativeToolTip": "project_pizzaria_newbyte\\Pages\\MenuOptions.xaml.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAYwCoAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T21:05:40.293Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "RegisterSupplier.xaml",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\RegisterSupplier.xaml",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\RegisterSupplier.xaml",
               "ToolTip": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\RegisterSupplier.xaml",
               "RelativeToolTip": "project_pizzaria_newbyte\\Pages\\RegisterSupplier.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-17T21:15:48.194Z"
+              "WhenOpened": "2024-11-17T21:15:48.194Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MenuOptions.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\MenuOptions.xaml.cs",
-              "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\MenuOptions.xaml.cs",
-              "ToolTip": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\MenuOptions.xaml.cs",
-              "RelativeToolTip": "project_pizzaria_newbyte\\Pages\\MenuOptions.xaml.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAASwCQAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T21:05:40.293Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "RegisterSupplier.xaml.cs",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\RegisterSupplier.xaml.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\RegisterSupplier.xaml.cs",
               "ToolTip": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\RegisterSupplier.xaml.cs",
               "RelativeToolTip": "project_pizzaria_newbyte\\Pages\\RegisterSupplier.xaml.cs",
-              "ViewState": "AQIAABoAAAAAAAAAAIA5wDsAAAAsAAAA",
+              "ViewState": "AQIAADEAAAAAAAAAAAAgwD4AAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T21:42:42.775Z"
+              "WhenOpened": "2024-11-17T21:42:42.775Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
+              "Title": "ConsultEmployees.xaml",
+              "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\ConsultEmployees.xaml",
+              "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\ConsultEmployees.xaml",
+              "ToolTip": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\ConsultEmployees.xaml",
+              "RelativeToolTip": "project_pizzaria_newbyte\\Pages\\ConsultEmployees.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-17T22:25:10.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SupplierConsult.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\SupplierConsult.xaml.cs",
+              "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\SupplierConsult.xaml.cs",
+              "ToolTip": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\SupplierConsult.xaml.cs",
+              "RelativeToolTip": "project_pizzaria_newbyte\\Pages\\SupplierConsult.xaml.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAApwBoAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T22:26:59.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConsultEmployees.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\ConsultEmployees.xaml.cs",
+              "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\ConsultEmployees.xaml.cs",
+              "ToolTip": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\ConsultEmployees.xaml.cs",
+              "RelativeToolTip": "project_pizzaria_newbyte\\Pages\\ConsultEmployees.xaml.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAA3wBoAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T22:24:52.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SupplierConsult.xaml",
+              "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\SupplierConsult.xaml",
+              "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\SupplierConsult.xaml",
+              "ToolTip": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\SupplierConsult.xaml",
+              "RelativeToolTip": "project_pizzaria_newbyte\\Pages\\SupplierConsult.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-17T22:26:09.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "SupplierModel.cs",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Model\\SupplierModel.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Model\\SupplierModel.cs",
@@ -184,20 +298,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "SupplierIDAO.cs",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Model\\SupplierIDAO.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Model\\SupplierIDAO.cs",
               "ToolTip": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Model\\SupplierIDAO.cs",
               "RelativeToolTip": "project_pizzaria_newbyte\\Model\\SupplierIDAO.cs",
-              "ViewState": "AQIAAAwAAAAAAAAAAAAAAAsAAAArAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAgwCgAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-17T21:24:35.177Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 13,
               "Title": "EmployeeRegistration.xaml.cs",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\EmployeeRegistration.xaml.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\EmployeeRegistration.xaml.cs",
@@ -209,7 +323,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 12,
               "Title": "EmployeeIDAO.cs",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Model\\EmployeeIDAO.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Model\\EmployeeIDAO.cs",
@@ -221,7 +335,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "ProdutoIDAO.cs",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Model\\ProdutoIDAO.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Model\\ProdutoIDAO.cs",
@@ -233,7 +347,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 15,
               "Title": "Login.xaml.cs",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\Login.xaml.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\Login.xaml.cs",
@@ -245,7 +359,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "Register-product.xaml",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\Register-product.xaml",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\Register-product.xaml",
@@ -256,7 +370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 18,
               "Title": "RegistrationEmployee.xaml",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\RegistrationEmployee.xaml",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\RegistrationEmployee.xaml",
@@ -267,18 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MenuOptions.xaml",
-              "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\MenuOptions.xaml",
-              "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\MenuOptions.xaml",
-              "ToolTip": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\MenuOptions.xaml",
-              "RelativeToolTip": "project_pizzaria_newbyte\\Pages\\MenuOptions.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-11-17T20:46:26.093Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "SignUp.xaml.cs",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\SignUp.xaml.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\SignUp.xaml.cs",
@@ -290,7 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "EmployeeRegistration.xaml",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\EmployeeRegistration.xaml",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\EmployeeRegistration.xaml",
@@ -301,7 +404,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
               "Title": "RegistrationEmployee.xaml.cs",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\RegistrationEmployee.xaml.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\RegistrationEmployee.xaml.cs",
@@ -313,7 +416,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 28,
               "Title": "ClientModel.cs",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Model\\ClientModel.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Model\\ClientModel.cs",
@@ -325,7 +428,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 26,
               "Title": "ClientIDAO.cs",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Model\\ClientIDAO.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Model\\ClientIDAO.cs",
@@ -337,7 +440,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 23,
               "Title": "SignUp.xaml",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\SignUp.xaml",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\SignUp.xaml",
@@ -348,7 +451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 30,
               "Title": "ResourcePart.cs",
               "DocumentMoniker": "C:\\Users\\daluz\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\b49ace08f4cd26a4f275d628999a0f91ccb8a1892704530d9e6f5bd1284082f1\\ResourcePart.cs",
@@ -361,7 +464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 29,
               "Title": "DAOHelper.cs",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Helpers\\DAOHelper.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Helpers\\DAOHelper.cs",
@@ -373,7 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 27,
               "Title": "Connection.cs",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\DataBase\\Connection.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\DataBase\\Connection.cs",
@@ -385,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 34,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\App.xaml.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\App.xaml.cs",
@@ -397,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "Payment.xaml",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\Payment.xaml",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\Payment.xaml",
@@ -408,18 +511,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\App.xaml",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\App.xaml",
               "ToolTip": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\App.xaml",
               "RelativeToolTip": "project_pizzaria_newbyte\\App.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-08-06T17:02:50.081Z"
+              "WhenOpened": "2024-08-06T17:02:50.081Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "AssemblyInfo.cs",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\AssemblyInfo.cs",
@@ -431,7 +535,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "Profile.xaml",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\Profile.xaml",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\Profile.xaml",
@@ -442,7 +546,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "Search-1.xaml",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\Search-1.xaml",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\Search-1.xaml",
@@ -453,7 +557,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "Login.xaml",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\Login.xaml",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\Login.xaml",
@@ -464,7 +568,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "Product.xaml",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\Product.xaml",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\Product.xaml",
@@ -475,7 +579,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 25,
               "Title": "MenuWindow.xaml",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\Pages\\MenuWindow.xaml",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\Pages\\MenuWindow.xaml",
@@ -507,7 +611,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 24,
               "Title": "newbite-workbench-1.sql",
               "DocumentMoniker": "C:\\Users\\daluz\\source\\repos\\Project_NewByte_Pizza_WPF\\project_pizzaria_newbyte\\DataBase\\newbite-workbench-1.sql",
               "RelativeDocumentMoniker": "project_pizzaria_newbyte\\DataBase\\newbite-workbench-1.sql",

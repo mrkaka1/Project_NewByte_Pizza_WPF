@@ -36,5 +36,11 @@ namespace project_pizzaria_newbyte.Pages
             RegisterSupplier supplier = new RegisterSupplier();
             supplier.Show();
         }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            ConsultSupplier supplier = new ConsultSupplier();
+            supplier.Show();
+        }
     }
 }

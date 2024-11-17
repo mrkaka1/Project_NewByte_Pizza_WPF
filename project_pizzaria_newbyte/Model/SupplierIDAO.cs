@@ -38,6 +38,7 @@ namespace project_pizzaria_newbyte.Model
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.Message);
                 return false;
             }
             finally
