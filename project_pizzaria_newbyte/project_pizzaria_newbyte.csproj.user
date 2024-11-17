@@ -22,6 +22,9 @@
     <Compile Update="Pages\Login.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="Pages\MenuOptions.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="Pages\MenuWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -32,6 +35,9 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\Register-product.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\RegistrationEmployee.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\Search-1.xaml.cs">
@@ -60,6 +66,9 @@
     <Page Update="Pages\Login.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Pages\MenuOptions.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Pages\MenuWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
@@ -70,6 +79,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\Register-product.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Pages\RegistrationEmployee.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Pages\Search-1.xaml">

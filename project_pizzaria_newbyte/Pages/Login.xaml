@@ -60,6 +60,7 @@
                             Style="{StaticResource Border-Style-1}"
                         >
                             <TextBox
+                                x:Name="inputEmail"
                                 Padding="10"
                                 Text="Insira seu email"    
                                 Foreground="{StaticResource Gray-2-Color}" 
@@ -86,6 +87,7 @@
                             Style="{StaticResource Border-Style-1}"
                         >
                             <TextBox
+                                x:Name="inputPassword"
                                 Padding="12"
                                 Text="Insira sua senha"    
                                 Foreground="{StaticResource Gray-2-Color}" 
@@ -111,15 +113,17 @@
                             FontSize="12"
                             FontFamily="{StaticResource Poppins-Regular}"
                             Background="#00000000"
+                            Margin="0 3 0 0"
                         />
-                        <TextBlock 
+                        <!--<TextBlock 
                             Text="Clique aqui."
                             Foreground="#FFF" 
                             FontSize="12"
                             FontFamily="{StaticResource Poppins-Regular}"
                             Background="#00000000" 
                             TextDecorations="Underline"
-                        />
+                        >/--> 
+                        <Button Content="Clique Aqui" Background="Transparent" Foreground="#FFF" BorderBrush="Transparent" Click="Button_Click"/>
                     </StackPanel>
 
                     <!-- BUTTON -->
@@ -127,6 +131,7 @@
                         BorderBrush="Transparent"
                         Background="Transparent"
                         BorderThickness="0"
+                        Click="Button_Click_1"
                     >
                         <Border 
                             BorderThickness="2"
@@ -151,6 +156,7 @@
                 </StackPanel>
                 
             </Border>
+                <Frame x:Name="framaPage" Grid.Column="1" Grid.RowSpan="3" />
 
 
             <!--#region SET GRID -->

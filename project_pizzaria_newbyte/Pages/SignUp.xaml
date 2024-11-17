@@ -57,6 +57,7 @@
                     Style="{StaticResource Border-Style-1}"
                 >
                         <TextBox
+                            x:Name="inputName"
                         Padding="10"
                         Text="Insira seu nome"    
                         Foreground="{StaticResource Gray-2-Color}" 
@@ -83,6 +84,7 @@
                     Style="{StaticResource Border-Style-1}"
                 >
                         <TextBox
+                            x:Name="inputEmail"
                         Padding="10"
                         Text="Insira seu email"    
                         Foreground="{StaticResource Gray-2-Color}" 
@@ -109,6 +111,7 @@
                     Style="{StaticResource Border-Style-1}"
                 >
                         <TextBox
+                            x:Name="inputCpf"
                         Padding="12"
                         Text="Insira seu CPF"    
                         Foreground="{StaticResource Gray-2-Color}" 
@@ -135,6 +138,7 @@
                     Style="{StaticResource Border-Style-1}"
                 >
                         <TextBox
+                            x:Name="inputPassWord"
                         Padding="12"
                         Text="Insira sua senha"    
                         Foreground="{StaticResource Gray-2-Color}" 
@@ -187,20 +191,24 @@
                     FontFamily="{StaticResource Poppins-Regular}"
                     Background="#00000000"
     />
-                    <TextBlock 
-                    Text="Entrar"
-                    Foreground="#FFF" 
-                    FontSize="12"
-                    FontFamily="{StaticResource Poppins-Regular}"
-                    Background="#00000000" 
-                    TextDecorations="Underline"
-    />
+                            <!--<TextBlock 
+                            Text="Entrar"
+                            Foreground="#FFF" 
+                            FontSize="12"
+                            FontFamily="{StaticResource Poppins-Regular}"
+                            Background="#00000000" 
+                            TextDecorations="Underline"
+            />-->
+                    <Button Content="Entrar" Background="Transparent" BorderBrush="Transparent" Foreground="#FFF" Click="Button_Click_1"/>
                 </StackPanel>
                 <!-- BUTTON -->
+                
+
                 <Button
                 BorderBrush="Transparent"
                 Background="Transparent"
                 BorderThickness="0"
+                    Click="Button_Click"
             >
                     <Border 
                     BorderThickness="2"
