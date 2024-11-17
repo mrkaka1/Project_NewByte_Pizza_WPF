@@ -9,6 +9,15 @@
   <ItemGroup>
 <<<<<<< HEAD
     <Compile Update="Pages\edit_supplier.xaml.cs">
+=======
+    <Compile Update="Pages\ConsultEmployees.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\ConsultProduct.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Pages\ConsultSupplier.xaml.cs">
+>>>>>>> origin
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\EmployeeRegistration.xaml.cs">
@@ -26,7 +35,11 @@
     <Compile Update="Pages\Profile.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+<<<<<<< HEAD
     <Compile Update="Pages\register_supplier.xaml.cs">
+=======
+    <Compile Update="Pages\Register-product.xaml.cs">
+>>>>>>> origin
       <SubType>Code</SubType>
     </Compile>
     <Compile Update="Pages\Search-1.xaml.cs">
