@@ -71,6 +71,9 @@ create table Funcionario(
     id_fun int primary key not null auto_increment,
     nome_fun varchar(200),
     email_fun varchar(200),
+    acesso_fun varchar(200),
+    cargo_fun varchar(100),
+    
     senha_fun varchar(200),
     repetir_senha_fun varchar(200),
 );
