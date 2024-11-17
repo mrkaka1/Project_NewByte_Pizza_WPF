@@ -50,9 +50,10 @@ namespace project_pizzaria_newbyte.Pages
 
                     estoqueCRUD.Create(estoque);
 
-
+                
 
                     ProdutoModel produto = new ProdutoModel();
+
                     produto.Nome = nameInput.Text;
                     produto.Valor = Convert.ToDouble(priceInput.Text);
 
