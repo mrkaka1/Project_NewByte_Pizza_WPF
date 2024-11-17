@@ -17,22 +17,11 @@ create table Entrega (
     tempo_estimado_ent time
 );
 
-create table Observacao(
-	id_obs int primary key not null,
-    descricao_obs varchar(500)
-);
-
 create table Alimento(
 	id_ali int primary key not null,
     nome_ali varchar(300),
     valor_ali float,
     foto_ali blob
-);
-
-create table Estoque(
-	id_est int primary key not null,
-    tipo_medida_est varchar(20),
-    quantidade_est int
 );
 
 create table Pagamento(
@@ -44,38 +33,30 @@ create table Pagamento(
 );
 
 # ====== Tabelas Semi-Livres ======
-create table Credencial(
-	id_cre int primary key not null,
-    cpf_cre varchar(11),
-    cnpj_cre varchar(14),
-    insc_estadual_cre varchar(14),
-    complemento_cre varchar(500),
-    rg_cre varchar(6),
-    telefone_cre varchar(11),
-    email_cre varchar(200),
-    senha_cre varchar(200),
-    
-    id_end_fk int,
-    foreign key (id_end_fk) references Endereco(id_end)
-);
-
 create table Cliente(
 	id_cli int primary key not null,
     nome_cli varchar(200),
+    email_cli varchar(200),
+    telefone_cli varchar(11),
+    cpf_cli varchar(200),
+    senha_cli varchar(200),
     
-    id_cre_fk int,
-    foreign key (id_cre_fk) references Credencial(id_cre)
+    id_end_fk int,
+    foreign key (id_end_fk) references Endereco(id_end)
 );
 
 create table Funcionario(
     id_fun int primary key not null auto_increment,
     nome_fun varchar(200),
     email_fun varchar(200),
+	telefone_fun varchar(11),
+    cpf_fun varchar(200),
     acesso_fun varchar(200),
     cargo_fun varchar(100),
-    
     senha_fun varchar(200),
-    repetir_senha_fun varchar(200),
+    
+	id_end_fk int,
+    foreign key (id_end_fk) references Endereco(id_end)
 );
 
 create table Produto(
@@ -83,9 +64,8 @@ create table Produto(
     nome_pro varchar(300),
     foto_pro blob,
     valor_pro float,
-
-	id_est_fk int,
-    foreign key (id_est_fk) references Estoque(id_est)
+    tipo_medida_est varchar(20),
+    quantidade_est int
 );
 
 create table QuantidadePedido(
@@ -101,12 +81,11 @@ create table QuantidadePedido(
 create table Pedido(
 	id_ped int primary key not null,
     status_ped boolean,
+    descricao_obs varchar(500),
     
     id_ent_fk int,
-    id_obs_fk int,
     id_qped_fk int,
     foreign key (id_ent_fk) references Entrega(id_ent),
-    foreign key (id_obs_fk) references Observacao(id_obs),
     foreign key (id_qped_fk) references QuantidadePedido(id_qped)
 );
 
@@ -146,10 +125,10 @@ create table Fornecedor(
 	id_for int primary key not null,
     nome_for varchar(300),
     
-    id_cre_fk int,
     id_pro_fk int,
+    id_end_fk int,
     foreign key(id_pro_fk) references Produto(id_pro),
-    foreign key(id_cre_fk) references Credencial(id_cre)
+    foreign key (id_end_fk) references Endereco(id_end)
 );
 
 create table Cofre(
@@ -161,21 +140,6 @@ create table Cofre(
 );
 
 # ====== Tabelas Presas ======
-create table Acesso (
-	id_ace int primary key not null,
-    tipo_ace varchar(200),
-    
-    id_fun_fk int,
-    foreign key (id_fun_fk) references Funcionario(id_fun)
-);
-
-create table Cargo (
-	id_car int primary key not null,
-    tipo_car varchar(200),
-    
-    id_fun_fk int,
-    foreign key (id_fun_fk) references Funcionario(id_fun)
-);
 
 create table AlimenProd(
 	id_aprod int primary key not null,
