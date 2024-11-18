@@ -15,7 +15,7 @@
         Source="/Resourses/Images/NewBite-Logomarca.png" 
         HorizontalAlignment="Center"
         VerticalAlignment="Center"
-        Width="127px" Height="113px"
+        Width="127px" Height="60px"
     />
 
         <Border
@@ -25,7 +25,7 @@
         Background="{StaticResource Dark-2-Color}"
         Style="{StaticResource Border-Style-1}"
         Padding="20"
-        Width="260"
+        Width="398"
         HorizontalAlignment="Center"
         VerticalAlignment="Center"
 
@@ -52,11 +52,12 @@
                     Background="#00000000"
                 />
                     <Border
-                    BorderBrush="{StaticResource Gray-1-Color}"  
-                    Background="#00000000"
-                    Style="{StaticResource Border-Style-1}"
-                >
+                        BorderBrush="{StaticResource Gray-1-Color}"  
+                        Background="#00000000"
+                        Style="{StaticResource Border-Style-1}"
+                    >
                         <TextBox
+                            x:Name="inputName"
                         Padding="10"
                         Text="Insira seu nome"    
                         Foreground="{StaticResource Gray-2-Color}" 
@@ -83,6 +84,7 @@
                     Style="{StaticResource Border-Style-1}"
                 >
                         <TextBox
+                            x:Name="inputEmail"
                         Padding="10"
                         Text="Insira seu email"    
                         Foreground="{StaticResource Gray-2-Color}" 
@@ -109,6 +111,7 @@
                     Style="{StaticResource Border-Style-1}"
                 >
                         <TextBox
+                            x:Name="inputCpf"
                         Padding="12"
                         Text="Insira seu CPF"    
                         Foreground="{StaticResource Gray-2-Color}" 
@@ -135,6 +138,7 @@
                     Style="{StaticResource Border-Style-1}"
                 >
                         <TextBox
+                            x:Name="inputPassWord"
                         Padding="12"
                         Text="Insira sua senha"    
                         Foreground="{StaticResource Gray-2-Color}" 
@@ -187,27 +191,31 @@
                     FontFamily="{StaticResource Poppins-Regular}"
                     Background="#00000000"
     />
-                    <TextBlock 
-                    Text="Entrar"
-                    Foreground="#FFF" 
-                    FontSize="12"
-                    FontFamily="{StaticResource Poppins-Regular}"
-                    Background="#00000000" 
-                    TextDecorations="Underline"
-    />
+                            <!--<TextBlock 
+                            Text="Entrar"
+                            Foreground="#FFF" 
+                            FontSize="12"
+                            FontFamily="{StaticResource Poppins-Regular}"
+                            Background="#00000000" 
+                            TextDecorations="Underline"
+            />-->
+                    <Button Content="Entrar" Background="Transparent" BorderBrush="Transparent" Foreground="#FFF" Click="Button_Click_1"/>
                 </StackPanel>
                 <!-- BUTTON -->
+                
+
                 <Button
                 BorderBrush="Transparent"
                 Background="Transparent"
                 BorderThickness="0"
+                    Click="Button_Click"
             >
                     <Border 
                     BorderThickness="2"
                     BorderBrush="#FFF"
                     Background="#FFF"
                     Style="{StaticResource Border-Radius}"
-                    Width="214"
+                    Width="344"
                     Height="44"
                 >
                         <TextBlock 

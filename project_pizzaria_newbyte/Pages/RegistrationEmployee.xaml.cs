@@ -11,26 +11,24 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-
 
 namespace project_pizzaria_newbyte.Pages
 {
     /// <summary>
-    /// Interação lógica para EmployeeRegistration.xam
+    /// Lógica interna para RegistrationEmployee.xaml
     /// </summary>
-    public partial class EmployeeRegistration : Page
+    public partial class RegistrationEmployee : Window
     {
-        public EmployeeRegistration()
+        public RegistrationEmployee()
         {
             InitializeComponent();
         }
-           
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            try {
+            try
+            {
                 if (
                    inputName.Text.Length > 0 &&
                    inputEmail.Text.Length > 0 &&
@@ -55,15 +53,16 @@ namespace project_pizzaria_newbyte.Pages
 
                 }
 
-            } catch (Exception ex) { MessageBox.Show("ERROR:"+ ex); }
+            }
+            catch (Exception ex) { MessageBox.Show("ERROR:" + ex); }
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
             ConsultEmployees consultEmployees = new ConsultEmployees();
-           
+
             consultEmployees.ShowDialog();
-            
+
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
@@ -77,4 +76,3 @@ namespace project_pizzaria_newbyte.Pages
         }
     }
 }
-

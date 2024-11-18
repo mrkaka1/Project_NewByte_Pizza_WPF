@@ -10,12 +10,13 @@ using System.Windows;
 
 namespace project_pizzaria_newbyte.Model
 {
-    class ProdutoModel
+    class ProductModel
     {
         public int Id { get; set; }       
         public string Nome { get; set; }
-        //public Blob Foto { get; set; }  
+        public string Foto { get; set; } = null;
         public double Valor { get; set; }
-        //public EstoqueModel Estoque { get; set; }
+        public string Medida { get; set; }
+        public double Quantidade {  get; set; }
     }
 }

@@ -8,9 +8,9 @@
   <ul>
       <li>Gabriel Guedes Alves de Moura</li>
       <li>Kauan Marques da Luz</li>
-      <li>Matheus Andrade da Costa</li>
-      <li>Miguel Henrique da Rocha Ferreira</li>
-      <li>Thiago Silva Samasquini</li>
+      <li>Matheus Andrade</li>
+      <li>Miguel Henrique</li>
+    
   </ul>
   </p>
 

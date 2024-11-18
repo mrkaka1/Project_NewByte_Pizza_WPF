@@ -1,6 +1,9 @@
 ﻿using MySql.Data.MySqlClient;
+using MySqlConnector;
 using System.Data;
 using System.Windows;
+using MySqlConnection = MySql.Data.MySqlClient.MySqlConnection;
+using MySqlCommand = MySql.Data.MySqlClient.MySqlCommand;
 
 namespace project_pizzaria_newbyte.DataBase
 {

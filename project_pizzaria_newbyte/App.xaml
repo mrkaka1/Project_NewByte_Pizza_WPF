@@ -2,7 +2,7 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:local="clr-namespace:project_pizzaria_newbyte"
-             StartupUri="Pages/Register-product.xaml">
+             StartupUri="Pages/Login.xaml">
     <Application.Resources>
         <!--#region FONT -->
         <FontFamily x:Key="Poppins-Thin">pack://application:,,,/Resourses/Fonts/Poppins-Thin.ttf#Poppins</FontFamily>
@@ -45,5 +45,153 @@
         <SolidColorBrush x:Key="Gray-1-Color">#313131</SolidColorBrush>
         <SolidColorBrush x:Key="Gray-2-Color">#868686</SolidColorBrush>
         <!--#endregion STYLES -->
+
+        <Style x:Key="customTextBox" TargetType="TextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Grid>
+                            <Border
+                                BorderBrush="{StaticResource Gray-1-Color}"  
+                                Background="#00000000"
+                                Style="{StaticResource Border-Style-1}"
+                            >
+                                <TextBox
+                                    x:Name="inputPassword"
+                                    Padding="12"
+                                    Text="Insira sua senha"    
+                                    Foreground="{StaticResource Gray-2-Color}" 
+                                    FontSize="12"
+                                    FontFamily="{StaticResource Poppins-Regular}"
+                                    BorderThickness="0"
+                                    BorderBrush="#00000000"
+                                    Background="#00000000"
+                                />
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+        
+        <!-- Estilo para o ComboBox -->
+        <Style x:Key="customComboBox"  TargetType="ComboBox">
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#313131"/>
+            <Setter Property="BorderBrush" Value="#313131"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Padding" Value="4"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBox">
+                        <Grid>
+                            <!-- Área do ComboBox -->
+                            <ToggleButton Name="ToggleButton"
+                                      Background="{TemplateBinding Background}"
+                                      Foreground="{TemplateBinding Foreground}"
+                                      BorderBrush="{TemplateBinding BorderBrush}"
+                                      BorderThickness="{TemplateBinding BorderThickness}"
+                                      Focusable="False"
+                                      IsChecked="{Binding Path=IsDropDownOpen, Mode=TwoWay, RelativeSource={RelativeSource TemplatedParent}}"
+                                      ClickMode="Press">
+                                <ToggleButton.Template>
+                                    <ControlTemplate TargetType="ToggleButton">
+                                        <Border Name="Border"
+                                            Background="{TemplateBinding Background}"
+                                            BorderBrush="{TemplateBinding BorderBrush}"
+                                            BorderThickness="1"
+                                            CornerRadius="2">
+                                            <Grid>
+                                                <ContentPresenter HorizontalAlignment="Left"
+                                                              VerticalAlignment="Center"
+                                                              Margin="4,0,25,0" />
+                                                <Path HorizontalAlignment="Right" VerticalAlignment="Center"
+                                                  Margin="0,0,10,0" Data="M 0 0 L 4 4 L 8 0 Z"
+                                                  Fill="White"/>
+                                            </Grid>
+                                        </Border>
+                                    </ControlTemplate>
+                                </ToggleButton.Template>
+                            </ToggleButton>
+
+                            <!-- Área de itens -->
+                            <Popup Name="Popup"
+                               Placement="Bottom"
+                               IsOpen="{TemplateBinding IsDropDownOpen}"
+                               AllowsTransparency="True"
+                               Focusable="False"
+                               PopupAnimation="Slide">
+                                <Grid Name="DropDown"
+                                  SnapsToDevicePixels="True"
+                                  MinWidth="{TemplateBinding ActualWidth}"
+                                  MaxHeight="200"
+                                  Background="LightGray">
+                                    <Border x:Name="DropDownBorder"
+                                        Background="Gray"
+                                        BorderBrush="DarkGray"
+                                        BorderThickness="1"/>
+                                    <ScrollViewer Margin="4,6,4,6" SnapsToDevicePixels="True">
+                                        <ItemsPresenter />
+                                    </ScrollViewer>
+                                </Grid>
+                            </Popup>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Estilo para os itens do ComboBox -->
+        <Style x:Key="customComboBoxItem" TargetType="ComboBoxItem">
+            <Setter Property="Background" Value="Gray"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="5,2"/>
+            <Setter Property="HorizontalContentAlignment" Value="Left"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ComboBoxItem">
+                        <Border Name="Border" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                            <ContentPresenter />
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsHighlighted" Value="True">
+                                <Setter TargetName="Border" Property="Background" Value="DarkGray" />
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!--Estilo Textbox-->
+        <Style TargetType="TextBox" x:Key="RoundedTextBox">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="TextBox">
+                        <Border Background="{TemplateBinding Background}"
+                        CornerRadius="5"
+                        BorderThickness="1"
+                        Padding="6">
+                            <ScrollViewer x:Name="PART_ContentHost" />
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Padding" Value="2"/>
+        </Style>
+
+        <!--Estilo botões-->
+    <Style TargetType="Button" x:Key="RoundedButtonStyle">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="Button">
+                    <Border
+                            CornerRadius="15"
+                            />
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
     </Application.Resources>
 </Application>

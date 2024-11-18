@@ -9,29 +9,36 @@ using System.Windows;
 
 namespace project_pizzaria_newbyte.Model
 {
-    class ProdutoIDAO : IDAO<ProdutoModel>
+    class ProductIDAO : IDAO<ProductModel>
     {
         public static Connection connection;
 
-        public ProdutoIDAO() { 
+        public ProductIDAO() { 
             connection = new Connection();
         }
 
-        public bool Create(ProdutoModel produto)
+        public bool Create(ProductModel produto)
         {
             try
             {
                 connection.Connect();
 
                 var create = connection.Query();
-                create.CommandText = $"insert into Produto (id_pro, nome_pro, valor_pro) values (@Id, @Nome, @Valor)";
+                create.CommandText = $"insert into Produto " +
+                    $"(id_pro, nome_pro, foto_pro, valor_pro, tipo_medida_pro, quantidade_pro) " +
+                    $"values " +
+                    $"(null, @Nome, null, @Valor, @Tipo, @Quantidade)";
 
-                create.Parameters.AddWithValue("@Id", null);
                 create.Parameters.AddWithValue("@Nome", produto.Nome);
                 create.Parameters.AddWithValue("@Valor", produto.Valor);
+                create.Parameters.AddWithValue("@Tipo", produto.Medida);
+                create.Parameters.AddWithValue("@Quantidade", produto.Quantidade);
+
                 create.ExecuteNonQuery();
+                MessageBox.Show("Produto cadastrado.");
 
             } catch (Exception ex) {
+                MessageBox.Show("Erro ao cadastrar produto. " + ex);
                 return false;
             } finally
             {
@@ -41,22 +48,22 @@ namespace project_pizzaria_newbyte.Model
             return true;
         }
 
-        public void Delete(ProdutoModel value)
+        public void Delete(ProductModel value)
         {
             throw new NotImplementedException();
         }
 
-        public List<ProdutoModel> Read()
+        public List<ProductModel> Read()
         {
             throw new NotImplementedException();
         }
 
-        public ProdutoModel ReadById(int id)
+        public ProductModel ReadById(int id)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(ProdutoModel value)
+        public void Update(ProductModel value)
         {
             throw new NotImplementedException();
         }

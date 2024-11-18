@@ -1,6 +1,5 @@
 ﻿using project_pizzaria_newbyte.DataBase;
 using project_pizzaria_newbyte.Interface;
-using project_pizzaria_newbyte.Pages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,28 +9,32 @@ using System.Windows;
 
 namespace project_pizzaria_newbyte.Model
 {
-    class EstoqueIDAO : IDAO<EstoqueModel>
+    class SupplierIDAO : IDAO<SupplierModel>
     {
         public static Connection connection;
 
-        public EstoqueIDAO()
+        public SupplierIDAO()
         {
             connection = new Connection();
         }
 
-        public bool Create(EstoqueModel estoque)
+        public bool Create(SupplierModel supplier)
         {
             try
             {
                 connection.Connect();
 
                 var create = connection.Query();
-                create.CommandText = $"insert into Estoque (id_est, tipo_medida_est, quantidade_est) values (@Id, @Medida, @Quantidade)";
+                create.CommandText = $"insert into Fornecedor (id_for, nome_for, cnpj_for, cep_for, endereco_for) values (@Id, @Nome, @Cnpj, @Cep, @Endereco)";
 
                 create.Parameters.AddWithValue("@Id", null);
-                create.Parameters.AddWithValue("@Medida", estoque.TipoMedida);
-                create.Parameters.AddWithValue("@Quantidade", estoque.Quantidade);
+                create.Parameters.AddWithValue("@Nome", supplier.Name);
+                create.Parameters.AddWithValue("@Cnpj", supplier.CNPJ);
+                create.Parameters.AddWithValue("@Cep", supplier.Cep);
+                create.Parameters.AddWithValue("@Endereco", supplier.Endereco);
                 create.ExecuteNonQuery();
+
+                MessageBox.Show("Cadastrado");
             }
             catch (Exception ex)
             {
@@ -43,37 +46,26 @@ namespace project_pizzaria_newbyte.Model
             }
 
             return true;
-        } 
-        public List<EstoqueModel> Read()
-        {
-            try
-            {
-                connection.Connect();
-                var read = connection.Query();
-                read.CommandText = "select * from Estoque;";
-
-
-            }
-            catch (Exception ex)
-            {
-
-            }
         }
 
-        public EstoqueModel ReadById(int id)
+        public void Delete(SupplierModel value)
         {
             throw new NotImplementedException();
         }
 
-        public void Update(EstoqueModel value)
+        public List<SupplierModel> Read()
         {
             throw new NotImplementedException();
         }
 
-        public void Delete(EstoqueModel value)
+        public SupplierModel ReadById(int id)
         {
             throw new NotImplementedException();
         }
 
+        public void Update(SupplierModel value)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
