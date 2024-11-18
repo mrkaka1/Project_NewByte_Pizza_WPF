@@ -129,7 +129,7 @@
                                 </Style>
                             </Button.Resources>
                         </Button>
-                        <Button VerticalAlignment="Top" Content="Limpar" Grid.Column="1" Margin="5" Padding="5" Background="Transparent" Foreground="White" Height="44">
+                        <Button VerticalAlignment="Top" Content="Limpar" Grid.Column="1" Margin="5" Padding="5" Background="Transparent" Foreground="White" Height="44" Click="Button_Click_1">
                             <Button.Resources>
                                 <Style TargetType="{x:Type Border}">
                                     <Setter Property="CornerRadius" Value="2"/>

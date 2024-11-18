@@ -46,6 +46,8 @@ namespace project_pizzaria_newbyte.Pages
                     produto.Quantidade = amount;
 
                     produtoCRUD.Create(produto);
+                    
+                    
                 } else
                 {
                     MessageBox.Show("Campos de quantidade e preço inválidos.");
@@ -60,6 +62,14 @@ namespace project_pizzaria_newbyte.Pages
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ProductIDAO produtoCRUD = new ProductIDAO();
+            List<ProductModel> products = produtoCRUD.Read();
+            if (products.Count > 0)
+                MessageBox.Show(products.ToList().ToString());
         }
     }
 }

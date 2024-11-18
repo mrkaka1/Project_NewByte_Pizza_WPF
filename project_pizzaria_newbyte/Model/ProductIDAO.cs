@@ -55,7 +55,35 @@ namespace project_pizzaria_newbyte.Model
 
         public List<ProductModel> Read()
         {
-            throw new NotImplementedException();
+            List<ProductModel> products = new List<ProductModel> ();
+
+            try
+            {
+                connection.Connect();
+                var read = connection.Query();
+                read.CommandText = "select * from Produto;";
+
+                var reader = read.ExecuteReader();
+
+                while(reader.Read())
+                {
+                    ProductModel product = new ProductModel();
+                    product.Id = reader.GetInt32("id_pro");
+                    product.Nome = reader.GetString("nome_pro");
+                    product.Valor = reader.GetDouble("valor_pro");
+                    product.Medida = reader.GetString("tipo_medida_pro");
+                    product.Quantidade = reader.GetDouble("quantidade_pro");
+
+                    products.Add(product);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Erro ao consultar produtos." + ex);
+                return products;
+            }
+
+            return products;
         }
 
         public ProductModel ReadById(int id)
