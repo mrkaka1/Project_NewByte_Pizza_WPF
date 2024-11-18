@@ -66,10 +66,6 @@ namespace project_pizzaria_newbyte.Pages
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            ProductIDAO produtoCRUD = new ProductIDAO();
-            List<ProductModel> products = produtoCRUD.Read();
-            if (products.Count > 0)
-                MessageBox.Show(products.ToList().ToString());
         }
     }
 }

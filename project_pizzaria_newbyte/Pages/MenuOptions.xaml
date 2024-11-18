@@ -60,6 +60,7 @@
             <Button  Content="Cadastrar Produto" Width="150" Click="Button_Click_2"></Button>
             <Button  Content="Consultar Funcionario" Width="150"></Button>
             <Button  Content="Cadastrar Fornecedor" Width="150" Click="Button_Click_1"></Button>
+            <Button  Content="Consultar Fornecedor" Width="150" Click="Button_Click_2"  ></Button>
         </StackPanel>
     </Grid>
 </Window>

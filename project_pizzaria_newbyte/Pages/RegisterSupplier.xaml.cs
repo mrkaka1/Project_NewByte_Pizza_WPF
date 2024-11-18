@@ -24,7 +24,9 @@ namespace project_pizzaria_newbyte.Pages
         {
             InitializeComponent();
         }
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
             try
             {
@@ -32,7 +34,7 @@ namespace project_pizzaria_newbyte.Pages
                    inputName.Text.Length > 0 &&
                    inputCnpj.Text.Length > 0 &&
                    inputEndereco.Text.Length > 0 &&
-                   inputCep.Text.Length > 0 
+                   inputCep.Text.Length > 0
                 )
                 {
                     SupplierIDAO supplierIDAO = new SupplierIDAO();
@@ -53,11 +55,12 @@ namespace project_pizzaria_newbyte.Pages
             catch (Exception ex) { MessageBox.Show("ERROR:" + ex); }
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            //ConsultEmployees consultEmployees = new ConsultEmployees();
 
-            //consultEmployees.ShowDialog();
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            ConsultSupplier consultSupplier = new ConsultSupplier();
+
+            consultSupplier.ShowDialog();
 
         }
 
@@ -65,7 +68,7 @@ namespace project_pizzaria_newbyte.Pages
         {
             inputName.Text = "";
             inputCnpj.Text = "";
-            
+
             inputEndereco.Text = "";
             inputCep.Text = "";
         }
