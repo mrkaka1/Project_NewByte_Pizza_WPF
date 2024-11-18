@@ -39,8 +39,8 @@ namespace project_pizzaria_newbyte.Pages
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            ConsultSupplier supplier = new ConsultSupplier();
-            supplier.Show();
+            RegisterProduct product = new RegisterProduct();
+            product.Show();
         }
     }
 }

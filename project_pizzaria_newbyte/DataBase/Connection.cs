@@ -1,6 +1,9 @@
 ﻿using MySql.Data.MySqlClient;
+using MySqlConnector;
 using System.Data;
 using System.Windows;
+using MySqlConnection = MySql.Data.MySqlClient.MySqlConnection;
+using MySqlCommand = MySql.Data.MySqlClient.MySqlCommand;
 
 namespace project_pizzaria_newbyte.DataBase
 {
@@ -12,7 +15,7 @@ namespace project_pizzaria_newbyte.DataBase
 
         private static string user = "root";
 
-        private static string password = "Kauan23@";
+        private static string password = "root";
 
         private static string dbname = "newbite";
 

@@ -156,7 +156,7 @@
                 </StackPanel>
                 
             </Border>
-                <Frame x:Name="framaPage" Grid.Column="1" Grid.RowSpan="3" />
+                <Frame x:Name="framaPage" Grid.Column="1" Grid.RowSpan="3" Navigated="framaPage_Navigated" />
 
 
             <!--#region SET GRID -->

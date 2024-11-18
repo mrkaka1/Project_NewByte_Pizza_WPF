@@ -72,5 +72,10 @@ namespace project_pizzaria_newbyte.Pages
                 connection.Close();
             }
         }
+
+        private void framaPage_Navigated(object sender, NavigationEventArgs e)
+        {
+
+        }
     }
 }

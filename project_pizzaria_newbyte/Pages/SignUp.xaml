@@ -15,7 +15,7 @@
         Source="/Resourses/Images/NewBite-Logomarca.png" 
         HorizontalAlignment="Center"
         VerticalAlignment="Center"
-        Width="127px" Height="113px"
+        Width="127px" Height="60px"
     />
 
         <Border
@@ -25,7 +25,7 @@
         Background="{StaticResource Dark-2-Color}"
         Style="{StaticResource Border-Style-1}"
         Padding="20"
-        Width="260"
+        Width="398"
         HorizontalAlignment="Center"
         VerticalAlignment="Center"
 
@@ -52,10 +52,10 @@
                     Background="#00000000"
                 />
                     <Border
-                    BorderBrush="{StaticResource Gray-1-Color}"  
-                    Background="#00000000"
-                    Style="{StaticResource Border-Style-1}"
-                >
+                        BorderBrush="{StaticResource Gray-1-Color}"  
+                        Background="#00000000"
+                        Style="{StaticResource Border-Style-1}"
+                    >
                         <TextBox
                             x:Name="inputName"
                         Padding="10"
@@ -215,7 +215,7 @@
                     BorderBrush="#FFF"
                     Background="#FFF"
                     Style="{StaticResource Border-Radius}"
-                    Width="214"
+                    Width="344"
                     Height="44"
                 >
                         <TextBlock 

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using project_pizzaria_newbyte.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,27 +11,21 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using project_pizzaria_newbyte.Model;
-using project_pizzaria_newbyte.DataBase;
-using Google.Protobuf.WellKnownTypes;
 
 namespace project_pizzaria_newbyte.Pages
 {
     /// <summary>
-    /// Interação lógica para Register_product.xam
+    /// Lógica interna para RegisterProduct.xaml
     /// </summary>
-    public partial class Register_product : Page
+    public partial class RegisterProduct : Window
     {
-        public Register_product()
+        public RegisterProduct()
         {
             InitializeComponent();
         }
-
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-
             if (
                     nameInput.Text.Length > 0 &&
                     measureSelect.Text.Length > 0 &&
@@ -41,30 +36,36 @@ namespace project_pizzaria_newbyte.Pages
 
                 if (double.TryParse(amountInput.Text, out amount) && double.TryParse(priceInput.Text, out price))
                 {
-                    EstoqueIDAO estoqueCRUD = new EstoqueIDAO();
-                    ProdutoIDAO produtoCRUD = new ProdutoIDAO();
+                    ProductIDAO produtoCRUD = new ProductIDAO();
 
-                    EstoqueModel estoque = new EstoqueModel();
-                    estoque.TipoMedida = measureSelect.Text;
-                    estoque.Quantidade = amount;
+                    ProductModel produto = new ProductModel();
 
-                    estoqueCRUD.Create(estoque);
-
-
-
-                    ProdutoModel produto = new ProdutoModel();
                     produto.Nome = nameInput.Text;
-                    produto.Valor = Convert.ToDouble(priceInput.Text);
+                    produto.Valor = price;
+                    produto.Medida = measureSelect.Text;
+                    produto.Quantidade = amount;
 
                     produtoCRUD.Create(produto);
+                    
+                    
+                } else
+                {
+                    MessageBox.Show("Campos de quantidade e preço inválidos.");
                 }
             }
-
+            else
+            {
+                MessageBox.Show("Campos obrigatórios não preenchidos.");
+            }
         }
 
         private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
         {
 
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
         }
     }
 }

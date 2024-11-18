@@ -54,15 +54,7 @@ namespace project_pizzaria_newbyte.Model
         {
 
             throw new NotImplementedException();
-            /*try
-            {
-                connection.Connect();
-                var read = connection.Query();
-                read.CommandText = "select * from Estoque;";
-            } catch (Exception ex)
-            {
-
-            }*/
+    
         }
 
         public ClientModel ReadById(int id)
