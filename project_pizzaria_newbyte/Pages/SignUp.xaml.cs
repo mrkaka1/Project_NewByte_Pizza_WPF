@@ -35,7 +35,7 @@ namespace project_pizzaria_newbyte.Pages
                    inputName.Text.Length > 0 &&
                    inputEmail.Text.Length > 0 &&
                    inputCpf.Text.Length > 0 &&
-                   inputPassWord.Text.Length > 0 
+                   inputPassWord.Text.Length > 0
                 )
                 {
                     ClientIDAO userIDAO = new ClientIDAO();
@@ -46,10 +46,12 @@ namespace project_pizzaria_newbyte.Pages
                     user.Email = inputEmail.Text;
                     user.Cpf = inputCpf.Text;
                     user.Password = inputPassWord.Text;
+                    user.Phone = inputPhone.Text;
 
                     userIDAO.Create(user);
 
                 }
+                else MessageBox.Show("Algumas credenciais podem estar incorretas.");
 
             }
             catch (Exception ex) { MessageBox.Show("ERROR:" + ex); }
@@ -57,6 +59,7 @@ namespace project_pizzaria_newbyte.Pages
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            formSignUp.Visibility = Visibility.Collapsed;
         }
 
     }

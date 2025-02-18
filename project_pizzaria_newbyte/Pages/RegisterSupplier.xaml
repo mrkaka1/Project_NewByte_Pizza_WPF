@@ -142,33 +142,6 @@
                     />
                 </Border>
 
-                <Button
-    BorderBrush="Transparent"
-    Background="Transparent"
-    BorderThickness="0"
-                    Margin="0 30 0 0"
-    Click="Button_Click_1"
->
-                    <Border 
-        BorderThickness="2"
-        BorderBrush="#FFF"
-        Background="#FFF"
-        Style="{StaticResource Border-Radius}"
-        Width="200"
-        Height="44"
-    >
-                        <TextBlock 
-            Text="Listagem" 
-            Foreground="#000"
-            FontWeight="Regular"
-            FontSize="12"
-            FontFamily="{StaticResource Poppins-SemiBold}"
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center"
-        />
-                    </Border>
-                </Button>
-
 
             </StackPanel>
 
@@ -187,7 +160,7 @@
                 Style="{StaticResource Border-Style-1}"
 >
                     <TextBox
-                    x:Name="inputEndereco"
+                    x:Name="inputAddress"
                     Padding="10"
                     Text="Inserir endereço"    
                     Foreground="{StaticResource Gray-2-Color}" 
@@ -234,16 +207,15 @@
                     BorderBrush="Transparent"
                     Background="Transparent"
                     BorderThickness="0"
-                    Margin="0 25 0 0"
-                    Click="Button_Click"
+                    Margin="0 15 0 0"
                 >
-                    <Border 
+                    <Border x:Name="registerSupplierBtn" 
                         BorderThickness="2"
                         BorderBrush="#FFF"
                         Background="#FFF"
                         Style="{StaticResource Border-Radius}"
                         Width="200"
-                        Height="44"
+                        Height="44" MouseLeftButtonDown="RegisterSuppliers"
                     >
                         <TextBlock 
                             Text="Cadastrar" 
@@ -257,14 +229,11 @@
                     </Border>
                 </Button>
 
-
-
                 <Button
                     BorderBrush="Transparent"
                     Background="Transparent"
                     BorderThickness="0"
-                    Margin="0 30 0 0"
-                    Click="Button_Click_2"
+                    Margin="0 15 0 0"
                 >
                     <Border 
                         BorderThickness="2"
@@ -276,6 +245,32 @@
                     >
                         <TextBlock 
                             Text="Cancelar" 
+                            Foreground="#FFF"
+                            FontWeight="Regular"
+                            FontSize="12"
+                            FontFamily="{StaticResource Poppins-SemiBold}"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                        />
+                    </Border>
+                </Button>
+                
+                <Button
+                    BorderBrush="Transparent"
+                    Background="Transparent"
+                    BorderThickness="0"
+                    Margin="0 15 0 0"
+                >
+                    <Border 
+                        BorderThickness="2"
+                        BorderBrush="#FFF"
+                        Background="#000"
+                        Style="{StaticResource Border-Radius}"
+                        Width="200"
+                        Height="44" MouseLeftButtonDown="ClearInputs"
+                    >
+                        <TextBlock 
+                            Text="Limpar" 
                             Foreground="#FFF"
                             FontWeight="Regular"
                             FontSize="12"

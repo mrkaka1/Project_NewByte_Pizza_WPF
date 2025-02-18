@@ -43,7 +43,7 @@ namespace project_pizzaria_newbyte.Pages
 
                 // Prepara a consulta
                 var query = connection.Query();
-                query.CommandText = "SELECT id_for, nome_for, cnpj_for, cep_for, endereco_for FROM Fornecedor";
+                query.CommandText = "select nome_for as Fornecedor, cnpj_for as CNPJ, cep_for as CEP, endereco_for as Endereco from Fornecedor";
 
                 // Executa a consulta
                 using (MySqlDataReader reader = query.ExecuteReader())

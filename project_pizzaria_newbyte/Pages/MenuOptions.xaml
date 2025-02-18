@@ -56,11 +56,12 @@
         <!--#endregion HEAD-->
 
         <StackPanel Grid.Column="1" Grid.Row="2">
-            <Button  Content="Cadastrar Funcionario" Width="150" Click="Button_Click"></Button>
-            <Button  Content="Cadastrar Produto" Width="150" Click="Button_Click_2"></Button>
-            <Button  Content="Consultar Funcionario" Width="150"></Button>
-            <Button  Content="Cadastrar Fornecedor" Width="150" Click="Button_Click_1"></Button>
-            <Button  Content="Consultar Fornecedor" Width="150" Click="Button_Click_2"  ></Button>
+            <Button  Content="Cadastrar Funcionario" Width="150" Click="Button_CadastrarFun"></Button>
+            <Button x:Name="consFuncionarioBtn"  Content="Consultar Funcionario" Width="150" Click="Button_ConsultarFun"/>
+            <Button  Content="Cadastrar Fornecedor" Width="150" Click="Button_CadastrarFor"></Button>
+            <Button  Content="Consultar Fornecedor" Width="150" Click="Button_ConsultarFor"  ></Button>
+            <Button  Content="Cadastrar Produto" Width="150" Click="Button_CadastrarProd"/>
+            <Button  Content="Consultar Produto" Width="150" Click="Button_ConsultarProd"/>
         </StackPanel>
     </Grid>
 </Window>

@@ -12,7 +12,7 @@
         <!--#region CONTENT -->
 
         <!--#region FORM -->
-        <Grid Grid.Column="0">
+        <Grid Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" Background="#FF1A1A1A">
             <Image 
                 Grid.Column="1" 
                 Grid.Row="1" 
@@ -100,7 +100,7 @@
                         </Border>
                     </StackPanel>
                     <!--#endregion TEXTBOX-->
-                    
+
                     <!-- RECOVERY ACCOUNT -->
                     <StackPanel 
                         Orientation="Horizontal" 
@@ -108,7 +108,7 @@
                         Margin="0,10,0,10"
                     >
                         <TextBlock 
-                            Text="Esqueceu a senha? "
+                            Text="Não tem uma conta? "
                             Foreground="{StaticResource Gray-2-Color}"  
                             FontSize="12"
                             FontFamily="{StaticResource Poppins-Regular}"
@@ -122,8 +122,8 @@
                             FontFamily="{StaticResource Poppins-Regular}"
                             Background="#00000000" 
                             TextDecorations="Underline"
-                        >/--> 
-                        <Button Content="Clique Aqui" Background="Transparent" Foreground="#FFF" BorderBrush="Transparent" Click="Button_Click"/>
+                        >/-->
+                        <Button Content="Crie uma" Background="Transparent" Foreground="#FFF" BorderBrush="Transparent" Click="Button_Click"/>
                     </StackPanel>
 
                     <!-- BUTTON -->
@@ -154,9 +154,9 @@
                     </Button>
 
                 </StackPanel>
-                
+
             </Border>
-                <Frame x:Name="framaPage" Grid.Column="1" Grid.RowSpan="3" Navigated="framaPage_Navigated" />
+            <Frame x:Name="framaPage" Grid.Column="1" Grid.RowSpan="3" Navigated="framaPage_Navigated" />
 
 
             <!--#region SET GRID -->
@@ -177,8 +177,10 @@
         <!--#endregion FORM -->
 
         <!--#region IMAGE -->
-        <Grid Grid.Column="1">
-            <Image Source="/Resourses/Images/Woman-Eat-Pizza.png"/>
+        <Grid Grid.Column="2" Grid.RowSpan="2">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Pages/Woman-Eat-Pizza.png" Stretch="UniformToFill"/>
+            </Grid.Background>
         </Grid>
         <!--#endregion IMAGE -->
 
@@ -186,11 +188,14 @@
 
         <!--#region SET GRID -->
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="313*" />
+            <ColumnDefinition Width="8*" />
+            <ColumnDefinition Width="305*"/>
             <ColumnDefinition Width="487*" />
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
+            <RowDefinition Height="11*"/>
+            <RowDefinition Height="439*"/>
         </Grid.RowDefinitions>
         <!--#endregion SET GRID -->
     </Grid>

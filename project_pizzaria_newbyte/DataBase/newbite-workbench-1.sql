@@ -32,18 +32,16 @@ create table Pagamento(
     hora_pag time
 );
 
-# ====== Tabelas Semi-Livres ======
 create table Cliente(
 	id_cli int primary key not null  auto_increment auto_increment,
     nome_cli varchar(200),
     email_cli varchar(200),
     telefone_cli varchar(11),
     cpf_cli varchar(200),
-    senha_cli varchar(200),
-    
-    id_end_fk int,
-    foreign key (id_end_fk) references Endereco(id_end)
+    senha_cli varchar(200)
 );
+
+insert into cliente values (null, "Admin", "admin@new.bite", "00000000000", "000.000.000-00", "a");
 
 create table Funcionario(
     id_fun int primary key not null  auto_increment auto_increment,
@@ -53,21 +51,26 @@ create table Funcionario(
     cpf_fun varchar(200),
     acesso_fun varchar(200),
     cargo_fun varchar(100),
-    senha_fun varchar(200),
-    
-	id_end_fk int,
-    foreign key (id_end_fk) references Endereco(id_end)
+    senha_fun varchar(200)
+);
+
+create table Fornecedor(
+	id_for int primary key not null  auto_increment,
+    nome_for varchar(300),
+    endereco_for varchar(300),
+    cnpj_for varchar(18),
+    cep_for varchar(9)    
 );
 
 create table Produto(
 	id_pro int primary key not null  auto_increment,
     nome_pro varchar(300),
-    foto_pro blob,
     valor_pro double,
     tipo_medida_pro varchar(20),
     quantidade_pro double
 );
 
+# ====== Tabelas Semi-Livres ======
 create table QuantidadePedido(
 	id_qped int primary key not null  auto_increment,
     quantidade_qped int,
@@ -119,16 +122,6 @@ create table Balcao(
     
     id_ven_fk int,
     foreign key(id_ven_fk) references Venda(id_ven)
-);
-
-create table Fornecedor(
-	id_for int primary key not null  auto_increment,
-    nome_for varchar(300),
-    
-    id_pro_fk int,
-    id_end_fk int,
-    foreign key(id_pro_fk) references Produto(id_pro),
-    foreign key (id_end_fk) references Endereco(id_end)
 );
 
 create table Cofre(

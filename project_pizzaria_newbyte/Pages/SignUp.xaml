@@ -8,7 +8,7 @@
       d:DesignHeight="720" d:DesignWidth="502"
       Title="SignUp">
 
-        <Grid Grid.Column="0">
+        <Grid x:Name="formSignUp" Grid.Column="0" Background="#FF1A1A1A">
         <Image 
         Grid.Column="1" 
         Grid.Row="1" 
@@ -126,6 +126,32 @@
 
                 <StackPanel>
                     <TextBlock
+     Text="Telefone"    
+     Foreground="#FFF" 
+     FontSize="12"
+     FontFamily="{StaticResource Poppins-Regular}"
+     Background="#00000000"
+ />
+                    <Border
+     BorderBrush="{StaticResource Gray-1-Color}"  
+     Background="#00000000"
+     Style="{StaticResource Border-Style-1}"
+ >
+                        <TextBox x:Name="inputPhone"
+         Padding="12"
+         Text="Insira um número de telefone"    
+         Foreground="{StaticResource Gray-2-Color}" 
+         FontSize="12"
+         FontFamily="{StaticResource Poppins-Regular}"
+         BorderThickness="0"
+         BorderBrush="#00000000"
+         Background="#00000000"
+     />
+                    </Border>
+                </StackPanel>
+
+                <StackPanel>
+                    <TextBlock
                     Text="Senha"    
                     Foreground="#FFF" 
                     FontSize="12"
@@ -151,31 +177,7 @@
                     </Border>
                 </StackPanel> 
                 
-                <StackPanel>
-                    <TextBlock
-                    Text="Repetir senha"    
-                    Foreground="#FFF" 
-                    FontSize="12"
-                    FontFamily="{StaticResource Poppins-Regular}"
-                    Background="#00000000"
-                />
-                    <Border
-                    BorderBrush="{StaticResource Gray-1-Color}"  
-                    Background="#00000000"
-                    Style="{StaticResource Border-Style-1}"
-                >
-                        <TextBox
-                        Padding="12"
-                        Text="Repetir senha"    
-                        Foreground="{StaticResource Gray-2-Color}" 
-                        FontSize="12"
-                        FontFamily="{StaticResource Poppins-Regular}"
-                        BorderThickness="0"
-                        BorderBrush="#00000000"
-                        Background="#00000000"
-                    />
-                    </Border>
-                </StackPanel> 
+               
                 
                 <!--#endregion TEXTBOX-->
 
@@ -199,7 +201,7 @@
                             Background="#00000000" 
                             TextDecorations="Underline"
             />-->
-                    <Button Content="Entrar" Background="Transparent" BorderBrush="Transparent" Foreground="#FFF" Click="Button_Click_1"/>
+                    <Button x:Name="closeFrame" Content="Entrar" Background="Transparent" BorderBrush="Transparent" Foreground="#FFF" Click="Button_Click_1"/>
                 </StackPanel>
                 <!-- BUTTON -->
                 

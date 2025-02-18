@@ -8,11 +8,11 @@ namespace project_pizzaria_newbyte.Model
 {
     class SupplierModel
     {
-            public string Name { get; set; }
+        public int Id { get; set; }
+        public string Nome { get; set; }
+        public string Endereco { get; set; }
         public string CNPJ { get; set; }
         public string Cep { get; set; }
-
-        public string Endereco { get; set; }
 
     }
 }
