@@ -9,8 +9,9 @@ namespace project_pizzaria_newbyte.Interface
     interface IDAO<T>
     {
         public bool Create(T value);
-        List<T> Read();
-        T ReadById(int id);
+        public List<T> Read();
+        public T ReadById(int id);
+
         public void Update(T value);
         public void Delete(T value);
     }

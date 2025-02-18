@@ -25,9 +25,9 @@ namespace project_pizzaria_newbyte.Model
 
                 var create = connection.Query();
                 create.CommandText = $"insert into Produto " +
-                    $"(id_pro, nome_pro, foto_pro, valor_pro, tipo_medida_pro, quantidade_pro) " +
+                    $"(nome_pro, valor_pro, tipo_medida_pro, quantidade_pro) " +
                     $"values " +
-                    $"(null, @Nome, null, @Valor, @Tipo, @Quantidade)";
+                    $"(@Nome, null, @Valor, @Tipo, @Quantidade)";
 
                 create.Parameters.AddWithValue("@Nome", produto.Nome);
                 create.Parameters.AddWithValue("@Valor", produto.Valor);
@@ -55,35 +55,7 @@ namespace project_pizzaria_newbyte.Model
 
         public List<ProductModel> Read()
         {
-            List<ProductModel> products = new List<ProductModel> ();
-
-            try
-            {
-                connection.Connect();
-                var read = connection.Query();
-                read.CommandText = "select * from Produto;";
-
-                var reader = read.ExecuteReader();
-
-                while(reader.Read())
-                {
-                    ProductModel product = new ProductModel();
-                    product.Id = reader.GetInt32("id_pro");
-                    product.Nome = reader.GetString("nome_pro");
-                    product.Valor = reader.GetDouble("valor_pro");
-                    product.Medida = reader.GetString("tipo_medida_pro");
-                    product.Quantidade = reader.GetDouble("quantidade_pro");
-
-                    products.Add(product);
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Erro ao consultar produtos." + ex);
-                return products;
-            }
-
-            return products;
+            throw new NotImplementedException();
         }
 
         public ProductModel ReadById(int id)

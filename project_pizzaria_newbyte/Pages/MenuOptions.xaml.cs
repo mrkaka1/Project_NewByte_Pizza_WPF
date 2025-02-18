@@ -33,14 +33,20 @@ namespace project_pizzaria_newbyte.Pages
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            RegisterSupplier supplier = new RegisterSupplier();
-            supplier.Show();
+            RegisterSupplier registrationSupplier = new RegisterSupplier();
+            registrationSupplier.Show();
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)
         {
-            RegisterProduct product = new RegisterProduct();
-            product.Show();
+            ConsultSupplier supplier = new ConsultSupplier();
+            supplier.Show();
+        }
+
+        private void consFuncionarioBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ConsultEmployees consultEmployees = new ConsultEmployees();
+            consultEmployees.Show();
         }
     }
 }

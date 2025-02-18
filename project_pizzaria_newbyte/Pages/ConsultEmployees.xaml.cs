@@ -27,7 +27,7 @@ namespace project_pizzaria_newbyte.Pages
                 connection.Connect();
 
                 var query = connection.Query();
-                query.CommandText = "SELECT id_fun, nome_fun, email_fun, acesso_fun, cargo_fun, senha_fun, repetir_senha_fun FROM Funcionario";
+                query.CommandText = "select nome_fun as Nome, email_fun as Email, telefone_fun as Telefone, cpf_fun as CPF, acesso_fun as Acesso, cargo_fun as Cargo from Funcionario";
 
                 using (MySqlDataReader reader = query.ExecuteReader())
                 {

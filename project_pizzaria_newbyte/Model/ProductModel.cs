@@ -14,7 +14,6 @@ namespace project_pizzaria_newbyte.Model
     {
         public int Id { get; set; }       
         public string Nome { get; set; }
-        public string Foto { get; set; } = null;
         public double Valor { get; set; }
         public string Medida { get; set; }
         public double Quantidade {  get; set; }

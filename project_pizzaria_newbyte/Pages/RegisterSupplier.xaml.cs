@@ -1,4 +1,6 @@
-﻿using project_pizzaria_newbyte.Model;
+﻿using project_pizzaria_newbyte.Interface;
+using project_pizzaria_newbyte.Model;
+using project_pizzaria_newbyte.Utils;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,29 +27,30 @@ namespace project_pizzaria_newbyte.Pages
             InitializeComponent();
         }
 
-
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void RegisterSuppliers(object sender, MouseButtonEventArgs e)
         {
             try
             {
                 if (
                    inputName.Text.Length > 0 &&
                    inputCnpj.Text.Length > 0 &&
-                   inputEndereco.Text.Length > 0 &&
+                   inputAddress.Text.Length > 0 &&
                    inputCep.Text.Length > 0
                 )
                 {
-                    SupplierIDAO supplierIDAO = new SupplierIDAO();
+                    SupplierIDAO IDAO = new SupplierIDAO();
+                    ValidateData check = new ValidateData();
 
-                    SupplierModel supplier = new SupplierModel();
+                    if (check.CP(inputCnpj.Text, true))
+                    {
+                        SupplierModel supplier = new SupplierModel();
+                        supplier.Nome = inputName.Text;
+                        supplier.CNPJ = inputCnpj.Text;
+                        supplier.Endereco = inputAddress.Text;
+                        supplier.Cep = inputCep.Text;
 
-                    supplier.Name = inputName.Text;
-                    supplier.CNPJ = inputCnpj.Text;
-                    supplier.Endereco = inputEndereco.Text;
-                    supplier.Cep = inputCep.Text;
-
-                    supplierIDAO.Create(supplier);
-
+                        IDAO.Create(supplier);
+                    }
 
                 }
 
@@ -55,21 +58,11 @@ namespace project_pizzaria_newbyte.Pages
             catch (Exception ex) { MessageBox.Show("ERROR:" + ex); }
         }
 
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
-            ConsultSupplier consultSupplier = new ConsultSupplier();
-
-            consultSupplier.ShowDialog();
-
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void ClearInputs(object sender, MouseButtonEventArgs e)
         {
             inputName.Text = "";
             inputCnpj.Text = "";
-
-            inputEndereco.Text = "";
+            inputAddress.Text = "";
             inputCep.Text = "";
         }
     }

@@ -103,8 +103,7 @@
     >
                     <TextBox
                         x:Name="inputName"
-                        Padding="10"
-                        Text="Inserir nome"    
+                        Padding="10"    
                         Foreground="{StaticResource Gray-2-Color}" 
                         FontSize="12"
                         FontFamily="{StaticResource Poppins-Regular}"
@@ -114,9 +113,35 @@
                     />
                 </Border>
 
-                <!-- Email-->
+                <!-- Email -->
                 <TextBlock
                     Text="Email"    
+                    Foreground="#FFF" 
+                    FontSize="12"
+                    Margin="0 10 0 0"
+                    FontFamily="{StaticResource Poppins-Regular}"
+                    Background="#00000000"
+                />
+                <Border
+                    BorderBrush="{StaticResource Gray-1-Color}"  
+                    Background="#00000000"
+                    Style="{StaticResource Border-Style-1}"
+>
+                    <TextBox
+                        x:Name="inputEmail"
+                        Padding="10"    
+                        Foreground="{StaticResource Gray-2-Color}" 
+                        FontSize="12"
+                        FontFamily="{StaticResource Poppins-Regular}"
+                        BorderThickness="0"
+                        BorderBrush="#00000000"
+                        Background="#00000000"
+                    />
+                </Border>
+
+                <!-- CPF-->
+                <TextBlock
+                    Text="CPF"    
                     Foreground="#FFF" 
                     Margin="0 10 0 0"
                     FontSize="12"
@@ -129,9 +154,8 @@
                     Style="{StaticResource Border-Style-1}"
 >
                     <TextBox
-                        x:Name="inputEmail"
-                        Padding="10"
-                        Text="Inserir email"    
+                        x:Name="inputCpf"
+                        Padding="10"    
                         Foreground="{StaticResource Gray-2-Color}" 
                         FontSize="12"
                         FontFamily="{StaticResource Poppins-Regular}"
@@ -141,6 +165,35 @@
                     />
                 </Border>
 
+                <!-- Telefone -->
+                <TextBlock
+                    Text="Telefone"    
+                    Foreground="#FFF" 
+                    Margin="0 10 0 0"
+                    FontSize="12"
+                    FontFamily="{StaticResource Poppins-Regular}"
+                    Background="#00000000"
+                />
+                <Border
+                    BorderBrush="{StaticResource Gray-1-Color}"  
+                    Background="#00000000"
+                    Style="{StaticResource Border-Style-1}"
+>
+                    <TextBox
+                        x:Name="inputPhone"
+                        Padding="10"    
+                        Foreground="{StaticResource Gray-2-Color}" 
+                        FontSize="12"
+                        FontFamily="{StaticResource Poppins-Regular}"
+                        BorderThickness="0"
+                        BorderBrush="#00000000"
+                        Background="#00000000"
+                    />
+                </Border>
+
+            </StackPanel>
+
+            <StackPanel Margin="0,0,0,10" Grid.Column="5">
                 <!-- Acesso -->
                 <TextBlock
                     Text="Acesso"    
@@ -156,9 +209,8 @@
                     Style="{StaticResource Border-Style-1}"
 >
                     <TextBox
-                        x:Name="inputAcesso"
-                        Padding="10"
-                        Text="Inserir acesso"    
+                        x:Name="inputAccess"
+                        Padding="10"    
                         Foreground="{StaticResource Gray-2-Color}" 
                         FontSize="12"
                         FontFamily="{StaticResource Poppins-Regular}"
@@ -167,6 +219,7 @@
                         Background="#00000000"
                     />
                 </Border>
+
                 <!-- Cargo -->
                 <TextBlock
                     Text="Cargo"    
@@ -182,9 +235,8 @@
                     Style="{StaticResource Border-Style-1}"
 >
                     <TextBox
-                        x:Name="inputCargo"
-                        Padding="10"
-                        Text="Inserir cargo"    
+                        x:Name="inputOffice"
+                        Padding="10"    
                         Foreground="{StaticResource Gray-2-Color}" 
                         FontSize="12"
                         FontFamily="{StaticResource Poppins-Regular}"
@@ -194,9 +246,6 @@
                     />
                 </Border>
 
-            </StackPanel>
-
-            <StackPanel Margin="0,0,0,10" Grid.Column="5">
                 <!-- Senha-->
                 <TextBlock
                     Text="Senha"    
@@ -211,9 +260,8 @@
                     Style="{StaticResource Border-Style-1}"
     >
                     <TextBox
-                        x:Name="inputSenha"
-                        Padding="10"
-                        Text="Inserir senha"    
+                        x:Name="inputPassword"
+                        Padding="10"    
                         Foreground="{StaticResource Gray-2-Color}" 
                         FontSize="12"
                         FontFamily="{StaticResource Poppins-Regular}"
@@ -223,49 +271,19 @@
                     />
                 </Border>
 
-                <!-- Confirmar Senha-->
-                <TextBlock
-                    Text="Email"    
-                    Foreground="#FFF" 
-                    Margin="0 10 0 0"
-                    FontSize="12"
-                    FontFamily="{StaticResource Poppins-Regular}"
-                    Background="#00000000"
-                />
-                <Border
-                    BorderBrush="{StaticResource Gray-1-Color}"  
-                    Background="#00000000"
-                    Style="{StaticResource Border-Style-1}"
->
-                    <TextBox
-                        x:Name="inputRepSenha"
-                        Padding="10"
-                        Text="Confirmar senha"    
-                        Foreground="{StaticResource Gray-2-Color}" 
-                        FontSize="12"
-                        FontFamily="{StaticResource Poppins-Regular}"
-                        BorderThickness="0"
-                        BorderBrush="#00000000"
-                        Background="#00000000"
-                    />
-                </Border>
 
-                <!-- BUTTON -->
-                <!--<Button Content="Cadastrar" Click="Button_Click_1" > </Button>-->
-                <!-- BUTTON -->
                 <Button
                     BorderBrush="Transparent"
                     Background="Transparent"
-                    BorderThickness="0"
-                    Click="Button_Click_1"
+                    BorderThickness="0" MouseRightButtonDown="RegisterEmployee"
                 >
-                    <Border 
+                    <Border x:Name="cadastrar_btn" 
                         BorderThickness="2"
                         BorderBrush="#FFF"
                         Background="#FFF"
                         Style="{StaticResource Border-Radius}"
                         Width="200"
-                        Height="44"
+                        Height="44" MouseLeftButtonDown="RegisterEmployee"
                     >
                         <TextBlock 
                             Text="Cadastrar" 
@@ -283,35 +301,15 @@
                     BorderBrush="Transparent"
                     Background="Transparent"
                     BorderThickness="0"
-                    Click="Button_Click"
-                >
-                    <Border 
-                        BorderThickness="2"
-                        BorderBrush="#FFF"
-                        Background="#FFF"
-                        Style="{StaticResource Border-Radius}"
-                        Width="200"
-                        Height="44"
-                    >
-                        <TextBlock 
-                            Text="Listagem" 
-                            Foreground="#000"
-                            FontWeight="Regular"
-                            FontSize="12"
-                            FontFamily="{StaticResource Poppins-SemiBold}"
-                            VerticalAlignment="Center"
-                            HorizontalAlignment="Center"
-                        />
-                    </Border>
-                </Button>
+                />
 
                 <Button
                     BorderBrush="Transparent"
                     Background="Transparent"
                     BorderThickness="0"
-                    Click="Button_Click_2"
                 >
                     <Border 
+                        x:Name="cancelar_btn" 
                         BorderThickness="2"
                         BorderBrush="#FFF"
                         Background="#000"
@@ -330,6 +328,41 @@
                         />
                     </Border>
                 </Button>
+
+                <Button
+                    BorderBrush="Transparent"
+                    Background="Transparent"
+                    BorderThickness="0"
+                />
+
+
+
+                <Button
+                    BorderBrush="Transparent"
+                    Background="Transparent"
+                    BorderThickness="0"
+                >
+                    <Border 
+                        x:Name="limpar_btn" 
+                        BorderThickness="2"
+                        BorderBrush="#FFF"
+                        Background="#000"
+                        Style="{StaticResource Border-Radius}"
+                        Width="200"
+                        Height="44" MouseLeftButtonDown="ClearInputs"
+                    >
+                        <TextBlock 
+                            Text="Limpar" 
+                            Foreground="#FFF"
+                            FontWeight="Regular"
+                            FontSize="12"
+                            FontFamily="{StaticResource Poppins-SemiBold}"
+                            VerticalAlignment="Center"
+                            HorizontalAlignment="Center"
+                        />
+                    </Border>
+                </Button>
+
             </StackPanel>
         </Grid>
     </Grid>
