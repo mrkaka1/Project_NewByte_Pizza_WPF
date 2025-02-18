@@ -88,18 +88,15 @@
                         <StackPanel></StackPanel>
                         <StackPanel Margin="5">
                             <Label Content="Nome" Foreground="White"/>
-                            <TextBox x:Name="nameInput" Foreground="#FFF" Height="44" Background="{StaticResource Gray-1-Color}" BorderBrush="{StaticResource Gray-1-Color}" Style="{StaticResource RoundedTextBox}" TextChanged="TextBox_TextChanged"/>
-                            <Label Content="Fornecedor" Foreground="White"/>
-                            <ComboBox Foreground="#FFF" Style="{StaticResource customComboBox}" x:Name="supplierSelect" Height="44">
-                                <ComboBoxItem Style="{StaticResource customComboBoxItem}" Content="Nenhuma" />
-                            </ComboBox>
+                            <TextBox x:Name="inputName" Foreground="#FFF" Height="44" Background="{StaticResource Gray-1-Color}" BorderBrush="{StaticResource Gray-1-Color}" Style="{StaticResource RoundedTextBox}"/>
+           
                             <Label Content="Valor (R$)" Foreground="White"/>
-                            <TextBox x:Name="priceInput" Foreground="#FFF" Height="44" Background="{StaticResource Gray-1-Color}" BorderBrush="{StaticResource Gray-1-Color}" Style="{StaticResource RoundedTextBox}"/>
+                            <TextBox x:Name="inputPrice" Foreground="#FFF" Height="44" Background="{StaticResource Gray-1-Color}" BorderBrush="{StaticResource Gray-1-Color}" Style="{StaticResource RoundedTextBox}"/>
                         </StackPanel>
 
                         <StackPanel Grid.Column="1" Margin="5">
                             <Label Content="Medida" Foreground="White"/>
-                            <ComboBox Style="{StaticResource customComboBox}" Foreground="#FFF" x:Name="measureSelect" Height="44" ItemStringFormat="">
+                            <ComboBox Style="{StaticResource customComboBox}" Foreground="#FFF" x:Name="selectMeasure" Height="44" ItemStringFormat="">
                                 <ComboBoxItem Content="Seleci" />
                                 <ComboBoxItem Content="Quilograma" />
                                 <ComboBoxItem Content="Miligrama" />
@@ -108,7 +105,7 @@
                                 <ComboBoxItem Content="Mililitro" />
                             </ComboBox>
                             <Label Content="Quantidade" Foreground="White"/>
-                            <TextBox x:Name="amountInput" Foreground="#FFF" Height="44" Background="{StaticResource Gray-1-Color}" BorderBrush="{StaticResource Gray-1-Color}" Style="{StaticResource RoundedTextBox}"/>
+                            <TextBox x:Name="inputAmount" Foreground="#FFF" Height="44" Background="{StaticResource Gray-1-Color}" BorderBrush="{StaticResource Gray-1-Color}" Style="{StaticResource RoundedTextBox}"/>
 
                         </StackPanel>
 
@@ -129,14 +126,14 @@
                                 </Style>
                             </Button.Resources>
                         </Button>
-                        <Button VerticalAlignment="Top" Content="Limpar" Grid.Column="1" Margin="5" Padding="5" Background="Transparent" Foreground="White" Height="44" Click="Button_Click_1">
+                        <Button x:Name="clearInputsBtn" VerticalAlignment="Top" Content="Limpar" Grid.Column="1" Margin="5" Padding="5" Background="Transparent" Foreground="White" Height="44" Click="Button_Click_1">
                             <Button.Resources>
                                 <Style TargetType="{x:Type Border}">
                                     <Setter Property="CornerRadius" Value="2"/>
                                 </Style>
                             </Button.Resources>
                         </Button>
-                        <Button VerticalAlignment="Top" Content="Cadastrar" Grid.Column="2" Margin="5" Background="White" Padding="5" Click="Button_Click" Height="44">
+                        <Button x:Name="registerProdBtn" VerticalAlignment="Top" Content="Cadastrar" Grid.Column="2" Margin="5" Background="White" Padding="5" Click="Button_Click" Height="44">
                             <Button.Resources>
                                 <Style TargetType="{x:Type Border}">
                                     <Setter Property="CornerRadius" Value="2"/>

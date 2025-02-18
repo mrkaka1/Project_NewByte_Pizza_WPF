@@ -24,48 +24,47 @@ namespace project_pizzaria_newbyte.Pages
         {
             InitializeComponent();
         }
+
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (
-                    nameInput.Text.Length > 0 &&
-                    measureSelect.Text.Length > 0 &&
-                    supplierSelect.Text.Length > 0
-            )
+            try
             {
-                double amount, price;
-
-                if (double.TryParse(amountInput.Text, out amount) && double.TryParse(priceInput.Text, out price))
+                if (
+                        inputName.Text.Length > 0 &&
+                        selectMeasure.Text.Length > 0 &&
+                        inputPrice.Text.Length > 0
+                )
                 {
+                    double amount = Convert.ToDouble(inputAmount.Text), price = Convert.ToDouble(inputPrice.Text.Replace(",", "."));
+
                     ProductIDAO produtoCRUD = new ProductIDAO();
 
                     ProductModel produto = new ProductModel();
 
-                    produto.Nome = nameInput.Text;
+                    produto.Nome = inputName.Text;
                     produto.Valor = price;
-                    produto.Medida = measureSelect.Text;
+                    produto.Medida = selectMeasure.Text;
                     produto.Quantidade = amount;
 
                     produtoCRUD.Create(produto);
-                    
-                    
-                } else
+                }
+                else
                 {
-                    MessageBox.Show("Campos de quantidade e preço inválidos.");
+                    MessageBox.Show("Algumas informações estão inseridas incorretamente.");
                 }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Campos obrigatórios não preenchidos.");
+                throw new Exception("Error: " + ex);
             }
-        }
-
-        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
+            inputAmount.Text = "";
+            inputName.Text = "";
+            inputPrice.Text = "";
         }
     }
+    
 }

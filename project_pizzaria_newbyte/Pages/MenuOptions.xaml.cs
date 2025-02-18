@@ -24,29 +24,40 @@ namespace project_pizzaria_newbyte.Pages
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void Button_CadastrarFun(object sender, RoutedEventArgs e)
         {
             RegistrationEmployee registrationEmployee = new RegistrationEmployee();
             registrationEmployee.Show();
-            
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void Button_ConsultarFun(object sender, RoutedEventArgs e)
+        {
+            ConsultEmployees consultEmployees = new ConsultEmployees();
+            consultEmployees.Show();
+        }
+
+        private void Button_CadastrarFor(object sender, RoutedEventArgs e)
         {
             RegisterSupplier registrationSupplier = new RegisterSupplier();
             registrationSupplier.Show();
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Button_ConsultarFor(object sender, RoutedEventArgs e)
         {
             ConsultSupplier supplier = new ConsultSupplier();
             supplier.Show();
         }
 
-        private void consFuncionarioBtn_Click(object sender, RoutedEventArgs e)
+        private void Button_CadastrarProd(object sender, RoutedEventArgs e)
         {
-            ConsultEmployees consultEmployees = new ConsultEmployees();
-            consultEmployees.Show();
+            RegisterProduct restrationProd = new RegisterProduct();
+            restrationProd.Show();
+        }
+
+        private void Button_ConsultarProd(object sender, RoutedEventArgs e)
+        {
+            ConsultProduct prods = new ConsultProduct();
+            prods.Show();
         }
     }
 }

@@ -27,7 +27,7 @@ namespace project_pizzaria_newbyte.Model
                 create.CommandText = $"insert into Produto " +
                     $"(nome_pro, valor_pro, tipo_medida_pro, quantidade_pro) " +
                     $"values " +
-                    $"(@Nome, null, @Valor, @Tipo, @Quantidade)";
+                    $"(@Nome, @Valor, @Tipo, @Quantidade)";
 
                 create.Parameters.AddWithValue("@Nome", produto.Nome);
                 create.Parameters.AddWithValue("@Valor", produto.Valor);

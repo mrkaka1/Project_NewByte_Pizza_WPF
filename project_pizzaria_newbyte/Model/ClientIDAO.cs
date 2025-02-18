@@ -25,13 +25,16 @@ namespace project_pizzaria_newbyte.Model
                 connection.Connect();
 
                 var create = connection.Query();
-                create.CommandText = $"insert into Cliente (id_cli, nome_cli, email_cli, cpf_cli,senha_cli) values (@Id, @Nome,@email, @cpf, @senha)";
+                create.CommandText = $"insert into " +
+                    $"Cliente (nome_cli, email_cli, cpf_cli, telefone_cli, senha_cli) " +
+                    $"values " +
+                    $"(@Nome,@Email, @Cpf, @Telefone, @Senha)";
 
-                create.Parameters.AddWithValue("@Id", null);
                 create.Parameters.AddWithValue("@Nome", user.Name);
-                create.Parameters.AddWithValue("@email", user.Email);
-                create.Parameters.AddWithValue("@cpf", user.Cpf);
-                create.Parameters.AddWithValue("@senha", user.Password);
+                create.Parameters.AddWithValue("@Email", user.Email);
+                create.Parameters.AddWithValue("@Cpf", user.Cpf);
+                create.Parameters.AddWithValue("@Telefone", user.Phone);
+                create.Parameters.AddWithValue("@Senha", user.Password);
 
                 create.ExecuteNonQuery();
 
